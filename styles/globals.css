@@ -1,16 +1,81 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+#page {
+  max-width: 860px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-* {
-  box-sizing: border-box;
+#theme-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 35px;
+}
+
+#big-logo-container {
+  margin-top: 7px;
+  margin-right: 20px;
+}
+
+.cover-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cover-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  background-color: #000;
+}
+
+.card-important {
+  /* box-shadow: #f7b955 0px 0px 10px 0px;
+  border-radius: 10px; */
+}
+
+.card {
+  min-height: fit-content;
+  max-height: 300px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.markdown-body {
+  width: 100%;
+}
+
+.markdown-body table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.markdown-body th {
+  text-align: left;
+}
+
+.markdown-body td {
+  padding: 3px;
+}
+
+.markdown-body details {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.image,
+.image-container {
+  width: 100%;
 }

@@ -1,0 +1,1309 @@
+{
+    "sha": "394083c2fe6e59d838cc422bf4ce8f126bc39ffb",
+    "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/394083c2fe6e59d838cc422bf4ce8f126bc39ffb",
+    "tree": [
+        {
+            "path": ".DS_Store",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "5008ddfcf53c02e82d7eee2e57c38e5672ef89f6",
+            "size": 6148,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/5008ddfcf53c02e82d7eee2e57c38e5672ef89f6"
+        },
+        {
+            "path": ".gitattributes",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "eba1110b5794582b53554bb1e4224b860d4e173f",
+            "size": 65,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/eba1110b5794582b53554bb1e4224b860d4e173f"
+        },
+        {
+            "path": ".gitignore",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "198b423ef2d2f6a041ed818e41a9006e17de5533",
+            "size": 1902,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/198b423ef2d2f6a041ed818e41a9006e17de5533"
+        },
+        {
+            "path": "LICENSE",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "b9a2dabb99d9e02ebf1f1dc2a1710c781dacc920",
+            "size": 1070,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/b9a2dabb99d9e02ebf1f1dc2a1710c781dacc920"
+        },
+        {
+            "path": "Procfile",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "207d22f8035f439f3df0e935302ccb8a91194414",
+            "size": 16,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/207d22f8035f439f3df0e935302ccb8a91194414"
+        },
+        {
+            "path": "README.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "86eb63ba2f08e58a276eda4a244efca00d7f2325",
+            "size": 1964,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/86eb63ba2f08e58a276eda4a244efca00d7f2325"
+        },
+        {
+            "path": "api",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "7f1d2d505881d19b3ba2829825b49db4c751bb12",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/7f1d2d505881d19b3ba2829825b49db4c751bb12"
+        },
+        {
+            "path": "api/assets",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "e8397fe9ea515a0cdf1606f65b5529eb4470400d",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/e8397fe9ea515a0cdf1606f65b5529eb4470400d"
+        },
+        {
+            "path": "api/assets/carbon-back.json",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "fba8569422052d28aed0f5eb348bfea6cc7e3891",
+            "size": 682,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/fba8569422052d28aed0f5eb348bfea6cc7e3891"
+        },
+        {
+            "path": "api/assets/madlibz.json",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "b1599a61095c4033c5b2cdcef1246cb9b9fdc48f",
+            "size": 14554,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/b1599a61095c4033c5b2cdcef1246cb9b9fdc48f"
+        },
+        {
+            "path": "api/assets/tic-tac-toe.json",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+            "size": 2,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/9e26dfeeb6e641a33dae4961196235bdb965b21b"
+        },
+        {
+            "path": "api/carbon-back.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "614bdec3f887c59976c2b1598a465d23f97dcebe",
+            "size": 13458,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/614bdec3f887c59976c2b1598a465d23f97dcebe"
+        },
+        {
+            "path": "api/madlibz.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "c2bf4ecf7b0e8034d27616e1a15ef4b7a925d1f9",
+            "size": 672,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/c2bf4ecf7b0e8034d27616e1a15ef4b7a925d1f9"
+        },
+        {
+            "path": "api/pypi-downloads.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f65d1f4f230c2610a8d97459a24cdf85b20dea84",
+            "size": 2753,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/f65d1f4f230c2610a8d97459a24cdf85b20dea84"
+        },
+        {
+            "path": "api/tic-tac-toe.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "1a6b81b720b15124e2d3ccc50acfa27f83a1aebf",
+            "size": 5268,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/1a6b81b720b15124e2d3ccc50acfa27f83a1aebf"
+        },
+        {
+            "path": "app.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "a86d0cac2178ae007b315a003b6ffe2559c4261b",
+            "size": 1965,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/a86d0cac2178ae007b315a003b6ffe2559c4261b"
+        },
+        {
+            "path": "assets",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "59aacddb371e562700eb00fc143b181555b645fe",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/59aacddb371e562700eb00fc143b181555b645fe"
+        },
+        {
+            "path": "assets/.DS_Store",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "c9006c63281847da495febda670673dc8ddcc1d1",
+            "size": 6148,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/c9006c63281847da495febda670673dc8ddcc1d1"
+        },
+        {
+            "path": "assets/bootstrap",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "790fe784c54fd0a6fecdf5a52bde8109c59ed11d",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/790fe784c54fd0a6fecdf5a52bde8109c59ed11d"
+        },
+        {
+            "path": "assets/bootstrap/css",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "660ce366217857f28a638671eecef047772a2419",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/660ce366217857f28a638671eecef047772a2419"
+        },
+        {
+            "path": "assets/bootstrap/css/bootstrap.min.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "8efedc4d0b9f18030c81bb8d22b213e8be3c9e77",
+            "size": 180286,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/8efedc4d0b9f18030c81bb8d22b213e8be3c9e77"
+        },
+        {
+            "path": "assets/bootstrap/js",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "c81fffd86bc1bd371957ff5fda7fa9abced29083",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/c81fffd86bc1bd371957ff5fda7fa9abced29083"
+        },
+        {
+            "path": "assets/bootstrap/js/bootstrap.min.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "b65b161a5332cca8cdea77ed3320bcc99380f304",
+            "size": 78468,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/b65b161a5332cca8cdea77ed3320bcc99380f304"
+        },
+        {
+            "path": "assets/bootstrap/prism.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "16b3e93e6fdf094428f9c31cf96c570cb63bc189",
+            "size": 16603,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/16b3e93e6fdf094428f9c31cf96c570cb63bc189"
+        },
+        {
+            "path": "assets/css",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "f4d543de501f9e68a28f0ed1d7759e5473f5144b",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/f4d543de501f9e68a28f0ed1d7759e5473f5144b"
+        },
+        {
+            "path": "assets/css/prism.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "1e77979c8baae631fc986c955a7d430f0a9097f1",
+            "size": 3401,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/1e77979c8baae631fc986c955a7d430f0a9097f1"
+        },
+        {
+            "path": "assets/css/style-markdown.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "fa2835ee77f272485488d489bdf6b02ccbbaf722",
+            "size": 2251,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/fa2835ee77f272485488d489bdf6b02ccbbaf722"
+        },
+        {
+            "path": "assets/css/styles.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "bda35480cfa7a94c32d44bedba9207e6d8252398",
+            "size": 4107,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/bda35480cfa7a94c32d44bedba9207e6d8252398"
+        },
+        {
+            "path": "assets/css/ttt.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "9f00135f2d9588d0af51df57c08331089262b765",
+            "size": 1189,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/9f00135f2d9588d0af51df57c08331089262b765"
+        },
+        {
+            "path": "assets/fonts",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "ce38041d745aa6b650c7c68c8aefe07caa0f11c2",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/ce38041d745aa6b650c7c68c8aefe07caa0f11c2"
+        },
+        {
+            "path": "assets/fonts/FontAwesome.otf",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "401ec0f36e4f73b8efa40bd6f604fe80d286db70",
+            "size": 134808,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/401ec0f36e4f73b8efa40bd6f604fe80d286db70"
+        },
+        {
+            "path": "assets/fonts/fa-brands-400.eot",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "baf40576d2221380817c2bb62f2d68e0f8f0a37b",
+            "size": 131930,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/baf40576d2221380817c2bb62f2d68e0f8f0a37b"
+        },
+        {
+            "path": "assets/fonts/fa-brands-400.svg",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "843c1c785cb03beae16cdbd9e21042b8f8f9f5ed",
+            "size": 708706,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/843c1c785cb03beae16cdbd9e21042b8f8f9f5ed"
+        },
+        {
+            "path": "assets/fonts/fa-brands-400.ttf",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "991632871b5b5c8adb447ddfe98876787c82f42c",
+            "size": 131624,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/991632871b5b5c8adb447ddfe98876787c82f42c"
+        },
+        {
+            "path": "assets/fonts/fa-brands-400.woff",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f9e3bcd008fdc1340750773df10e88d5e805b1e1",
+            "size": 89100,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/f9e3bcd008fdc1340750773df10e88d5e805b1e1"
+        },
+        {
+            "path": "assets/fonts/fa-brands-400.woff2",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "51c07aef34bdc898f312dfe23f6dd4d9e4c0fcf4",
+            "size": 75936,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/51c07aef34bdc898f312dfe23f6dd4d9e4c0fcf4"
+        },
+        {
+            "path": "assets/fonts/fa-regular-400.eot",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "04e25cbaa3eb3abcd60076993039382d1fcd4c7a",
+            "size": 34390,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/04e25cbaa3eb3abcd60076993039382d1fcd4c7a"
+        },
+        {
+            "path": "assets/fonts/fa-regular-400.svg",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f1f7e6cb064489887e51ab946d1adb24f6dda238",
+            "size": 144322,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/f1f7e6cb064489887e51ab946d1adb24f6dda238"
+        },
+        {
+            "path": "assets/fonts/fa-regular-400.ttf",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "9c6249c027cae5939362ee3c82df8c1be9adb7d2",
+            "size": 34092,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/9c6249c027cae5939362ee3c82df8c1be9adb7d2"
+        },
+        {
+            "path": "assets/fonts/fa-regular-400.woff",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "2873e438908a1aada4141fc240996c6bb1752cce",
+            "size": 16800,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/2873e438908a1aada4141fc240996c6bb1752cce"
+        },
+        {
+            "path": "assets/fonts/fa-regular-400.woff2",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "a34bd6524ca12e0203a0704162ade75f8749f7ea",
+            "size": 13576,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/a34bd6524ca12e0203a0704162ade75f8749f7ea"
+        },
+        {
+            "path": "assets/fonts/fa-solid-900.eot",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "39716a7b0b7f73e709f660a7d1b318b423890379",
+            "size": 194066,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/39716a7b0b7f73e709f660a7d1b318b423890379"
+        },
+        {
+            "path": "assets/fonts/fa-solid-900.svg",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "cfd0e2f447fafae6e5e1af0a6305f9790a64a181",
+            "size": 849145,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/cfd0e2f447fafae6e5e1af0a6305f9790a64a181"
+        },
+        {
+            "path": "assets/fonts/fa-solid-900.ttf",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "ac4baa21f9d81f340a1562867f3da0e655a3e41e",
+            "size": 193780,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/ac4baa21f9d81f340a1562867f3da0e655a3e41e"
+        },
+        {
+            "path": "assets/fonts/fa-solid-900.woff",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "23002f8a6199becbd651a2ccb4754056662f0e46",
+            "size": 98996,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/23002f8a6199becbd651a2ccb4754056662f0e46"
+        },
+        {
+            "path": "assets/fonts/fa-solid-900.woff2",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "b37f209d16997b381d607a9498fe08b9388cd9b4",
+            "size": 76084,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/b37f209d16997b381d607a9498fe08b9388cd9b4"
+        },
+        {
+            "path": "assets/fonts/font-awesome.min.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "540440ce89f2a408aa699b65100e18f15e0f09ca",
+            "size": 31000,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/540440ce89f2a408aa699b65100e18f15e0f09ca"
+        },
+        {
+            "path": "assets/fonts/fontawesome-all.min.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "27e7ddd2fcca2444c99c7e4aacfe4211aa262c17",
+            "size": 57126,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/27e7ddd2fcca2444c99c7e4aacfe4211aa262c17"
+        },
+        {
+            "path": "assets/fonts/fontawesome-webfont.eot",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "e9f60ca953f93e35eab4108bd414bc02ddcf3928",
+            "size": 165742,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/e9f60ca953f93e35eab4108bd414bc02ddcf3928"
+        },
+        {
+            "path": "assets/fonts/fontawesome-webfont.svg",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "855c845e538b65548118279537a04eab2ec6ef0d",
+            "size": 444379,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/855c845e538b65548118279537a04eab2ec6ef0d"
+        },
+        {
+            "path": "assets/fonts/fontawesome-webfont.ttf",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "35acda2fa1196aad98c2adf4378a7611dd713aa3",
+            "size": 165548,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/35acda2fa1196aad98c2adf4378a7611dd713aa3"
+        },
+        {
+            "path": "assets/fonts/fontawesome-webfont.woff",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "400014a4b06eee3d0c0d54402a47ab2601b2862b",
+            "size": 98024,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/400014a4b06eee3d0c0d54402a47ab2601b2862b"
+        },
+        {
+            "path": "assets/fonts/fontawesome-webfont.woff2",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "4d13fc60404b91e398a37200c4a77b645cfd9586",
+            "size": 77160,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/4d13fc60404b91e398a37200c4a77b645cfd9586"
+        },
+        {
+            "path": "assets/fonts/fontawesome5-overrides.min.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "498a1042329a85d57b603cc232291aefb00e97d7",
+            "size": 566,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/498a1042329a85d57b603cc232291aefb00e97d7"
+        },
+        {
+            "path": "assets/img",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "ec978d33ff84aed7ad149a174a1a3167b3952791",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/ec978d33ff84aed7ad149a174a1a3167b3952791"
+        },
+        {
+            "path": "assets/img/.DS_Store",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "8d3169fc27b7ae35e18096ae8e158535ee7c472e",
+            "size": 6148,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/8d3169fc27b7ae35e18096ae8e158535ee7c472e"
+        },
+        {
+            "path": "assets/img/3d-riemanns-and-gradients.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "e711f61ce9eb6f6aafce0eba8ae23651cdf63770",
+            "size": 91730,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/e711f61ce9eb6f6aafce0eba8ae23651cdf63770"
+        },
+        {
+            "path": "assets/img/caseel.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "a7b1255e72040a76f3c4e37b6b5eb1cd3a8ae374",
+            "size": 150652,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/a7b1255e72040a76f3c4e37b6b5eb1cd3a8ae374"
+        },
+        {
+            "path": "assets/img/favicon.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "575fbe17366a7e457f6c6d09b00c3af6c9bce283",
+            "size": 377,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/575fbe17366a7e457f6c6d09b00c3af6c9bce283"
+        },
+        {
+            "path": "assets/img/github-profile.svg",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "e70b0ef67bebce12f31c69df9c92d7200ce1150e",
+            "size": 2742,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/e70b0ef67bebce12f31c69df9c92d7200ce1150e"
+        },
+        {
+            "path": "assets/img/pfp.jpg",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "6d3d6e38e0921a0aa17aba403ffcbb4025b09013",
+            "size": 2061416,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/6d3d6e38e0921a0aa17aba403ffcbb4025b09013"
+        },
+        {
+            "path": "assets/img/ttt-live.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "abaf19ba87c522c99fdaba8e5966de7fe5f90312",
+            "size": 30473,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/abaf19ba87c522c99fdaba8e5966de7fe5f90312"
+        },
+        {
+            "path": "assets/js",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "25d9c6dcdc76ef1a1b324dfd157e0f9136e2a49f",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/25d9c6dcdc76ef1a1b324dfd157e0f9136e2a49f"
+        },
+        {
+            "path": "assets/js/coloredlinks.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "348203409588fe680bbdf2d029f6e05c08ba337c",
+            "size": 1582,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/348203409588fe680bbdf2d029f6e05c08ba337c"
+        },
+        {
+            "path": "assets/js/gridfilter.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "3ac2f8c62aa6dea19e1e0b63cf422b9569a21e10",
+            "size": 192,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/3ac2f8c62aa6dea19e1e0b63cf422b9569a21e10"
+        },
+        {
+            "path": "assets/js/prism.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "487a7dc6aa41e5d4af3b914ec5c76f5b817c6655",
+            "size": 36015,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/487a7dc6aa41e5d4af3b914ec5c76f5b817c6655"
+        },
+        {
+            "path": "assets/js/ttt.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "08137c3243aa216b1ed3675172c98432b82d7442",
+            "size": 2944,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/08137c3243aa216b1ed3675172c98432b82d7442"
+        },
+        {
+            "path": "build.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "9f26fc22b35d1b4de233e4ae7d066ea57e44329d",
+            "size": 812,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/9f26fc22b35d1b4de233e4ae7d066ea57e44329d"
+        },
+        {
+            "path": "content",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "dd189ab5a6c4270b1c076ad318ca4385550ccbb3",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/dd189ab5a6c4270b1c076ad318ca4385550ccbb3"
+        },
+        {
+            "path": "content/.DS_Store",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "5008ddfcf53c02e82d7eee2e57c38e5672ef89f6",
+            "size": 6148,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/5008ddfcf53c02e82d7eee2e57c38e5672ef89f6"
+        },
+        {
+            "path": "content/_root.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "efdc3bbe42d9e09af6a29fd91faf42b40f9dde2b",
+            "size": 1799,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/efdc3bbe42d9e09af6a29fd91faf42b40f9dde2b"
+        },
+        {
+            "path": "content/blog",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "2baec2fb427c88263d49da012d9d6d2ebdf9adc2",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/2baec2fb427c88263d49da012d9d6d2ebdf9adc2"
+        },
+        {
+            "path": "content/blog/A-Simple-Pascal's-Triangle-Solution.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "2c63dfc38f4a765ffe8d548837738471655ec876",
+            "size": 5245,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/2c63dfc38f4a765ffe8d548837738471655ec876"
+        },
+        {
+            "path": "content/blog/Deploying-An-App:-5-Things-I-Learned.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "4164ad4d395aa79f48d591b393c04d43c3ce9075",
+            "size": 10296,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/4164ad4d395aa79f48d591b393c04d43c3ce9075"
+        },
+        {
+            "path": "content/blog/In-Memory-Databases:-A-Demo.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "77a6decc5544c431726db0fcff8262e98f87af7a",
+            "size": 8828,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/77a6decc5544c431726db0fcff8262e98f87af7a"
+        },
+        {
+            "path": "content/blog/_root.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "26062011da880d7830c45fb8ce2a338bf23aa1f9",
+            "size": 167,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/26062011da880d7830c45fb8ce2a338bf23aa1f9"
+        },
+        {
+            "path": "content/projects",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "aa0756f56b572f93ff4715f24232837715e795ae",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/aa0756f56b572f93ff4715f24232837715e795ae"
+        },
+        {
+            "path": "content/projects/2048.py.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "0f2ee84bceee0eb0d1f1e0e96b715dc8dc64bd3a",
+            "size": 2746,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/0f2ee84bceee0eb0d1f1e0e96b715dc8dc64bd3a"
+        },
+        {
+            "path": "content/projects/CasEel.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "c76badf5c227ac24032830de6939665322cf53ea",
+            "size": 2429,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/c76badf5c227ac24032830de6939665322cf53ea"
+        },
+        {
+            "path": "content/projects/CodeSwipe.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "7945adc9211c4498289fe5ccea9cd3a1e0353359",
+            "size": 2933,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/7945adc9211c4498289fe5ccea9cd3a1e0353359"
+        },
+        {
+            "path": "content/projects/CodeSwipe",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "53134d759ee6bf66520affc68ca14d317b847c1d",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/53134d759ee6bf66520affc68ca14d317b847c1d"
+        },
+        {
+            "path": "content/projects/CodeSwipe/privacy.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "ceb6786a0680fae77f142808c30fe83e5d258738",
+            "size": 4814,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/ceb6786a0680fae77f142808c30fe83e5d258738"
+        },
+        {
+            "path": "content/projects/CodeSwipe/tos.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "75acc0e1ca94a3ec64d41aa26b312e304a2c365e",
+            "size": 4880,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/75acc0e1ca94a3ec64d41aa26b312e304a2c365e"
+        },
+        {
+            "path": "content/projects/Cut-It.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "cc482dc35959f4c396984fd322d4f957a59035dd",
+            "size": 4880,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/cc482dc35959f4c396984fd322d4f957a59035dd"
+        },
+        {
+            "path": "content/projects/GenDoc.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "2f5e6a2d8dafcdda1290cc8ad252ee8e8df8b0fd",
+            "size": 2134,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/2f5e6a2d8dafcdda1290cc8ad252ee8e8df8b0fd"
+        },
+        {
+            "path": "content/projects/Holler.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "e8e64e9a8ca4878753da16c38c503dcdb40ebf08",
+            "size": 1476,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/e8e64e9a8ca4878753da16c38c503dcdb40ebf08"
+        },
+        {
+            "path": "content/projects/Madlibz.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "622db816617b798e2d76300551f6a45187c03af3",
+            "size": 1410,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/622db816617b798e2d76300551f6a45187c03af3"
+        },
+        {
+            "path": "content/projects/Portfolio.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "b4afdf967f51584da3606bffe0d05b92f02bd58f",
+            "size": 3217,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/b4afdf967f51584da3606bffe0d05b92f02bd58f"
+        },
+        {
+            "path": "content/projects/PyPI-Download-API.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "c444eb64e4e9feedf5c891569a1618b0ef22d709",
+            "size": 1551,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/c444eb64e4e9feedf5c891569a1618b0ef22d709"
+        },
+        {
+            "path": "content/projects/QuickCite.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "fdf60d0c4411ea34cc328bf7fefef151f3275a7c",
+            "size": 1704,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/fdf60d0c4411ea34cc328bf7fefef151f3275a7c"
+        },
+        {
+            "path": "content/projects/Tabroom-API.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "a7e5370b070b867f995278fa1e90fa9780ec82df",
+            "size": 4533,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/a7e5370b070b867f995278fa1e90fa9780ec82df"
+        },
+        {
+            "path": "content/projects/_root.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "b5d6027b9eb17ef90ecc8f64ffb4cd960338dc9a",
+            "size": 254,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/b5d6027b9eb17ef90ecc8f64ffb4cd960338dc9a"
+        },
+        {
+            "path": "content/projects/holler",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "cd4e06be8f3f9a4b6459078554700e6ae607548a",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/cd4e06be8f3f9a4b6459078554700e6ae607548a"
+        },
+        {
+            "path": "content/projects/holler/_root.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "0621fd5df5b9fc2e7accfedfcdbb5c317aa3d237",
+            "size": 144,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/0621fd5df5b9fc2e7accfedfcdbb5c317aa3d237"
+        },
+        {
+            "path": "content/projects/holler/privacy.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "76ffbcd3a13da9419edef411f75123d8c0bfea40",
+            "size": 4796,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/76ffbcd3a13da9419edef411f75123d8c0bfea40"
+        },
+        {
+            "path": "content/projects/holler/tos.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "295d5ebad72c0a42425ec39a49d3c66af3278ea2",
+            "size": 4871,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/295d5ebad72c0a42425ec39a49d3c66af3278ea2"
+        },
+        {
+            "path": "content/projects/tic-tac-toe-live.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "bbca58a413b31fdfce4febf0ff07b767d7235b93",
+            "size": 6649,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/bbca58a413b31fdfce4febf0ff07b767d7235b93"
+        },
+        {
+            "path": "content/projects/tournaments.tech-(mobile).md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "b58e9b59cded6e53365cd790786422d5f0d488c5",
+            "size": 2951,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/b58e9b59cded6e53365cd790786422d5f0d488c5"
+        },
+        {
+            "path": "content/projects/tournaments.tech.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "81da02b2ab572d62525267c230d2cb60a2f17d40",
+            "size": 2326,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/81da02b2ab572d62525267c230d2cb60a2f17d40"
+        },
+        {
+            "path": "content/projects/tournaments.tech",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "a79ecf8b2844423bd1bc70b54ede5f56989cb17f",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/a79ecf8b2844423bd1bc70b54ede5f56989cb17f"
+        },
+        {
+            "path": "content/projects/tournaments.tech/privacy.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "af5d69a91ff954dc7d944c796c38a96703602cae",
+            "size": 4689,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/af5d69a91ff954dc7d944c796c38a96703602cae"
+        },
+        {
+            "path": "content/projects/tournaments.tech/tos.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f58684949c8a25f7a77cfed567c9c361aacfdb4c",
+            "size": 5157,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/f58684949c8a25f7a77cfed567c9c361aacfdb4c"
+        },
+        {
+            "path": "content/syntax.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "a8615045f450b44bb723f6157cc2d6447abb9a6e",
+            "size": 2050,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/a8615045f450b44bb723f6157cc2d6447abb9a6e"
+        },
+        {
+            "path": "fragments",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "6409b82106da42257526462a8517741a2db8780b",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/6409b82106da42257526462a8517741a2db8780b"
+        },
+        {
+            "path": "fragments/blogGrid.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "3bc6d63bb0a1b7d96dcfabef53806f2ab39b7c4f",
+            "size": 1842,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/3bc6d63bb0a1b7d96dcfabef53806f2ab39b7c4f"
+        },
+        {
+            "path": "fragments/blogSlides.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "fa39dcb7c066ac29ec4576bfd8c452aaf4e1ee0b",
+            "size": 1550,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/fa39dcb7c066ac29ec4576bfd8c452aaf4e1ee0b"
+        },
+        {
+            "path": "fragments/caseel.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "7c31c03187bac253b5f8e007a04a19b0f5811447",
+            "size": 88,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/7c31c03187bac253b5f8e007a04a19b0f5811447"
+        },
+        {
+            "path": "fragments/codeSwipeImgs.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "94092a22cedcca97279f319aa02a949804c17573",
+            "size": 1048,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/94092a22cedcca97279f319aa02a949804c17573"
+        },
+        {
+            "path": "fragments/github-ref.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f14a8dabd962b21be7c7f4a46039b311855f9bf6",
+            "size": 204,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/f14a8dabd962b21be7c7f4a46039b311855f9bf6"
+        },
+        {
+            "path": "fragments/hollerImgs.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "d0033a4c8cc5f607d0a06d7db8d259572d197a13",
+            "size": 803,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/d0033a4c8cc5f607d0a06d7db8d259572d197a13"
+        },
+        {
+            "path": "fragments/hollerInstall.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "aca8a21092c6ade1c8d02bc6e376aeae6176a2b9",
+            "size": 481,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/aca8a21092c6ade1c8d02bc6e376aeae6176a2b9"
+        },
+        {
+            "path": "fragments/pfp.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "c86f3b060107aed99f8fc7e1bd109024952c6b54",
+            "size": 138,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/c86f3b060107aed99f8fc7e1bd109024952c6b54"
+        },
+        {
+            "path": "fragments/projectsGrid.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "dca6619eecceb994452b89a06dfada8dfb16b560",
+            "size": 5756,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/dca6619eecceb994452b89a06dfada8dfb16b560"
+        },
+        {
+            "path": "fragments/projectsSlides.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "a1149f066d1a0495bb48a440a9828d0898e50bf7",
+            "size": 4797,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/a1149f066d1a0495bb48a440a9828d0898e50bf7"
+        },
+        {
+            "path": "fragments/socials.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "19f81ba8987b42750d2a48f0aeeddb20af0af697",
+            "size": 1218,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/19f81ba8987b42750d2a48f0aeeddb20af0af697"
+        },
+        {
+            "path": "fragments/tech.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "fda79d34f0efbf24f0ba3e0f21f3ed7e7f6be128",
+            "size": 9396,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/fda79d34f0efbf24f0ba3e0f21f3ed7e7f6be128"
+        },
+        {
+            "path": "fragments/tournaments.tech-mobileImgs.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "0df8083224d9cbb3a87e1056a6c0f0cc1b05f021",
+            "size": 2507,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/0df8083224d9cbb3a87e1056a6c0f0cc1b05f021"
+        },
+        {
+            "path": "google_verification.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "60f4a2fcc64178408f0b83d8e5e30d5ea3728ee7",
+            "size": 53,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/60f4a2fcc64178408f0b83d8e5e30d5ea3728ee7"
+        },
+        {
+            "path": "hooks",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "b765e03b8231ad66491d0a13aea2d83ff618f72f",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/b765e03b8231ad66491d0a13aea2d83ff618f72f"
+        },
+        {
+            "path": "hooks/gen-grid.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "4e61c46679202f8861df0bace5adc8373c361467",
+            "size": 1590,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/4e61c46679202f8861df0bace5adc8373c361467"
+        },
+        {
+            "path": "hooks/gen-slides.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "73652666aae94a1806f7336ec9bf924f8c17ccf2",
+            "size": 1656,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/73652666aae94a1806f7336ec9bf924f8c17ccf2"
+        },
+        {
+            "path": "hooks/render-md.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "e6ec30f6ebb08b14c83fb1c7fde1752269994139",
+            "size": 2780,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/e6ec30f6ebb08b14c83fb1c7fde1752269994139"
+        },
+        {
+            "path": "package-lock.json",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "29a725d95e325f65efe4569e76b442271780caaf",
+            "size": 115014,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/29a725d95e325f65efe4569e76b442271780caaf"
+        },
+        {
+            "path": "package.json",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "c3c8cd703384b1f768fac2a06d4bd0467b9be48b",
+            "size": 749,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/c3c8cd703384b1f768fac2a06d4bd0467b9be48b"
+        },
+        {
+            "path": "public",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "63ee8d498e4fcffb44ca009d0d57b6f6c6816f76",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/63ee8d498e4fcffb44ca009d0d57b6f6c6816f76"
+        },
+        {
+            "path": "public/_root.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "69ca2e52704b9fe1b77abc851882207ae2903d1d",
+            "size": 23076,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/69ca2e52704b9fe1b77abc851882207ae2903d1d"
+        },
+        {
+            "path": "public/blog",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "46030212fea17258f55fcb9ddc875e1b44b252e9",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/46030212fea17258f55fcb9ddc875e1b44b252e9"
+        },
+        {
+            "path": "public/blog/A-Simple-Pascal's-Triangle-Solution.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "d5198d9c078a72212971990648979816976fe4c2",
+            "size": 11747,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/d5198d9c078a72212971990648979816976fe4c2"
+        },
+        {
+            "path": "public/blog/Deploying-An-App:-5-Things-I-Learned.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f68c7dcce45f07f7dbaae8d6fcdd2bcb68b959fc",
+            "size": 17254,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/f68c7dcce45f07f7dbaae8d6fcdd2bcb68b959fc"
+        },
+        {
+            "path": "public/blog/In-Memory-Databases:-A-Demo.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "ad665779d71e585b8beba80bce10bb211ba0aff1",
+            "size": 15615,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/ad665779d71e585b8beba80bce10bb211ba0aff1"
+        },
+        {
+            "path": "public/blog/_root.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "1f1152c5ac61e5ffbc4fe48377bb9518c8751908",
+            "size": 5929,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/1f1152c5ac61e5ffbc4fe48377bb9518c8751908"
+        },
+        {
+            "path": "public/projects",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "340fdf4c0941feb5179925ef02e451da5280762c",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/340fdf4c0941feb5179925ef02e451da5280762c"
+        },
+        {
+            "path": "public/projects/2048.py.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "8c9c88e2bdd13f03214bd4bf80eb5822d769e178",
+            "size": 11783,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/8c9c88e2bdd13f03214bd4bf80eb5822d769e178"
+        },
+        {
+            "path": "public/projects/CasEel.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "94a339c16c63eaece6e60e54b9a3e7f7f453f714",
+            "size": 11345,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/94a339c16c63eaece6e60e54b9a3e7f7f453f714"
+        },
+        {
+            "path": "public/projects/CodeSwipe.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "432c14783f5066e0ce790f42cc7b41452c6b5246",
+            "size": 13033,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/432c14783f5066e0ce790f42cc7b41452c6b5246"
+        },
+        {
+            "path": "public/projects/CodeSwipe",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "f0237d501c0ccaff1bb6bf094b5926a40386e920",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/f0237d501c0ccaff1bb6bf094b5926a40386e920"
+        },
+        {
+            "path": "public/projects/CodeSwipe/privacy.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "6a85040ee13daf7830d3909b97e6ac0ed42f3e7d",
+            "size": 14248,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/6a85040ee13daf7830d3909b97e6ac0ed42f3e7d"
+        },
+        {
+            "path": "public/projects/CodeSwipe/tos.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "b90d8dbb9bb9f2203d6f8c46743c65757bfb7477",
+            "size": 14130,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/b90d8dbb9bb9f2203d6f8c46743c65757bfb7477"
+        },
+        {
+            "path": "public/projects/Cut-It.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "fdd07db31ea7aeb4549ee52cad161ebcaad2455a",
+            "size": 14430,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/fdd07db31ea7aeb4549ee52cad161ebcaad2455a"
+        },
+        {
+            "path": "public/projects/GenDoc.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "756806bcdef0a19d5abbb01e2bfb4f8f385bbcf1",
+            "size": 11201,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/756806bcdef0a19d5abbb01e2bfb4f8f385bbcf1"
+        },
+        {
+            "path": "public/projects/Holler.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "796475b0a7ca3221af753434e6d91d42a78e8422",
+            "size": 11191,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/796475b0a7ca3221af753434e6d91d42a78e8422"
+        },
+        {
+            "path": "public/projects/Madlibz.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "d860e1dbcf8bceecb77fffdc405efda9796d4dfb",
+            "size": 10418,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/d860e1dbcf8bceecb77fffdc405efda9796d4dfb"
+        },
+        {
+            "path": "public/projects/Portfolio.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "655effbe2fd46c9046c81f59ca2afb39c3d91b30",
+            "size": 12575,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/655effbe2fd46c9046c81f59ca2afb39c3d91b30"
+        },
+        {
+            "path": "public/projects/PyPI-Download-API.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "ae41c6d999c1a4f919a6a6db4b2355a556d1760a",
+            "size": 10695,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/ae41c6d999c1a4f919a6a6db4b2355a556d1760a"
+        },
+        {
+            "path": "public/projects/QuickCite.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "99ef2b1a2c0e3e08963ce78d84bbb5085b0ae156",
+            "size": 10716,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/99ef2b1a2c0e3e08963ce78d84bbb5085b0ae156"
+        },
+        {
+            "path": "public/projects/Tabroom-API.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "edb906987593e066a38cfa1c6532b4841cfe2a24",
+            "size": 13824,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/edb906987593e066a38cfa1c6532b4841cfe2a24"
+        },
+        {
+            "path": "public/projects/_root.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "2463420f5dc374d6bc2340027917a88f13e56047",
+            "size": 9923,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/2463420f5dc374d6bc2340027917a88f13e56047"
+        },
+        {
+            "path": "public/projects/holler",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "0fb6b71279e94da0cc00852ae6a13de4c9e524dc",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/0fb6b71279e94da0cc00852ae6a13de4c9e524dc"
+        },
+        {
+            "path": "public/projects/holler/_root.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "500fd43c66046f774271110d18877730a2b3ec87",
+            "size": 4086,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/500fd43c66046f774271110d18877730a2b3ec87"
+        },
+        {
+            "path": "public/projects/holler/privacy.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "5662a715029de16cc4c5a2f0f394c4cda7a3d037",
+            "size": 14229,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/5662a715029de16cc4c5a2f0f394c4cda7a3d037"
+        },
+        {
+            "path": "public/projects/holler/tos.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f24ed98b7a2821783248d281d5fcd043c0279e9f",
+            "size": 14122,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/f24ed98b7a2821783248d281d5fcd043c0279e9f"
+        },
+        {
+            "path": "public/projects/tic-tac-toe-live.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "003e354aea463d8c1e2bd3687de8a25962992aa9",
+            "size": 16975,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/003e354aea463d8c1e2bd3687de8a25962992aa9"
+        },
+        {
+            "path": "public/projects/tournaments.tech-(mobile).html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "29960a8f71812f1befb9a25b6c6b55dff379acb9",
+            "size": 14492,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/29960a8f71812f1befb9a25b6c6b55dff379acb9"
+        },
+        {
+            "path": "public/projects/tournaments.tech.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "6b571fdf679ea274c96d8e1888f4be4fdcaf2d26",
+            "size": 11296,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/6b571fdf679ea274c96d8e1888f4be4fdcaf2d26"
+        },
+        {
+            "path": "public/projects/tournaments.tech",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "00d3ca33263f95fcc8534242342dc4ce346a6e73",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/00d3ca33263f95fcc8534242342dc4ce346a6e73"
+        },
+        {
+            "path": "public/projects/tournaments.tech/privacy.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "c1740c2063bae8686bda9199aeb280a0c9252a7e",
+            "size": 14181,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/c1740c2063bae8686bda9199aeb280a0c9252a7e"
+        },
+        {
+            "path": "public/projects/tournaments.tech/tos.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "6fc2e6104f99f56b40b82cf88dc8be085e7c1e16",
+            "size": 14471,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/6fc2e6104f99f56b40b82cf88dc8be085e7c1e16"
+        },
+        {
+            "path": "public/syntax.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "fcd4bf482e5deb4685c778cd6e304db56a2408d8",
+            "size": 6654,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/fcd4bf482e5deb4685c778cd6e304db56a2408d8"
+        },
+        {
+            "path": "static",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "a02778aec60fdffb84f76098938333d0ed34f2df",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/a02778aec60fdffb84f76098938333d0ed34f2df"
+        },
+        {
+            "path": "static/math241.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "eafb713425f2397de369c3d08dcce1de51e46ade",
+            "size": 2371836,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/eafb713425f2397de369c3d08dcce1de51e46ade"
+        },
+        {
+            "path": "static/math241.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "9a89649c6a87884b0136c9dfc1b1cee9bb70014c",
+            "size": 36331,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/9a89649c6a87884b0136c9dfc1b1cee9bb70014c"
+        },
+        {
+            "path": "static/math241.pdf",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "e54a04d9f9e11e510f16a20f713694846147d80c",
+            "size": 224704,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/e54a04d9f9e11e510f16a20f713694846147d80c"
+        },
+        {
+            "path": "static/ttt.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "55d1f8a6b3639f89a15f9e650b8fa743fa2d3cb2",
+            "size": 2886,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/55d1f8a6b3639f89a15f9e650b8fa743fa2d3cb2"
+        },
+        {
+            "path": "templates",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "bc5bca99a51363b584727b394b6baa8dfab3f43a",
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/trees/bc5bca99a51363b584727b394b6baa8dfab3f43a"
+        },
+        {
+            "path": "templates/404.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "3e486f5b42a3ed43cf102730a7c0c63f8b7dc2e4",
+            "size": 4528,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/3e486f5b42a3ed43cf102730a7c0c63f8b7dc2e4"
+        },
+        {
+            "path": "templates/base.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "7816487279c00f023b47c3012474292827554d0e",
+            "size": 3916,
+            "url": "https://api.github.com/repos/http-samc/smrth.dev/git/blobs/7816487279c00f023b47c3012474292827554d0e"
+        }
+    ],
+    "truncated": false
+}
