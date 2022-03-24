@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive'
 import { useDarkMode } from 'usehooks-ts'
 
 const App = ({ Component, pageProps, router }: AppProps) => {
-  const { isDarkMode, toggle, enable, disable } = useDarkMode()
+  const { isDarkMode, toggle } = useDarkMode(false)
   const isBig = useMediaQuery({
     query: '(min-width: 720px)'
   })
