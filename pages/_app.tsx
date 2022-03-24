@@ -4,19 +4,18 @@ import '../styles/globals.css'
 import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button } from '@geist-ui/core'
 import { Sun, Moon, Code, Mail, Pin } from '@geist-ui/icons'
 import { useMediaQuery } from 'react-responsive'
+import { useDarkMode } from 'usehooks-ts'
 
 const App = ({ Component, pageProps, router }: AppProps) => {
-  const [theme, setTheme] = useState('light')
+  const { isDarkMode, toggle, enable, disable } = useDarkMode()
   const isBig = useMediaQuery({
     query: '(min-width: 720px)'
   })
 
-
-  const toggleTheme = () => setTheme(theme === 'light' ? 'dark' : 'light')
   let crumbStack = ''
 
   return (
-    <GeistProvider themeType={theme}>
+    <GeistProvider themeType={isDarkMode ? 'dark' : 'light'}>
       <CssBaseline />
       <Page id="page" dotBackdrop={true} dotSize="2px">
         <Page.Header className='header-container'>
@@ -48,14 +47,14 @@ const App = ({ Component, pageProps, router }: AppProps) => {
             <Spacer inline w={1} />
             <Link href="/blog"><Pin /></Link>
             {isBig &&
-              <div id='theme-toggle' onClick={toggleTheme}>
-                {theme === 'dark' ? <Sun color='yellow' /> : <Moon color='blue' />}
+              <div id='theme-toggle' onClick={toggle}>
+                {isDarkMode ? <Sun color='yellow' /> : <Moon color='blue' />}
               </div>
             }
           </div>
         </Page.Header>
         <Divider />
-        <Component {...pageProps} toggleTheme={toggleTheme} />
+        <Component {...pageProps} />
         <Page.Footer>
           <Divider />
           <Text style={{ textAlign: 'center' }}>created with 💙&nbsp; & ☕&nbsp; by smrth</Text>

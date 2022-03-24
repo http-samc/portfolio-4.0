@@ -23,6 +23,10 @@
   margin-right: 20px;
 }
 
+.tag {
+  border-radius: 10px;
+  padding: 1px 5px;
+}
 .cover-img-container {
   display: flex;
   flex-direction: column;
