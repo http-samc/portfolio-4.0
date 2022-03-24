@@ -5,6 +5,7 @@ import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, 
 import { Sun, Moon, Code, Mail, Pin } from '@geist-ui/icons'
 import { useMediaQuery } from 'react-responsive'
 import { useDarkMode } from 'usehooks-ts'
+import Head from 'next/head'
 
 const App = ({ Component, pageProps, router }: AppProps) => {
   const { isDarkMode, toggle } = useDarkMode(false)
@@ -17,6 +18,23 @@ const App = ({ Component, pageProps, router }: AppProps) => {
   return (
     <GeistProvider themeType={isDarkMode ? 'dark' : 'light'}>
       <CssBaseline />
+      <Head>
+        <title>smrth.dev</title>
+        <meta name="title" content="smrth.dev" />
+        <meta name="description" content="Sam Chitgopekar's official developer portfolio and blog." />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://smrth.dev/${router.pathname}`} />
+        <meta property="og:title" content="smrth.dev" />
+        <meta property="og:description" content="Sam Chitgopekar's official developer portfolio and blog." />
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/67826352?s=500" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={`https://smrth.dev/${router.pathname}`} />
+        <meta property="twitter:title" content="smrth.dev" />
+        <meta property="twitter:description" content="Sam Chitgopekar's official developer portfolio and blog." />
+        <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/67826352?s=500" />
+      </Head>
       <Page id="page" dotBackdrop={true} dotSize="2px">
         <Page.Header className='header-container'>
           <div className='header-container' id="big-logo-container">
