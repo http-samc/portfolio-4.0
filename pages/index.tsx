@@ -1,21 +1,20 @@
 import RenderedMarkdown from "../components/renderedMarkdown"
-import { Text, Badge, Link, Image, Spacer } from "@geist-ui/core";
-import getRandomThemeColor from "../utils/get-random-theme-color";
+import fs from 'fs'
 
 export const getStaticProps = async (context: any) => {
-    const res = await fetch(`https://raw.githubusercontent.com/http-samc/smrth.dev/main/content/_root.md`);
-    const data = await res.text();
+    const homepage = fs.readFileSync(`${process.cwd()}/content/index.md`, 'utf8')
+
     return {
         props: {
-            post: data
+            homepage
         }
     }
 }
 
-const Home = ({ post }: any) => {
+const Home = ({ homepage }: any) => {
     return (
         <RenderedMarkdown
-            markdown={post}
+            markdown={homepage}
             ignoreCustomComponents={true}
         />
     )

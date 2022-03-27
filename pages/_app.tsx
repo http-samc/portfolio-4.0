@@ -90,9 +90,10 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         </Page.Header>
         <Divider />
         <Component {...pageProps} />
-        <Page.Footer>
+        <Spacer />
+        <Page.Footer id='footer'>
           <Divider />
-          <Text style={{ textAlign: 'center' }}>created with 💙&nbsp; & ☕&nbsp; by smrth</Text>
+          <Text id='masthead' style={{ textAlign: 'center' }}>created with 💙&nbsp; & ☕&nbsp; by smrth</Text>
         </Page.Footer>
       </Page>
     </GeistProvider>
