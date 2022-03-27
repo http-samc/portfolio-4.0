@@ -1,14 +1,27 @@
 import type { AppProps } from 'next/app'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../styles/globals.css'
-import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button } from '@geist-ui/core'
+import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button, GeistUIThemes } from '@geist-ui/core'
 import { Sun, Moon, Code, Mail, Pin } from '@geist-ui/icons'
 import { useMediaQuery } from 'react-responsive'
 import { useDarkMode } from 'usehooks-ts'
+import { useTheme } from '@geist-ui/core'
 import Head from 'next/head'
+import { useLocalStorage } from 'usehooks-ts'
 
 const App = ({ Component, pageProps, router }: AppProps) => {
-  const { isDarkMode, toggle } = useDarkMode(false)
+  const theme = useTheme()
+  const [themeType, setThemeType] = useState<string>()
+  const themeChangeHandle = (theme: GeistUIThemes) => {
+    setThemeType(theme.type == 'dark' ? 'light' : 'dark')
+  }
+
+  useEffect(() => {
+    const theme = window.localStorage.getItem('theme')
+    if (theme !== 'dark') return
+    setThemeType('dark')
+  }, [])
+
   const isBig = useMediaQuery({
     query: '(min-width: 720px)'
   })
@@ -16,7 +29,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
   let crumbStack = ''
 
   return (
-    <GeistProvider themeType={isDarkMode ? 'dark' : 'light'}>
+    <GeistProvider themeType={themeType}>
       <CssBaseline />
       <Head>
         <title>smrth.dev</title>
@@ -64,11 +77,14 @@ const App = ({ Component, pageProps, router }: AppProps) => {
             <Link href="/projects"><Code /></Link>
             <Spacer inline w={1} />
             <Link href="/blog"><Pin /></Link>
-            {isBig &&
-              <div id='theme-toggle' onClick={toggle}>
-                {isDarkMode ? <Sun color='yellow' /> : <Moon color='blue' />}
+            <div id='theme-toggle' onClick={themeChangeHandle}>
+              {theme.type == 'dark' ? <Sun color='yellow' /> : <Moon color='blue' />}
+            </div>
+            {/* {isBig &&
+              <div id='theme-toggle' onClick={themeChangeHandle('light')}>
+                {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='blue' />}
               </div>
-            }
+            } */}
           </div>
         </Page.Header>
         <Divider />
