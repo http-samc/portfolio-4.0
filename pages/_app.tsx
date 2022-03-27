@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../styles/globals.css'
 import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button } from '@geist-ui/core'
 import { Sun, Moon, Code, Mail, Pin } from '@geist-ui/icons'
@@ -8,7 +8,24 @@ import { useDarkMode } from 'usehooks-ts'
 import Head from 'next/head'
 
 const App = ({ Component, pageProps, router }: AppProps) => {
-  const { isDarkMode, toggle } = useDarkMode(false)
+  const [theme, setTheme] = useState('light')
+
+  const toggle = () => {
+    let newTheme = theme === 'light' ? 'dark' : 'light'
+    window.localStorage.setItem('theme', newTheme)
+    setTheme(newTheme)
+  }
+
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem('theme')
+    localTheme
+      ? setTheme(localTheme)
+      : window.localStorage.setItem(
+        'theme',
+        window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      )
+  }, [])
+
   const isBig = useMediaQuery({
     query: '(min-width: 720px)'
   })
@@ -16,7 +33,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
   let crumbStack = ''
 
   return (
-    <GeistProvider themeType={isDarkMode ? 'dark' : 'light'}>
+    <GeistProvider themeType={theme}>
       <CssBaseline />
       <Head>
         <title>smrth.dev</title>
@@ -66,7 +83,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
             <Link href="/blog"><Pin /></Link>
             {isBig &&
               <div id='theme-toggle' onClick={toggle}>
-                {isDarkMode ? <Sun color='yellow' /> : <Moon color='blue' />}
+                {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='blue' />}
               </div>
             }
           </div>
