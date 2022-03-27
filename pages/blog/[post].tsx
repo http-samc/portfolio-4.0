@@ -1,42 +1,31 @@
 import RenderedMarkdown from "../../components/renderedMarkdown"
 import { Text, Badge, Link, Image, Spacer } from "@geist-ui/core";
 import getRandomThemeColor from "../../utils/get-random-theme-color";
-var yfm = require('yaml-front-matter')
+const yfm = require('yaml-front-matter')
+import fs from 'fs'
 
 export const getStaticPaths = async () => {
-    const res = await fetch('https://api.github.com/repos/http-samc/smrth.dev/git/trees/main?recursive=1')
-    const data = await res.json();
-
-    const paths = data.tree.map((item: any) => {
-        if (
-            item.path.startsWith('content/blog/')
-            && item.path.endsWith('.md')
-            && !item.path.includes('%2F')
-            && !item.path.includes('_')
-        ) {
-            return {
-                params: {
-                    post: item.path.replace('content/blog/', '').replace('.md', '')
-                }
-            }
-        }
+    let postPaths = fs.readdirSync(`${process.cwd()}/content/blog`)
+    let paths = postPaths.map((post: string) => {
+        return { params: { post: post.replace('.md', '') } }
     })
+
     return {
-        paths: paths.filter(Boolean),
+        paths,
         fallback: false
     }
 }
 
 export const getStaticProps = async (context: any) => {
     const { post } = context.params;
-    const res = await fetch(`https://raw.githubusercontent.com/http-samc/smrth.dev/main/content/blog/${post}.md`);
-    const data = await res.text();
+    const postText = fs.readFileSync(`${process.cwd()}/content/blog/${post}.md`, 'utf8')
     return {
         props: {
-            post: data
+            post: postText
         }
     }
 }
+
 
 const Post = ({ post }: any) => {
     const parsedPost = yfm.loadFront(post)

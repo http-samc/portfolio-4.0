@@ -2,37 +2,20 @@ import RenderedMarkdown from "../../components/renderedMarkdown"
 import { Text, Badge, Link, Image, Spacer, Grid, Card, Snippet } from "@geist-ui/core";
 import getRandomThemeColor from "../../utils/get-random-theme-color";
 import { useRouter } from "next/router";
-var yfm = require('yaml-front-matter')
+const yfm = require('yaml-front-matter')
+import fs from 'fs'
 
-const getStaticPaths = async () => {
-    const res = await fetch('https://api.github.com/repos/http-samc/smrth.dev/git/trees/main?recursive=1')
-    // const res = await fetch('http://127.0.0.1:5500/mock.json')
-    const data = await res.json();
-
-    const paths = data.tree.map((item: any) => {
-        if (item.path.startsWith('content/blog/')
-            && item.path.endsWith('.md')
-            && !item.path.includes('%2F')
-            && !item.path.includes('_')
-        ) {
-            return {
-                post: item.path.replace('content/blog/', '').replace('.md', '')
-            }
-        }
-    })
-
-    return paths.filter(Boolean)
+const getStaticPaths = () => {
+    let postPaths = fs.readdirSync(`${process.cwd()}/content/blog`)
+    return postPaths
 }
 
-export const getStaticProps = async (context: any) => {
-    const posts = await getStaticPaths()
+export const getStaticProps = (context: any) => {
+    const posts = getStaticPaths()
     const data: any = []
-    for (const { post } of posts) {
-        if (post.startsWith('_'))
-            continue
-        let res = await fetch(`https://raw.githubusercontent.com/http-samc/smrth.dev/main/content/blog/${post}.md`)
-        let text = await res.text()
-        data.push({ ...yfm.loadFront(text), ...{ urlPath: post } })
+    for (const post of posts) {
+        let text = fs.readFileSync(`${process.cwd()}/content/blog/${post}`, 'utf8')
+        data.push({ ...yfm.loadFront(text), ...{ urlPath: post.replace('.md', '') } })
     }
     return {
         props: {
