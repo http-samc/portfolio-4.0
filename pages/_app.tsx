@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button } from '@geist-ui/core'
 import { Sun, Moon, Mail, Pin, Terminal } from '@geist-ui/icons'
 import Head from 'next/head'
+import { BiTestTube } from 'react-icons/bi'
 
 const App = ({ Component, pageProps, router }: AppProps) => {
   const [theme, setTheme] = useState('light')
@@ -75,6 +76,8 @@ const App = ({ Component, pageProps, router }: AppProps) => {
             <Link href="/projects"><Terminal /></Link>
             <Spacer inline w={1} />
             <Link href="/blog"><Pin /></Link>
+            <Spacer inline w={1} />
+            <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
             {
               <div id='theme-toggle' onClick={toggle}>
                 {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='blue' />}
