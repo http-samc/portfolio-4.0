@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app'
 import { useEffect, useState } from 'react'
 import '../styles/globals.css'
 import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button } from '@geist-ui/core'
-import { Sun, Moon, Code, Mail, Pin } from '@geist-ui/icons'
+import { Sun, Moon, Mail, Pin, Terminal } from '@geist-ui/icons'
 import Head from 'next/head'
 
 const App = ({ Component, pageProps, router }: AppProps) => {
@@ -72,7 +72,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
           <div className='header-container'>
             <Link href="mailto:chitgopekarsamarth@gmail.com"><Mail /></Link>
             <Spacer inline w={1} />
-            <Link href="/projects"><Code /></Link>
+            <Link href="/projects"><Terminal /></Link>
             <Spacer inline w={1} />
             <Link href="/blog"><Pin /></Link>
             {

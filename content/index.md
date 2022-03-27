@@ -12,6 +12,7 @@ I'm Sam, a student at [Fremd High School](https://adc.d211.org/Domain/9) ('23). 
 - debating [Public Forum](https://www.speechanddebate.org/topics/) 📣
 - swimming & water polo 🤽‍♂️
 - organizing hackathons 🚀
+<!-- TODO: link /research -->
 - working on research 🧪
 - and going to school 🎒
 
