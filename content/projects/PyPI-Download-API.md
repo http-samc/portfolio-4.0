@@ -8,7 +8,7 @@ tags:
     - Python
 ---
 
-This API allows you to get the total amount of downloads any [PyPI](https://pypi.org) project has gotten throughout its existence. It employs the use of [PyPI Stats](https://pypistats.org/) (which provides monthly download breakdowns) and [Badge Maker](https://www.npmjs.com/package/badge-maker) (which powers the badge endpoint). I primarily made this API for myself, as I like to know how many people are using packages I publish so I know what I need to work on. The endpoints (which use `https://www.smrth.dev` as their base) are listed below:
+This API allows you to get the total amount of downloads any [PyPI](https://pypi.org) project has gotten throughout its existence. It employs the use of [PyPI Stats](https://pypistats.org/) (which provides monthly download breakdowns) and [Badge Maker](https://www.npmjs.com/package/badge-maker) (which powers the badge endpoint). I primarily made this API for myself, as I like to know how many people are using packages I publish so I know what I need to work on. The endpoints (which use `https://smrth.dev` as their base) are listed below:
 
 ## JSON API
 - `/api/pypi-downloads/:packageName`:  Get the number of downloads and number of active days of a PyPI package.

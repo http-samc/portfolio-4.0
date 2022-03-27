@@ -15,7 +15,7 @@ const DynamicImage = (props: any) => {
   if (props.alt) {
     return (
       <Display shadow caption={<Text>{props.alt}</Text>}>
-        <Image style={{ marginLeft: 'auto', marginRight: 'auto' }} {...props} />
+        <Image style={{ maxHeight: '500px', height: 'auto', width: '100%' }} {...props} />
       </Display>
     )
   }

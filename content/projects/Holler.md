@@ -28,4 +28,15 @@ You can check out the source code on GitHub at [http-samc/holler](https://github
 
 ## UI
 
-${fragments/hollerImgs.html}$
+<details>
+<summary>View Screenshots</summary>
+
+![Holler Splash](https://is3-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/96/77/b6/9677b6c8-c94d-11fb-40b0-bd6148dba10e/9525b03d-d555-480b-b925-e28d6d07a389_Simulator_Screen_Shot_-_iPhone_13_Pro_Max_-_2021-11-21_at_16.30.12.png/1284x2778bb.png)
+
+![Holler Authentication](https://is4-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/88/c8/3c/88c83cd6-ad70-8430-8efa-c3ae599da0ac/153ce562-feb6-4201-b539-d950f0506f73_Simulator_Screen_Shot_-_iPhone_13_Pro_Max_-_2021-11-21_at_16.30.17.png/1284x2778bb.png)
+
+![Holler Messaging](https://is4-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/50/41/b6/5041b6eb-0907-5a04-8bb1-5850bfe48a29/1043b223-2f71-4098-97e1-dc68650b5f81_Simulator_Screen_Shot_-_iPhone_13_Pro_Max_-_2021-11-21_at_16.32.11.png/1284x2778bb.png)
+
+</details>
+
+<br>

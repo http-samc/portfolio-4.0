@@ -13,7 +13,7 @@ Every day, developers around the world push billions of commits, deliberate on m
 
 That’s why made CodeSwipe, the premier platform to share code snippets with other developers. Our target audience is developers of all ages looking to experience code in a new way. Users can ‘swipe’ on posts, with ‘liked’ posts showing up in their history. To create their own posts, users can paste in a code snippet, define a language, and add an (optional) description with an (optional) GitHub repository name.
 
-Get the CodeSwipe on the [Play Store](https://play.google.com/store/apps/details?id=dev.smrth.www.codeswipe)!
+Get the CodeSwipe on the [Play Store](https://play.google.com/store/apps/details?id=dev.smrth.www.codeswipe) !
 
 
 ## What I Learned?
@@ -48,5 +48,16 @@ View the original presentation [here](https://docs.google.com/presentation/d/1hb
 
 <br>
 
-${fragments/codeSwipeImgs.html}$
+<details>
+<summary>View Screenshots</summary>
 
+![CodeSwipe Auth](https://github.com/http-samc/CodeSwipe/blob/main/images/CodeSwipeAuthPhone.png?raw=true)
+
+![CodeSwipe Create](https://github.com/http-samc/CodeSwipe/blob/main/images/CodeSwipeCreate.png?raw=true)
+
+![CodeSwipe Filter](https://github.com/http-samc/CodeSwipe/blob/main/images/CodeSwipeFilter.png?raw=true)
+
+![CodeSwipe Feed](https://github.com/http-samc/CodeSwipe/blob/main/images/CodeSwipeSwipe.png?raw=true)
+
+</details>
+<br>

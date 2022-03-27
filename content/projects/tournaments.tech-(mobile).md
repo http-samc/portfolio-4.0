@@ -35,4 +35,17 @@ You can check out the source code on GitHub at [http-samc/tournaments.tech-mobil
 
 ## UI
 
-${fragments/tournaments.tech-mobileImgs.html}$
+<details>
+<summary>View Screenshots</summary>
+
+![Tournaments.Tech Leaderboard](https://is5-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/6e/81/6e/6e816e88-8d41-a278-b4c8-9ec9fa9fed49/e8347d76-1176-4fbf-9464-254597e2b5a4_Simulator_Screen_Shot_-_iphone_6.5_13pm_-_2021-12-05_at_19.08.01.png/1284x2778bb.png)
+
+![Tournaments.Tech Team View](https://is3-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/7a/9c/57/7a9c5729-a853-4664-c66f-c90ac036328b/0c900d97-6280-4bc2-8927-1e089f160f98_Simulator_Screen_Shot_-_iphone_6.5_13pm_-_2021-12-05_at_19.08.23.png/1284x2778bb.png)
+
+![Tournaments.Tech Bid List](https://is5-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/cc/67/da/cc67da99-7fb4-7e2c-c50c-8aab2c665889/304def8e-a979-4f42-b06f-212499ec33a5_Simulator_Screen_Shot_-_iPhone_13_Pro_Max_-_2021-12-05_at_19.21.27.png/1284x2778bb.png)
+
+![Tournaments.Tech Team Lookup](https://is3-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/37/6a/13/376a138b-f770-c1b1-e4b1-671c6d7be216/556e895d-dfe3-4865-b852-50126a8c62fe_Simulator_Screen_Shot_-_iphone_6.5_13pm_-_2021-12-05_at_19.11.16.png/1284x2778bb.png)
+
+</details>
+
+<br>
