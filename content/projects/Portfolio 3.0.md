@@ -1,6 +1,6 @@
 ---
-title: Portfolio
-description: The site you're on (there's more to it than you think) 🕸
+title: Portfolio 3.0
+description: The old version of legacy.smrth.dev 👴🏻
 important: false
 cover: null
 tags:

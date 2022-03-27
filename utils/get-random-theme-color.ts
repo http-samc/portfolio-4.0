@@ -1,4 +1,4 @@
-const COLORS = [
+export const COLORS = [
     // '#d3e5ff',
     '#3291ff',
     '#0070f3',
@@ -21,7 +21,18 @@ const COLORS = [
     '#4c2889',
     '#ff0080',
     '#f81ce5',
-    '#eb367f'
+    '#eb367f',
+
+    // non-official colors
+    '#ffc0cb',
+    '#ffa500',
+    '#ff0000',
+    '#008000',
+    '#ff00ff',
+    '#800080',
+    '#800000',
+    '#808000',
+    '#008080',
 ]
 
 const getRandomThemeColor = (): string => {

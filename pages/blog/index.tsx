@@ -1,6 +1,6 @@
 import RenderedMarkdown from "../../components/renderedMarkdown"
 import { Text, Badge, Link, Image, Spacer, Grid, Card, Snippet } from "@geist-ui/core";
-import getRandomThemeColor from "../../utils/get-random-theme-color";
+import { COLORS } from "../../utils/get-random-theme-color";
 import { useRouter } from "next/router";
 const yfm = require('yaml-front-matter')
 import fs from 'fs'
@@ -26,6 +26,19 @@ export const getStaticProps = (context: any) => {
 
 const Blog = ({ posts }: any) => {
     const router = useRouter()
+
+    let colors = COLORS
+    let tagLookup: any = {}
+
+    const getTagColor = (tag: string) => {
+        if (tagLookup[tag]) {
+            return tagLookup[tag]
+        }
+        let color = colors.pop()
+        tagLookup[tag] = color
+        return color
+    }
+
     return (
         <div>
             <Text h1>My Blog 📒</Text>
@@ -49,7 +62,7 @@ const Blog = ({ posts }: any) => {
                                         post.tags.map((tag: string, idx: number) => {
                                             return <Badge
                                                 style={{
-                                                    backgroundColor: getRandomThemeColor(),
+                                                    backgroundColor: getTagColor(tag),
                                                     marginRight: '5px',
                                                     marginBottom: '5px'
                                                 }}

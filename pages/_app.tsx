@@ -87,7 +87,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         <Spacer />
         <Page.Footer id='footer'>
           <Divider />
-          <Text id='masthead' style={{ textAlign: 'center' }}>created with 💙&nbsp; & ☕&nbsp; by smrth</Text>
+          <Text id='masthead' style={{ textAlign: 'center' }}>forged with 💙&nbsp; & ☕&nbsp; by smrth</Text>
         </Page.Footer>
       </Page>
     </GeistProvider>

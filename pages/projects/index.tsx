@@ -1,6 +1,6 @@
 import RenderedMarkdown from "../../components/renderedMarkdown"
 import { Text, Badge, Link, Image, Spacer, Grid, Card, Snippet } from "@geist-ui/core";
-import getRandomThemeColor from "../../utils/get-random-theme-color";
+import { COLORS } from "../../utils/get-random-theme-color";
 import { useRouter } from "next/router";
 const yfm = require('yaml-front-matter')
 import fs from 'fs'
@@ -27,13 +27,24 @@ export const getStaticProps = (context: any) => {
 const Blog = ({ projects }: any) => {
     const router = useRouter()
 
+    let colors = COLORS
+    let tagLookup: any = {}
+
+    const getTagColor = (tag: string) => {
+        if (tagLookup[tag]) {
+            return tagLookup[tag]
+        }
+        let color = colors.pop()
+        tagLookup[tag] = color
+        return color
+    }
+
     return (
         <div>
             <Text h1>My Projects 🚀</Text>
             <Grid.Container gap={2} justify='center'>
                 {
                     projects.map((project: any, idx: number) => {
-                        if (!project.tags) { return null }
                         return (
                             <Grid xs={24} md={8} className={project.important ? "card-important" : ""} key={idx}>
                                 <Card
@@ -41,7 +52,9 @@ const Blog = ({ projects }: any) => {
                                     height="auto"
                                     className="card"
                                     onClick={() => {
-                                        router.push(`/projects/${project.urlPath}`)
+                                        project.redirect
+                                            ? router.push(project.redirect)
+                                            : router.push(`/projects/${project.urlPath}`)
                                     }}
                                     shadow
                                 >
@@ -52,7 +65,7 @@ const Blog = ({ projects }: any) => {
                                         project.tags.map((tag: string, idx: number) => {
                                             return <Badge
                                                 style={{
-                                                    backgroundColor: getRandomThemeColor(),
+                                                    backgroundColor: getTagColor(tag),
                                                     marginRight: '5px',
                                                     marginBottom: '5px'
                                                 }}
