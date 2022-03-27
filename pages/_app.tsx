@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react'
 import '../styles/globals.css'
 import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button } from '@geist-ui/core'
 import { Sun, Moon, Code, Mail, Pin } from '@geist-ui/icons'
-import { useMediaQuery } from 'react-responsive'
-import { useDarkMode } from 'usehooks-ts'
 import Head from 'next/head'
 
 const App = ({ Component, pageProps, router }: AppProps) => {
@@ -25,10 +23,6 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
       )
   }, [])
-
-  const isBig = useMediaQuery({
-    query: '(min-width: 720px)'
-  })
 
   let crumbStack = ''
 
@@ -58,7 +52,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
             <Link href='/'>
               <Text h2 type="success">smrth.dev</Text>
             </Link>
-            {isBig &&
+            {
               <Breadcrumbs>
                 {
                   router.pathname === '/'
@@ -81,7 +75,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
             <Link href="/projects"><Code /></Link>
             <Spacer inline w={1} />
             <Link href="/blog"><Pin /></Link>
-            {isBig &&
+            {
               <div id='theme-toggle' onClick={toggle}>
                 {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='blue' />}
               </div>
