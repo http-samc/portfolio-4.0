@@ -45,10 +45,7 @@ const Blog = ({ posts }: any) => {
     const router = useRouter()
     return (
         <div>
-            <Text h1>
-                <Snippet type="success" filled copy="prevent">echo "Sam's Blog"</Snippet>
-            </Text>
-            <Spacer h={2} />
+            <Text h1>My Blog 📒</Text>
             <Grid.Container gap={2} justify='center'>
                 {
                     posts.map((post: any, idx: number) => {
