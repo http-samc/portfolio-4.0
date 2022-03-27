@@ -23,11 +23,6 @@
   margin-right: 20px;
 }
 
-.tag {
-  border-radius: 10px;
-  padding: 1px 5px;
-}
-
 .cover-img-container {
   display: flex;
   flex-direction: column;
@@ -41,11 +36,6 @@
   height: auto;
   border-radius: 5px;
   background-color: #000;
-}
-
-.card-important {
-  /* box-shadow: #f7b955 0px 0px 10px 0px;
-  border-radius: 10px; */
 }
 
 .card {

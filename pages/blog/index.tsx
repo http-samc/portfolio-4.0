@@ -74,7 +74,6 @@ const Blog = ({ posts }: any) => {
                                                     marginBottom: '5px'
                                                 }}
                                                 key={idx.toString()}
-                                                className='tag'
                                             >
                                                 {tag}
                                             </Badge>
