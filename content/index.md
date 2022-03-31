@@ -32,7 +32,14 @@ I'm open for structured work, internships, freelance projects, and anything else
             src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
             alt="13723971" height="30" width="40" /></a>
 </div>
+<br>
 
+## recents 🛠
+
+<iframe src="/api/github-activity/http-samc" style="width: 100%; height: 70px, padding: 0px, border: 0px" />
+<br>
+
+## tech stack ⚙️
 ## tech stack ⚙️
 These are some of the technologies I look to when starting a new project. Though there's some overlap, I've always beleived that using the right tool for the right job is the most important aspect of software development.
 

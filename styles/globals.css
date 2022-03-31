@@ -64,6 +64,11 @@
   width: 100%;
 }
 
+.markdown-body iframe {
+  border: none;
+  height: 120px;
+}
+
 .markdown-body table {
   margin-left: auto;
   margin-right: auto;
