@@ -1,14 +1,26 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 const EVENT_LOOKUP: any = {
-    'PushEvent': ['Committed to', 'cyan'],
+    'PushEvent': ['Committed', 'cyan'],
     'CreateEvent': ['Created', 'green'],
     'DeleteEvent': ['Deleted', 'red'],
-    'ForkEvent': ['Forked', 'purple'],
-    'IssuesEvent': ['Raised Issue in', 'yellow'],
-    'PullRequestEvent': ['Pull Request in', 'blue'],
+    'ForkEvent': ['Forked', 'pink'],
+    'IssuesEvent': ['Raised Issue', 'yellow'],
+    'PullRequestEvent': ['Pull Request', 'skyblue'],
     'WatchEvent': ['Watched', 'yellow'],
 }
+
+const getEventTagline = (event: any) => {
+    let pl = event.payload
+    if (pl.commits)
+        return pl.commits[0].message
+    if (pl.issue)
+        return pl.issue.title
+    if (pl.pull_request)
+        return pl.pull_request.title
+    return ''
+}
+
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const { user }: any = req.query
@@ -16,7 +28,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         if (!user) {
             res.status(400).send({ error: 'No user specified.' })
         }
-        let apiCall = await fetch(`https://api.github.com/users/${user}/events`)
+        let apiCall = await fetch(`https://api.github.com/users/${user}/events`, {
+            headers: !process.env.token ? {} : {
+                'Authorization': `token ${process.env.GITHUB_TOKEN}`,
+            }
+        })
+
         let apiResponse = await apiCall.json()
 
         // extract most recent event
@@ -35,12 +52,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         let [action, color]: any = EVENT_LOOKUP[event.type]
         let date = new Date(event.created_at)
         let datetimestr = date.toLocaleDateString() + ' ' + date.toLocaleTimeString()
-        let message = `"${event.payload.commits[0].message}"` || '';
         let html = `
         <div style="font-family: monospace; background-color: #121212; padding: 5px; border-radius: 5px; color: white; display: flex; align-items: center; justify-content: space-between">
         <div style="display: flex; align-items: center; margin-left: 5px">
         <img src="${event.actor.avatar_url}" style="width: 30px; height: 30px; border-radius: 50px; margin-right: 10px;">
-        <p><span style="color: ${color}">${action}</span> ${event.repo.name.split('/')[1]} <span style="color: orange">${message}</span></p>
+        <p><span style="color: ${color}">${action}</span> @<a style="color: white" href="${event.repo.url}">${event.repo.name.split('/')[1]}</a> <span style="color: orange">${getEventTagline(event)}</span></p>
         </div>
         <p style="margin-right: 10px">${datetimestr}</p>
         </div>
@@ -48,6 +64,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
         res.status(200).send(html)
     } catch (err) {
-        res.status(500).send({ error: 'Error! API servers down.' })
+        res.status(500).send({ error: err })
     }
 }
