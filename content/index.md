@@ -37,7 +37,6 @@ I'm open for structured work, internships, freelance projects, and anything else
 ## recents 🛠
 
 <iframe src="/api/github-activity/http-samc" style="width: 100%; height: 70px, padding: 0px, border: 0px" />
-<br>
 
 ## tech stack ⚙️
 ## tech stack ⚙️
