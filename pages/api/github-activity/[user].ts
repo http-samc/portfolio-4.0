@@ -24,7 +24,7 @@ const getEventTagline = (event: any) => {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const { user }: any = req.query
-    res.send(process.env.GITHUB_TOKEN)
+
     try {
         if (!user) {
             res.status(400).send({ error: 'No user specified.' })
