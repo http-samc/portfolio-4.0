@@ -54,8 +54,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         let date = new Date(event.created_at)
         let datetimestr = date.toLocaleDateString() + ' ' + date.toLocaleTimeString()
         let message = getEventTagline(event)
-        message.length >= 25 && (message = message.substring(0, 25) + '...')
-        message && (message = '"' + message + '"')
+        message.length > 25 && (message = message.substring(0, 25) + '...')
+        message && (message = "'" + message + "'")
         let html = `
         <div style="font-family: monospace; background-color: rgba(0, 0, 0, .5); border: 1px solid grey; padding: 5px; border-radius: 5px; color: white; display: flex; align-items: center; justify-content: space-between">
         <div style="display: flex; align-items: center; margin-left: 5px">
