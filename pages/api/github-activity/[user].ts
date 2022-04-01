@@ -59,7 +59,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         <div style="font-family: monospace; background-color: rgba(0, 0, 0, .5); border: 1px solid grey; padding: 5px; border-radius: 5px; color: white; display: flex; align-items: center; justify-content: space-between">
         <div style="display: flex; align-items: center; margin-left: 5px">
         <img src="${event.actor.avatar_url}" style="width: 30px; height: 30px; border-radius: 50px; margin-right: 10px;">
-        <p><span style="color: ${color}">${action}</span> @<a style="color: white" href="https://github.com/${event.repo.name}">${event.repo.name.split('/')[1]}</a> <span style="color: orange">"${message}"</span></p>
+        <p><span style="color: ${color}">${action}</span> @<a target="blank" style="color: white" href="https://github.com/${event.repo.name}">${event.repo.name.split('/')[1]}</a> <span style="color: orange">"${message}"</span></p>
         </div>
         <p style="margin-right: 10px">${datetimestr}</p>
         </div>
