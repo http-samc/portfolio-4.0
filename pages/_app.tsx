@@ -5,9 +5,12 @@ import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, 
 import { Sun, Moon, Mail, Pin, Terminal } from '@geist-ui/icons'
 import Head from 'next/head'
 import { BiTestTube } from 'react-icons/bi'
+import { css } from '@emotion/react'
+import { BounceLoader } from 'react-spinners'
 
 const App = ({ Component, pageProps, router }: AppProps) => {
   const [theme, setTheme] = useState('light')
+  const [loading, setLoading] = useState(true)
 
   const toggle = () => {
     let newTheme = theme === 'light' ? 'dark' : 'light'
@@ -23,9 +26,24 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         'theme',
         window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
       )
+    setTimeout(() => setLoading(false), 1000)
   }, [])
 
   let crumbStack = ''
+
+  if (loading)
+    return (
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+        height: '100%',
+      }}>
+        <BounceLoader loading={loading} color='navy' />
+      </div>
+    )
 
   return (
     <GeistProvider themeType={theme}>
