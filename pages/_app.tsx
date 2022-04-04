@@ -20,13 +20,22 @@ const App = ({ Component, pageProps, router }: AppProps) => {
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem('theme')
-    localTheme
-      ? setTheme(localTheme)
-      : window.localStorage.setItem(
+    if (localTheme)
+      setTheme(localTheme)
+    else {
+      window.localStorage.setItem(
         'theme',
         window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
       )
-    setTimeout(() => setLoading(false), 1000)
+    }
+    const lastVisit = parseInt(window.localStorage.getItem('lastVisit') || '0')
+
+    if (!!lastVisit && lastVisit > Date.now() - 1000 * 60 * 60 * 24 * 2)
+      setLoading(false)
+    else {
+      window.localStorage.setItem('lastVisit', Date.now().toString())
+      setTimeout(() => setLoading(false), 1000)
+    }
   }, [])
 
   let crumbStack = ''
@@ -40,6 +49,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         alignItems: 'center',
         width: '100%',
         height: '100%',
+        backgroundColor: theme == 'light' ? 'white' : 'black'
       }}>
         <BounceLoader loading={loading} color='navy' />
       </div>
@@ -65,7 +75,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         <meta property="twitter:description" content="Sam Chitgopekar's official developer portfolio and blog." />
         <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/67826352?s=500" />
       </Head>
-      <Page id="page" dotBackdrop={true} dotSize="2px">
+      <Page id="page" dotBackdrop={true} dotSize="2px" style={{ padding: 20, marginTop: -30 }}>
         <Page.Header className='header-container'>
           <div className='header-container' id="big-logo-container">
             <Link href='/'>

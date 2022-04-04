@@ -1,6 +1,10 @@
 html, body, #__next {
   height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
+
 #page {
   max-width: 860px;
   width: 100%;
