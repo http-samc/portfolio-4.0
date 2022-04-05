@@ -123,7 +123,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
                 <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
               </Tooltip>
               <div id='theme-toggle' onClick={toggleTheme}>
-                <Tooltip text='Theme' placement='bottomStart'>
+                <Tooltip text='Theme' placement='bottomEnd'>
                   {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='purple' />}
                 </Tooltip>
               </div>
