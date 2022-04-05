@@ -6,7 +6,7 @@ import { Text } from "@geist-ui/core";
 // import GithubProfile from "../components/githubProfile";
 
 const TEXTS = [
-    "fullstack developer",
+    "developer",
     "bulls fan",
     "student",
     "debater",
