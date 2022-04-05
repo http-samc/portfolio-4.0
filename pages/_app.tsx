@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import { useEffect, useState } from 'react'
 import '../styles/globals.css'
-import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button, Drawer } from '@geist-ui/core'
+import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button, Drawer, Tooltip } from '@geist-ui/core'
 import { Sun, Moon, Mail, Pin, Terminal, Menu } from '@geist-ui/icons'
 import Head from 'next/head'
 import { BiTestTube } from 'react-icons/bi'
@@ -46,7 +46,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
 
   let crumbStack = ''
 
-  if (loading)
+  if (loading) {
     return (
       <div style={{
         display: 'flex',
@@ -60,6 +60,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         <BounceLoader loading={loading} color='navy' />
       </div>
     )
+  }
 
   return (
     <GeistProvider themeType={theme}>
@@ -106,18 +107,26 @@ const App = ({ Component, pageProps, router }: AppProps) => {
           </div>
           {isBig &&
             <div className='header-container'>
-              <Link href="mailto:chitgopekarsamarth@gmail.com"><Mail /></Link>
+              <Tooltip text='Contact'>
+                <Link href="mailto:chitgopekarsamarth@gmail.com"><Mail /></Link>
+              </Tooltip>
               <Spacer inline w={1} />
-              <Link href="/projects"><Terminal /></Link>
+              <Tooltip text='Projects'>
+                <Link href="/projects"><Terminal /></Link>
+              </Tooltip>
               <Spacer inline w={1} />
-              <Link href="/blog"><Pin /></Link>
+              <Tooltip text='Blog'>
+                <Link href="/blog"><Pin /></Link>
+              </Tooltip>
               <Spacer inline w={1} />
-              <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
-              {
-                <div id='theme-toggle' onClick={toggleTheme}>
-                  {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='blue' />}
-                </div>
-              }
+              <Tooltip text='Research'>
+                <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
+              </Tooltip>
+              <div id='theme-toggle' onClick={toggleTheme}>
+                <Tooltip text='Theme' placement='bottomStart'>
+                  {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='purple' />}
+                </Tooltip>
+              </div>
             </div>
           }
           {
@@ -125,20 +134,34 @@ const App = ({ Component, pageProps, router }: AppProps) => {
             <div>
               <Button auto icon={<Menu />} onClick={toggleDrawer} />
               <Drawer visible={darwerIsVisible} onClose={() => setDrawerisVisisble(false)}>
-                <div className='header-container-drawer'>
-                  {
-                    <div onClick={toggleTheme}>
-                      {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='blue' />}
-                    </div>
-                  }
-                  <Spacer inline w={1} />
-                  <Link href="mailto:chitgopekarsamarth@gmail.com"><Mail /></Link>
-                  <Spacer inline w={1} />
-                  <Link href="/projects"><Terminal /></Link>
-                  <Spacer inline w={1} />
-                  <Link href="/blog"><Pin /></Link>
-                  <Spacer inline w={1} />
-                  <Link href="/research"><BiTestTube size={21} color={theme == 'light' ? 'black' : 'white'} /></Link>
+                <div style={{ height: '100%' }}>
+                  <div className='header-container-drawer'>
+                    <Link className='drawer-link' href="mailto:chitgopekarsamarth@gmail.com">
+                      <Mail />
+                      <Spacer w={0.5} />
+                      <Text>contact</Text>
+                    </Link>
+                    <Link className='drawer-link' href="/projects">
+                      <Terminal />
+                      <Spacer w={0.5} />
+                      <Text>projects</Text>
+                    </Link>
+                    <Link className='drawer-link' href="/blog">
+                      <Pin />
+                      <Spacer w={0.5} />
+                      <Text>blog</Text>
+                    </Link>
+                    <Link className='drawer-link' href="/research">
+                      <BiTestTube size={21} color={theme == 'light' ? 'black' : 'white'} />
+                      <Spacer w={0.5} />
+                      <Text>research</Text>
+                    </Link>
+                    <Spacer h={10} />
+                  </div>
+                </div>
+                <Divider />
+                <div style={{ alignSelf: 'center' }} onClick={toggleTheme}>
+                  {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='purple' />}
                 </div>
               </Drawer>
             </div>
@@ -151,8 +174,8 @@ const App = ({ Component, pageProps, router }: AppProps) => {
           <Divider />
           <Text id='masthead' style={{ textAlign: 'center' }}>forged with 💙&nbsp; & ☕&nbsp; by smrth</Text>
         </Page.Footer>
-      </Page>
-    </GeistProvider>
+      </Page >
+    </GeistProvider >
   )
 }
 

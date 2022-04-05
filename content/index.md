@@ -1,9 +1,7 @@
-
-# I'm Samarth Chitgopekar
-### a fullstack developer from 📍 Chicago, IL
-
 <br/>
-<p align="center"><img style="border-radius:50%" class="ovr" src="https://avatars.githubusercontent.com/u/67826352?s=200&v=4"/></p>
+<p align="center">
+<img style="border-radius:50%" class="ovr" src="https://avatars.githubusercontent.com/u/67826352?s=200&v=4"/>
+</p>
 <br/>
 
 ## hi 👋
