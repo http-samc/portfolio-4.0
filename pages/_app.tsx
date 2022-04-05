@@ -1,21 +1,27 @@
 import type { AppProps } from 'next/app'
 import { useEffect, useState } from 'react'
 import '../styles/globals.css'
-import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button } from '@geist-ui/core'
-import { Sun, Moon, Mail, Pin, Terminal } from '@geist-ui/icons'
+import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button, Drawer } from '@geist-ui/core'
+import { Sun, Moon, Mail, Pin, Terminal, Menu } from '@geist-ui/icons'
 import Head from 'next/head'
 import { BiTestTube } from 'react-icons/bi'
-import { css } from '@emotion/react'
 import { BounceLoader } from 'react-spinners'
+import { useMediaQuery } from 'usehooks-ts'
 
 const App = ({ Component, pageProps, router }: AppProps) => {
   const [theme, setTheme] = useState('light')
   const [loading, setLoading] = useState(true)
+  const [darwerIsVisible, setDrawerisVisisble] = useState(false)
+  const isBig = useMediaQuery('(min-width: 600px)')
 
-  const toggle = () => {
+  const toggleTheme = () => {
     let newTheme = theme === 'light' ? 'dark' : 'light'
     window.localStorage.setItem('theme', newTheme)
     setTheme(newTheme)
+  }
+
+  const toggleDrawer = () => {
+    setDrawerisVisisble(!darwerIsVisible)
   }
 
   useEffect(() => {
@@ -98,20 +104,45 @@ const App = ({ Component, pageProps, router }: AppProps) => {
               </Breadcrumbs>
             }
           </div>
-          <div className='header-container'>
-            <Link href="mailto:chitgopekarsamarth@gmail.com"><Mail /></Link>
-            <Spacer inline w={1} />
-            <Link href="/projects"><Terminal /></Link>
-            <Spacer inline w={1} />
-            <Link href="/blog"><Pin /></Link>
-            <Spacer inline w={1} />
-            <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
-            {
-              <div id='theme-toggle' onClick={toggle}>
-                {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='blue' />}
-              </div>
-            }
-          </div>
+          {isBig &&
+            <div className='header-container'>
+              <Link href="mailto:chitgopekarsamarth@gmail.com"><Mail /></Link>
+              <Spacer inline w={1} />
+              <Link href="/projects"><Terminal /></Link>
+              <Spacer inline w={1} />
+              <Link href="/blog"><Pin /></Link>
+              <Spacer inline w={1} />
+              <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
+              {
+                <div id='theme-toggle' onClick={toggleTheme}>
+                  {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='blue' />}
+                </div>
+              }
+            </div>
+          }
+          {
+            !isBig &&
+            <div>
+              <Button auto icon={<Menu />} onClick={toggleDrawer} />
+              <Drawer visible={darwerIsVisible} onClose={() => setDrawerisVisisble(false)}>
+                <div className='header-container-drawer'>
+                  {
+                    <div onClick={toggleTheme}>
+                      {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='blue' />}
+                    </div>
+                  }
+                  <Spacer inline w={1} />
+                  <Link href="mailto:chitgopekarsamarth@gmail.com"><Mail /></Link>
+                  <Spacer inline w={1} />
+                  <Link href="/projects"><Terminal /></Link>
+                  <Spacer inline w={1} />
+                  <Link href="/blog"><Pin /></Link>
+                  <Spacer inline w={1} />
+                  <Link href="/research"><BiTestTube size={21} color={theme == 'light' ? 'black' : 'white'} /></Link>
+                </div>
+              </Drawer>
+            </div>
+          }
         </Page.Header>
         <Divider />
         <Component {...pageProps} />

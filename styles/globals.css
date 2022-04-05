@@ -29,6 +29,13 @@ html, body, #__next {
   align-items: center;
 }
 
+.header-container-drawer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 #theme-toggle {
   display: flex;
   flex-direction: column;
