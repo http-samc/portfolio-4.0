@@ -46,7 +46,7 @@ const Blog = ({ posts }: any) => {
                 {
                     posts.map((post: any, idx: number) => {
                         return (
-                            <Grid xs={24} md={8} lg={post.important ? 16 : 8} key={idx}>
+                            <Grid xs={24} md={8} lg={post.important ? 16 : 8} width="100%" key={idx}>
                                 <Card
                                     width="100%"
                                     height="auto"

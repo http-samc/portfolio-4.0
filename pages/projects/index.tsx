@@ -46,7 +46,7 @@ const Blog = ({ projects }: any) => {
                 {
                     projects.map((project: any, idx: number) => {
                         return (
-                            <Grid xs={24} md={8} className={project.important ? "card-important" : ""} key={idx}>
+                            <Grid xs={24} md={project.important ? 16 : 8} width="100%" key={idx}>
                                 <Card
                                     width="100%"
                                     height="auto"
