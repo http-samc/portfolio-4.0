@@ -8,7 +8,6 @@ import { Text } from "@geist-ui/core";
 const TEXTS = [
     "fullstack developer",
     "bulls fan",
-    "researcher",
     "student",
     "debater",
     "swimmer"
@@ -43,7 +42,7 @@ const Home = ({ homepage }: any) => {
                     text={TEXTS[index % TEXTS.length]}
                     springConfig={presets.wobbly}
                     inline={true}
-                    style={{ color: 'grey' }}
+                    style={{ fontStyle: 'italic' }}
                 />
                 &nbsp;from 📍 Chicago, IL
             </Text>
