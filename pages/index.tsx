@@ -3,7 +3,7 @@ import fs from 'fs'
 import TextTransition, { presets } from "react-text-transition"
 import { useState, useEffect } from 'react'
 import { Text } from "@geist-ui/core";
-import GithubProfile from "../components/githubProfile";
+// import GithubProfile from "../components/githubProfile";
 
 const TEXTS = [
     "fullstack developer",
