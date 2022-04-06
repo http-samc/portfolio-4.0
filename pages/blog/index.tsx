@@ -57,15 +57,12 @@ const Blog = ({ posts, theme }: any) => {
                                     shadow
                                     style={{ backgroundImage: `url(${post.cover})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                                 >
-                                    <Text h4 style={{
-                                        padding: 5,
-                                        backgroundColor: theme == 'light' ? 'rgba(255, 255, 255, 0.9)' : 'rgba(0, 0, 0, 0.9)',
-                                        width: 'fit-content',
-                                        borderRadius: 5,
-                                        background: 0.8,
+                                    <Badge style={{
+                                        fontSize: '1.2rem',
+                                        borderRadius: 5
                                     }}>
                                         {post.title}
-                                    </Text>
+                                    </Badge>
                                     <Spacer />
                                     {
                                         post.tags.map((tag: string, idx: number) => {
