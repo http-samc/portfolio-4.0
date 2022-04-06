@@ -24,7 +24,7 @@ export const getStaticProps = (context: any) => {
     }
 }
 
-const Blog = ({ posts }: any) => {
+const Blog = ({ posts, theme }: any) => {
     const router = useRouter()
 
     // let colors = COLORS
@@ -42,7 +42,7 @@ const Blog = ({ posts }: any) => {
     return (
         <div>
             <Text h1>My Blog 📒</Text>
-            <Grid.Container gap={2} justify='center'>
+            <Grid.Container gap={2} justify='center' direction="row">
                 {
                     posts.map((post: any, idx: number) => {
                         return (
@@ -55,8 +55,17 @@ const Blog = ({ posts }: any) => {
                                         router.push(`/blog/${post.urlPath}`)
                                     }}
                                     shadow
+                                    style={{ backgroundImage: `url(${post.cover})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                                 >
-                                    <Text h4>{post.title}</Text>
+                                    <Text h4 style={{
+                                        padding: 5,
+                                        backgroundColor: theme == 'light' ? 'rgba(255, 255, 255, 0.9)' : 'rgba(0, 0, 0, 0.9)',
+                                        width: 'fit-content',
+                                        borderRadius: 5,
+                                        background: 0.8,
+                                    }}>
+                                        {post.title}
+                                    </Text>
                                     <Spacer />
                                     {
                                         post.tags.map((tag: string, idx: number) => {

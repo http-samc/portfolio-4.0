@@ -183,7 +183,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
           }
         </Page.Header>
         <Divider />
-        <Component {...pageProps} />
+        <Component {...pageProps} theme={theme} />
         <Spacer />
         <Page.Footer id='footer'>
           <Divider />
