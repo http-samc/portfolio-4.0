@@ -7,6 +7,21 @@ import Head from 'next/head'
 import { BiTestTube } from 'react-icons/bi'
 import { BounceLoader } from 'react-spinners'
 import { useMediaQuery } from 'usehooks-ts'
+// @ts-ignore
+import TypeAnimation from 'react-type-animation';
+
+const ADJECTIVES = [
+  'built',
+  2000,
+  'forged',
+  2000,
+  'developed',
+  2000,
+  'created',
+  2000,
+  'envisioned',
+  2000
+]
 
 const App = ({ Component, pageProps, router }: AppProps) => {
   const [theme, setTheme] = useState('light')
@@ -172,7 +187,15 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         <Spacer />
         <Page.Footer id='footer'>
           <Divider />
-          <Text id='masthead' style={{ textAlign: 'center' }}>forged with 💙&nbsp; & ☕&nbsp; by smrth</Text>
+          <Text id='masthead' style={{ textAlign: 'center' }}>
+            <TypeAnimation
+              cursor={true}
+              sequence={ADJECTIVES}
+              wrapper="span"
+              repeat={Infinity}
+            />
+            with 💙&nbsp; & ☕&nbsp; by smrth
+          </Text>
         </Page.Footer>
       </Page >
     </GeistProvider >

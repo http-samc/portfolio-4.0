@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import { Text } from "@geist-ui/core";
 // import GithubProfile from "../components/githubProfile";
 
-const TEXTS = [
+const ADJECTIVES = [
     "developer",
     "bulls fan",
     "student",
@@ -39,10 +39,10 @@ const Home = ({ homepage }: any) => {
             <Text h3>
                 a&nbsp;
                 <TextTransition
-                    text={TEXTS[index % TEXTS.length]}
+                    text={ADJECTIVES[index % ADJECTIVES.length]}
                     springConfig={presets.wobbly}
                     inline={true}
-                    style={{ fontStyle: 'italic' }}
+                    style={{ fontStyle: 'underline' }}
                 />
                 &nbsp;from 📍 Chicago, IL
             </Text>

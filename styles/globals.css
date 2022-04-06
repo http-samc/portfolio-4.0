@@ -17,8 +17,15 @@ html, body, #__next {
   right: 0;
 }
 
-#masthead:hover {
-  color: #3291ff;
+#masthead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+#masthead span {
+  color: #0070f3;
 }
 
 .drawer-link {
