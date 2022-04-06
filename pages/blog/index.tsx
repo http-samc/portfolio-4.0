@@ -1,9 +1,11 @@
 import RenderedMarkdown from "../../components/renderedMarkdown"
-import { Text, Badge, Link, Image, Spacer, Grid, Card, Snippet } from "@geist-ui/core";
+import { Text, Badge, Link, Image, Spacer, Grid, Card, Snippet, Collapse } from "@geist-ui/core";
 import getRandomThemeColor, { COLORS } from "../../utils/get-random-theme-color";
 import { useRouter } from "next/router";
 const yfm = require('yaml-front-matter')
 import fs from 'fs'
+import hash from '../../utils/hash'
+import { useState } from "react";
 
 const getStaticPaths = () => {
     let postPaths = fs.readdirSync(`${process.cwd()}/content/blog`)
@@ -26,27 +28,63 @@ export const getStaticProps = (context: any) => {
 
 const Blog = ({ posts, theme }: any) => {
     const router = useRouter()
-
-    // let colors = COLORS
-    // let tagLookup: any = {}
-
-    // const getTagColor = (tag: string) => {
-    //     if (tagLookup[tag]) {
-    //         return tagLookup[tag]
-    //     }
-    //     let color = colors.pop()
-    //     tagLookup[tag] = color
-    //     return color
-    // }
+    const [tags, setTags] = useState<string[]>([])
+    const [visibleTag, setVisibleTag] = useState<string>('all')
 
     return (
         <div>
             <Text h1>My Blog 📒</Text>
+            <div className="grid-filter">
+                <span
+                    style={{
+                        marginRight: '5px',
+                        marginBottom: '5px',
+                        cursor: 'pointer',
+                        // textDecoration: 'wavy underline',
+                        fontWeight: 'bold',
+                    }}
+                    onClick={() => setVisibleTag('all')}
+                >
+                    #all
+                </span>
+                {
+                    tags.map((tag: string, idx: number) => {
+                        let pos = 0;
+                        for (let c of hash(tag)) {
+                            if (parseInt(c))
+                                pos += parseInt(c)
+                            else
+                                pos += c.charCodeAt(0)
+                        }
+                        let color = COLORS[pos % COLORS.length]
+
+                        return <span
+                            style={{
+                                color: color,
+                                marginRight: '5px',
+                                marginBottom: '5px',
+                                cursor: 'pointer',
+                                // textDecoration: 'wavy underline',
+                            }}
+                            key={idx.toString()}
+                            className={tag}
+                            onClick={() => setVisibleTag(tag)}
+                        >
+                            #{tag}
+                        </span>
+                    })
+                }
+            </div>
+            <Spacer h={1} />
             <Grid.Container gap={2} justify='center' direction="row">
                 {
                     posts.map((post: any, idx: number) => {
                         return (
-                            <Grid xs={24} md={8} lg={post.important ? 16 : 8} width="100%" key={idx}>
+                            <Grid xs={24} md={8} lg={post.important ? 16 : 8} width="100%" key={idx} style={{
+                                display: post.tags.includes(visibleTag) || visibleTag == 'all' ? 'block' : 'none'
+                            }}>
+
+
                                 <Card
                                     width="100%"
                                     height="auto"
@@ -59,20 +97,32 @@ const Blog = ({ posts, theme }: any) => {
                                 >
                                     <Badge style={{
                                         fontSize: '1.2rem',
-                                        borderRadius: 5
+                                        borderRadius: 5,
+                                        backgroundColor: theme == 'light' ? 'rgba(255,255,255,0.8)' : 'rgba(0,0,0,0.8)',
+                                        color: theme == 'light' ? 'black' : 'white',
                                     }}>
                                         {post.title}
                                     </Badge>
                                     <Spacer />
                                     {
                                         post.tags.map((tag: string, idx: number) => {
+                                            tags.includes(tag) || setTags([...tags, tag])
+                                            let pos = 0;
+                                            for (let c of hash(tag)) {
+                                                if (parseInt(c))
+                                                    pos += parseInt(c)
+                                            }
+                                            let color = COLORS[pos % COLORS.length]
+
                                             return <Badge
                                                 style={{
-                                                    backgroundColor: getRandomThemeColor(),
+                                                    backgroundColor: color,
                                                     marginRight: '5px',
-                                                    marginBottom: '5px'
+                                                    marginBottom: '5px',
+                                                    color: 'white'
                                                 }}
                                                 key={idx.toString()}
+                                                className={tag}
                                             >
                                                 {tag}
                                             </Badge>
