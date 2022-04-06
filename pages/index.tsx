@@ -42,7 +42,7 @@ const Home = ({ homepage }: any) => {
                     text={ADJECTIVES[index % ADJECTIVES.length]}
                     springConfig={presets.wobbly}
                     inline={true}
-                    style={{ fontStyle: 'underline' }}
+                    style={{ textDecoration: 'underline' }}
                 />
                 &nbsp;from 📍 Chicago, IL
             </Text>
