@@ -40,7 +40,7 @@ const Home = ({ homepage }: any) => {
                 a&nbsp;
                 <TextTransition
                     text={ADJECTIVES[index % ADJECTIVES.length]}
-                    springConfig={presets.wobbly}
+                    springConfig={presets.stiff}
                     inline={true}
                     style={{ textDecoration: 'underline' }}
                 />
