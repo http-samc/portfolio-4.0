@@ -12,18 +12,7 @@ import TypeAnimation from 'react-type-animation';
 import ReactGA from 'react-ga';
 import Script from 'next/script'
 
-const ADJECTIVES = [
-  'built',
-  2000,
-  'forged',
-  2000,
-  'developed',
-  2000,
-  'created',
-  2000,
-  'envisioned',
-  2000
-]
+const ADJECTIVES = ['built', 2000, 'forged', 2000, 'developed', 2000, 'created', 2000, 'envisioned', 2000, 'researched', 2000, 'implemented', 2000, 'programmed', 2000, 'designed', 2000, 'constructed', 2000, 'maintained', 2000, 'optimized', 2000, 'tailored', 2000,]
 
 const App = ({ Component, pageProps, router }: AppProps) => {
   const [theme, setTheme] = useState('light')
@@ -145,9 +134,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
                 <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
               </Tooltip>
               <div id='theme-toggle' onClick={toggleTheme}>
-                <Tooltip text='Theme' placement='bottomEnd'>
-                  {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='purple' />}
-                </Tooltip>
+                {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='purple' />}
               </div>
             </div>
           }
