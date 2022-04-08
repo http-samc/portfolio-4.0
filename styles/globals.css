@@ -63,6 +63,7 @@ html, body, #__next {
   flex-direction: column;
   justify-content: center;
   margin-left: 35px;
+  cursor: pointer;
 }
 
 #big-logo-container {

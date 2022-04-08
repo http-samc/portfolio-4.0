@@ -49,7 +49,7 @@ const Blog = ({ posts, theme }: any) => {
                 </span>
                 {
                     tags.map((tag: string, idx: number) => {
-                        let pos = 0;
+                        let pos = tag.length;
                         for (let c of hash(tag)) {
                             if (parseInt(c))
                                 pos += parseInt(c)
@@ -107,10 +107,12 @@ const Blog = ({ posts, theme }: any) => {
                                     {
                                         post.tags.map((tag: string, idx: number) => {
                                             tags.includes(tag) || setTags([...tags, tag])
-                                            let pos = 0;
+                                            let pos = tag.length;
                                             for (let c of hash(tag)) {
                                                 if (parseInt(c))
                                                     pos += parseInt(c)
+                                                else
+                                                    pos += c.charCodeAt(0)
                                             }
                                             let color = COLORS[pos % COLORS.length]
 
