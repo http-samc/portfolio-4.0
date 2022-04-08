@@ -52,7 +52,7 @@ const RenderedMarkdown = (props: any) => {
         components={ignoreCustomComponents ? undefined : {
           code: ({ node, ...props }) => <DynamicCodeSnippet {...props} />,
           img: ({ node, ...props }) => <DynamicImage {...props} />,
-          details: ({ node, ...props }) => <DynamicDetails {...props} />,
+          // details: ({ node, ...props }) => <DynamicDetails {...props} />, TODO: implement properly
         }}
       >
         {markdown}
