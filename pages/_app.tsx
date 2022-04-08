@@ -9,6 +9,8 @@ import { BounceLoader } from 'react-spinners'
 import { useMediaQuery } from 'usehooks-ts'
 // @ts-ignore
 import TypeAnimation from 'react-type-animation';
+import ReactGA from 'react-ga';
+import Script from 'next/script'
 
 const ADJECTIVES = [
   'built',
@@ -57,6 +59,11 @@ const App = ({ Component, pageProps, router }: AppProps) => {
       window.localStorage.setItem('lastVisit', Date.now().toString())
       setTimeout(() => setLoading(false), 1000)
     }
+
+    ReactGA.event({
+      category: 'User',
+      action: 'Visit',
+    })
   }, [])
 
   let crumbStack = ''
@@ -198,6 +205,19 @@ const App = ({ Component, pageProps, router }: AppProps) => {
           </Text>
         </Page.Footer>
       </Page >
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-BDJ8RBFCND"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-BDJ8RBFCND');
+        `}
+      </Script>
     </GeistProvider >
   )
 }
