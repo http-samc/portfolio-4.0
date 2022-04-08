@@ -141,4 +141,4 @@ These are some of the technologies I look to when starting a new project. Though
 I like to post about cool things I've learned or done. Some of these appear on my [dev.to](https://dev.to/httpsamc), but you can view all of my posts [here](/blog).
 
 ## projects 👨‍💻
-I've been proud to work on a myriad of projects over the years. There are a variety of applications, including: frontend, backend, desktop, mobile, api, chrome extensions, and more! I've made writeups for quite a few of them, so since the list is pretty extensive, they have a dedicated page [here](/projects).
+I've been proud to work on a myriad of projects over the years. There are a variety of applications, including: frontend, backend, desktop, mobile, api, chrome extensions, and more! I've also made writeups for quite a few of them. Because the list is pretty extensive, they have a dedicated page [here](/projects).
