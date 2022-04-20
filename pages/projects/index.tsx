@@ -88,7 +88,7 @@ const Blog = ({ projects }: any) => {
                                     shadow
                                 >
                                     <Text h4>{project.title}</Text>
-                                    <Text i>{project.description}</Text>
+                                    <Text>{project.description}</Text>
                                     <Spacer />
                                     {
                                         project.tags.map((tag: string, idx: number) => {
