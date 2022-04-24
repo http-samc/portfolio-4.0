@@ -171,10 +171,12 @@ const App = ({ Component, pageProps, router }: AppProps) => {
           }
         </Page.Header>
         <Divider />
-        <Component {...pageProps} theme={theme} />
+        <div style={{ minHeight: '80vh' }}>
+          <Component {...pageProps} theme={theme} />
+        </div>
         <Spacer />
+        <Divider />
         <Page.Footer id='footer'>
-          <Divider />
           <Text id='masthead' style={{ textAlign: 'center' }}>
             <TypeAnimation
               cursor={true}
