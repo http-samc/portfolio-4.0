@@ -5,7 +5,7 @@ important: false
 cover: null
 tags:
     - API
-    - Typescript
+    - TypeScript
 ---
 
 ## What is it?
