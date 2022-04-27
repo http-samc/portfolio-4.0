@@ -82,6 +82,7 @@ html, body, #__next {
 #big-logo-container {
   margin-top: 7px;
   margin-right: 20px;
+  user-select: none;
 }
 
 .cover-img-container {
