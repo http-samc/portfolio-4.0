@@ -2,7 +2,7 @@
 title: CodeSwipe
 description: A gallery for the art of code 💞
 important: true
-cover: null
+cover: https://play-lh.googleusercontent.com/kjugYKyxATvYeaoGJZ4qnUoehkFT6Le72_YQ6CUXqRt9pvzMjmDy_mM0fPMNrKO-ZI4=w720-h310-rw
 tags:
     - Android Native
     - Java
@@ -13,7 +13,7 @@ Every day, developers around the world push billions of commits, deliberate on m
 
 That’s why made CodeSwipe, the premier platform to share code snippets with other developers. Our target audience is developers of all ages looking to experience code in a new way. Users can ‘swipe’ on posts, with ‘liked’ posts showing up in their history. To create their own posts, users can paste in a code snippet, define a language, and add an (optional) description with an (optional) GitHub repository name.
 
-Get the CodeSwipe on the [Play Store](https://play.google.com/store/apps/details?id=dev.smrth.www.codeswipe) !
+Get the CodeSwipe on the [Play Store](https://play.google.com/store/apps/details?id=dev.smrth.www.codeswipe)!
 
 
 ## What I Learned?

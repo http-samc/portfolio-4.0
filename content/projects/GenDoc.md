@@ -2,7 +2,7 @@
 title: GenDoc
 description: A popular & versatile Python documentation generator 📖
 important: true
-cover: null
+cover: https://github.com/http-samc/GenDoc/blob/main/example.png?raw=true
 tags:
     - Python
     - CLI

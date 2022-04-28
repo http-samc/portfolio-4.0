@@ -2,7 +2,7 @@
 title: Cut-It
 description: The speech and debate card-cutting tool of the future ✂️
 important: false
-cover: null
+cover: https://github.com/http-samc/cut-it/blob/main/ui_images/home.png?raw=true
 tags:
     - Desktop App
     - Python

@@ -40,8 +40,8 @@ const Blog = ({ posts, theme }: any) => {
                         marginRight: '5px',
                         marginBottom: '5px',
                         cursor: 'pointer',
-                        // textDecoration: 'wavy underline',
                         fontWeight: 'bold',
+                        userSelect: 'none'
                     }}
                     onClick={() => setVisibleTag('all')}
                 >
@@ -59,7 +59,7 @@ const Blog = ({ posts, theme }: any) => {
                         let color = COLORS[pos % COLORS.length]
 
                         return <span
-                            style={{ color: color }}
+                            style={{ color: color, userSelect: 'none', backgroundColor: tag == visibleTag ? '#f5f5f5' : '', borderRadius: 5 }}
                             key={idx.toString()}
                             className={tag}
                             onClick={() => setVisibleTag(tag)}

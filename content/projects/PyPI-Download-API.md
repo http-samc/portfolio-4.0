@@ -2,7 +2,7 @@
 title: PyPI Download API
 description: The simplest badge api for cumulative PyPI downloads 🧮
 important: false
-cover: null
+cover: /assets/img/pypi-downloads-demo.png
 tags:
     - API
     - Python

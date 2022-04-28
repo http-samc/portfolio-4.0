@@ -2,7 +2,7 @@
 title: Portfolio 3.0
 description: "The old version of this site: legacy.smrth.dev 👴🏻"
 important: false
-cover: null
+cover: /assets/img/3-0-smrth-dev.png
 tags:
     - Web
     - Bootstrap 5

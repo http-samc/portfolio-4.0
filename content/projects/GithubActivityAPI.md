@@ -2,7 +2,7 @@
 title: Github Activity API
 description: An embed API for showing off Github events!
 important: false
-cover: null
+cover: /assets/img/github-activity-example.png
 tags:
     - API
     - TypeScript

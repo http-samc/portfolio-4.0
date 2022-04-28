@@ -2,7 +2,7 @@
 title: QuickCite
 description: A simple Python package for autogenerating MLA citations 💨
 important: false
-cover: null
+cover: /assets/img/quickcite-demo.png
 tags:
     - CLI
     - Python
@@ -14,7 +14,7 @@ Have you ever had to create a bibliography for a school research paper? If you h
 ## Installation
 QuickCite is available on PyPI as [QuickCite](https://pypi.org/project/QuickCite/), where it has over 3,000 downloads. It can be installed with pip:
 
-`$ pip install QuickCite`
+` pip install QuickCite`
 
 The project is also open sourced on GitHub at [http-samc/QuickCite](https://github.com/http-samc/QuickCite).
 

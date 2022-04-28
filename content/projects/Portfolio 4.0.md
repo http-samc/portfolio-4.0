@@ -2,7 +2,7 @@
 title: Portfolio 4.0
 description: The site you're on 🚀
 important: false
-cover: null
+cover: /favicon.ico
 tags:
     - Next.js
     - React

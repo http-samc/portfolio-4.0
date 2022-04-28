@@ -2,7 +2,7 @@
 title: Tournaments.Tech
 description: The most popular (and accurate) debate ranking site 🏆
 important: true
-cover: null
+cover: /assets/img/t-tech-web-demo.png
 tags:
     - Website
     - Bootstrap 5

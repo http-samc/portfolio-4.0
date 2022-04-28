@@ -2,7 +2,7 @@
 title: Tournaments.Tech (mobile)
 description: The best debate rankings on the go 🏃‍♂️
 important: false
-cover: null
+cover: https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/7a/ed/6a/7aed6a3c-d606-fa8c-b524-2975cafb4847/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.webp
 tags:
     - Mobile App
     - React Native

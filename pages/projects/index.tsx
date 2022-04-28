@@ -6,6 +6,7 @@ const yfm = require('yaml-front-matter')
 import fs from 'fs'
 import { useState } from "react";
 import hash from "../../utils/hash";
+import { useMediaQuery } from "usehooks-ts";
 
 const getStaticPaths = () => {
     let projectPaths = fs.readdirSync(`${process.cwd()}/content/projects`)
@@ -26,10 +27,11 @@ export const getStaticProps = (context: any) => {
     }
 }
 
-const Blog = ({ projects }: any) => {
+const Project = ({ projects }: any) => {
     const router = useRouter()
     const [tags, setTags] = useState<string[]>([])
     const [visibleTag, setVisibleTag] = useState<string>('all')
+    const isBig = useMediaQuery('(min-width: 900px)')
 
     return (
         <div>
@@ -41,6 +43,7 @@ const Blog = ({ projects }: any) => {
                         marginBottom: '5px',
                         cursor: 'pointer',
                         fontWeight: 'bold',
+                        userSelect: 'none'
                     }}
                     onClick={() => setVisibleTag('all')}
                 >
@@ -58,7 +61,7 @@ const Blog = ({ projects }: any) => {
                         let color = COLORS[pos % COLORS.length]
 
                         return <span
-                            style={{ color: color }}
+                            style={{ color: color, userSelect: 'none', backgroundColor: tag == visibleTag ? '#f5f5f5' : '', borderRadius: 5 }}
                             key={idx.toString()}
                             className={tag}
                             onClick={() => setVisibleTag(tag)}
@@ -80,41 +83,63 @@ const Blog = ({ projects }: any) => {
                                     width="100%"
                                     height="auto"
                                     className="card"
-                                    onClick={() => {
-                                        project.redirect
-                                            ? router.push(project.redirect)
-                                            : router.push(`/projects/${project.urlPath}`)
-                                    }}
                                     shadow
                                 >
-                                    <Text h4>{project.title}</Text>
-                                    <Text>{project.description}</Text>
-                                    <Spacer />
-                                    {
-                                        project.tags.map((tag: string, idx: number) => {
-                                            tags.includes(tag) || setTags([...tags, tag])
-                                            let pos = tag.length;
-                                            for (let c of hash(tag)) {
-                                                if (parseInt(c))
-                                                    pos += parseInt(c)
-                                                else
-                                                    pos += c.charCodeAt(0)
-                                            }
-                                            let color = COLORS[pos % COLORS.length]
-                                            return <Badge
-                                                style={{
-                                                    backgroundColor: color,
-                                                    marginRight: '5px',
-                                                    marginBottom: '5px',
-                                                    color: 'white'
-                                                }}
-                                                key={idx.toString()}
-                                                className={tag}
-                                            >
-                                                {tag}
-                                            </Badge>
-                                        })
-                                    }
+                                    <Card.Content
+                                        style={{
+                                            display: 'flex',
+                                            flexDirection: isBig ? 'column' : 'row-reverse',
+                                            justifyContent: 'space-between',
+                                            flexGrow: 1
+                                        }}
+                                        width="100%"
+                                        onClick={() => {
+                                            project.redirect
+                                                ? router.push(project.redirect)
+                                                : router.push(`/projects/${project.urlPath}`)
+                                        }}
+                                    >
+                                        <Image
+                                            src={project.cover}
+                                            height={project.important && isBig ? '125px' : '100px'}
+                                            width="auto"
+                                            draggable={false}
+                                            style={{ borderRadius: 5, marginLeft: isBig ? '0px' : '10px', margin: 0 }}
+                                        />
+                                        {isBig && <Spacer h={1} />}
+                                        <div style={{ width: isBig ? '' : '80%' }}>
+                                            <Text h4 style={{ marginBottom: -10 }}>{project.title}</Text>
+                                            <Text>{project.description}</Text>
+                                        </div>
+                                    </Card.Content>
+                                    <Card.Footer style={{ display: 'flex', flexGrow: 0.5, flexWrap: 'wrap' }}>
+                                        {
+                                            project.tags.map((tag: string, idx: number) => {
+                                                tags.includes(tag) || setTags([...tags, tag])
+                                                let pos = tag.length;
+                                                for (let c of hash(tag)) {
+                                                    if (parseInt(c))
+                                                        pos += parseInt(c)
+                                                    else
+                                                        pos += c.charCodeAt(0)
+                                                }
+                                                let color = COLORS[pos % COLORS.length]
+                                                return <Badge
+                                                    style={{
+                                                        backgroundColor: color,
+                                                        marginBottom: '5px',
+                                                        color: 'white',
+                                                        textAlign: 'center',
+                                                    }}
+                                                    key={idx.toString()}
+                                                    className={tag}
+                                                    onClick={() => setVisibleTag(tag)}
+                                                >
+                                                    {tag}
+                                                </Badge>
+                                            })
+                                        }
+                                    </Card.Footer>
                                 </Card>
                             </Grid>
                         )
@@ -122,8 +147,8 @@ const Blog = ({ projects }: any) => {
                 }
             </Grid.Container>
             <Spacer h={2} />
-        </div>
+        </div >
     )
 }
 
-export default Blog
+export default Project

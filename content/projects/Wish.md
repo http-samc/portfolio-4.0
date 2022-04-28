@@ -2,7 +2,7 @@
 title: Wish
 description: A simple yet sophisticated wish list ✨
 important: false
-cover: null
+cover: /assets/img/wish-demo.png
 tags:
     - Mobile App
     - React Native

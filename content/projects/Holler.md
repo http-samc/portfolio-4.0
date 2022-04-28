@@ -2,7 +2,7 @@
 title: Holler
 description: Speak what's on your mind 🗣
 important: false
-cover: null
+cover: https://play-lh.googleusercontent.com/4itUDAFK0SC_B-b9arkdw03O96QbMhvcKx6gl61ZqSrGgLflHN610eZieE1bNmXX--B0=s180-rw
 tags:
     - Mobile App
     - React Native

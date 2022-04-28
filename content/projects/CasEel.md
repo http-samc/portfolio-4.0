@@ -2,7 +2,7 @@
 title: CasEel
 description: A Chrome Extension for autosaving UIUC Netmath notebooks 📝
 important: false
-cover: null
+cover: https://lh3.googleusercontent.com/C6wmAZep50YIhiAfaM-BcgYLFDfP-d8UT07AZtVsOoLG9aUHBTx5e5HqHxmZ2p2_W9fTMv2j3Bb6HimV5rMJcx3-tf8=w640-h400-e365-rj-sc0x00ffffff
 tags:
     - Chrome Extension
     - JavaScript

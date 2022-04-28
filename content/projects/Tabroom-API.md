@@ -2,7 +2,7 @@
 title: Tabroom-API
 description: A revolutionary API for scraping and parsing tabroom.com 🔍
 important: true
-cover: null
+cover: /assets/img/tab-api-demo.png
 tags:
     - API
     - Python
