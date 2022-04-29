@@ -15,7 +15,7 @@ tags:
 After getting bored at lunch, my friends and I discovered the world of competitive Tic-Tac-Toe. We wanted a simple place to play that wouldn't get blocked on our school's WiFi, so I developed the app to host on this site.
 
 ## How do I play?
-Go to [https://legacy.smrth.dev/ttt](legacy.smrth.dev/ttt) to create a new game. A unique game id will be added to your url. Take this unique game link and share it to another friend. This "friend" needs to be on a different device than you. If this isn't possible, open a tab on the same browser in Incognito mode. This is because the unique player tokens are stored in the browser's local storage.
+Go to [legacy.smrth.dev/ttt](https://legacy.smrth.dev/ttt) to create a new game. A unique game id will be added to your url. Take this unique game link and share it to another friend. This "friend" needs to be on a different device than you. If this isn't possible, open a tab on the same browser in Incognito mode. This is because the unique player tokens are stored in the browser's local storage.
 
 ## How does it work?
 

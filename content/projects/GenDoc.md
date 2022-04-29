@@ -16,7 +16,7 @@ GenDoc is available on PyPI as [@smrth/GenDoc](https://pypi.org/project/GenDoc/)
 
 ` pip3 install gendoc`
 
-The project is also open sourced on GitHub at [http-samc/GenDoc](https://github.com/http-samc/gendoc).
+The project is also open sourced on GitHub at [@smrthGenDoc](https://github.com/http-samc/gendoc).
 
 ## Use
 In your terminal, simply run:
