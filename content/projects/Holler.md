@@ -17,7 +17,7 @@ Get the Holler on the [Play Store](https://play.google.com/store/apps/details?id
 ## What I learned?
 I made this app with React Native. This was my first time dealing with an app that required real-time updates. Fortunately, using the Firebase Web SDK, I was able to leverage React hooks to create a seamless experience. For my web deployment, I specified some separate components using regular React libraries (when universal options were not possible) using the `*.js` and `*.native.js` schemas.
 
-You can check out the source code on GitHub at [@smrthholler](https://github.com/http-samc/holler).
+You can check out the source code on GitHub at [http-samc/holler](https://github.com/http-samc/holler).
 
 
 ## Functionality

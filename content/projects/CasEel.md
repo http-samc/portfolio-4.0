@@ -14,7 +14,7 @@ After a long night of work for my Calc III class offered at my high school via t
 
 ## How Do I Get It?
 
-Because NetMath/CAS-ILE is a web-based platform, CasEel is offered via a Chrome Extension and can be installed [here](https://chrome.google.com/webstore/detail/caseel/flbmfehmclddmndggkkljocomalibaim) on the Chrome Webstore. Once installed (on any device that can run Google Chrome), it runs automatically on `courseware.illinois.edu`, saving every 30 seconds. The project is also open sourced on GitHub at [@smrthCasEel](https://github.com/http-samc/caseel)
+Because NetMath/CAS-ILE is a web-based platform, CasEel is offered via a Chrome Extension and can be installed [here](https://chrome.google.com/webstore/detail/caseel/flbmfehmclddmndggkkljocomalibaim) on the Chrome Webstore. Once installed (on any device that can run Google Chrome), it runs automatically on `courseware.illinois.edu`, saving every 30 seconds. The project is also open sourced on GitHub at [http-samc/CasEel](https://github.com/http-samc/caseel)
 
 Here's what the extension looks like - I had to scratch out some sensitive information and actual course content (since it is protected by UIUC copyright law), but the extension is still completely visible in the top right.
 

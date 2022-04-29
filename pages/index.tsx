@@ -13,13 +13,6 @@ const ADJECTIVES = [
     "swimmer"
 ];
 
-const NAMES = [
-    'Samarth Chitgopekar',
-    'smrth',
-    'http-samc',
-    'Sam C'
-];
-
 export const getStaticProps = async (context: any) => {
     const homepage = fs.readFileSync(`${process.cwd()}/content/index.md`, 'utf8')
 
@@ -42,15 +35,7 @@ const Home = ({ homepage }: any) => {
 
     return (
         <div>
-            <Text h1>I'm
-                &nbsp;
-                <TextTransition
-                    text={NAMES[index % NAMES.length]}
-                    springConfig={presets.stiff}
-                    inline={true}
-                    style={{ textDecoration: 'underline' }}
-                />
-            </Text>
+            <Text h1>I'm Samarth Chitgopekar</Text>
             <Text h3>
                 a&nbsp;
                 <TextTransition

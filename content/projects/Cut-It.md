@@ -39,7 +39,7 @@ Cut-It speeds up your workflow in 3 key ways:
 ## How Do I Get It?
 Downloads (Windows, MacOS) for Cut-It are hosted (alongside a full features list) on [cutit.cards](http://cutit.cards), with documentation available at [docs.cutit.cards](https://docs.cutit.cards).
 
-The project is also open sourced on GitHub at [@smrthCut-It](https://github.com/http-samc/cut-it) and API documentation is available at [Cut-It/DOCS.md](https://github.com/http-samc/cut-it/blob/main/DOCS.md).
+The project is also open sourced on GitHub at [http-samc/Cut-It](https://github.com/http-samc/cut-it) and API documentation is available at [Cut-It/DOCS.md](https://github.com/http-samc/cut-it/blob/main/DOCS.md).
 
 ## What I Learned
 Cut-It uses a proper GUI framework, [PyQt5](https://pypi.org/project/PyQt5/), in order to power its desktop applications. I didn't have any prior experience with Qt, but [Adithya](https://www.linkedin.com/in/adithyav-/) (the R&D lead for Cut-It) reccommended that I use it because of its cross-platform nature (which allows us to deploy to both Windows and MacOS with one codebase).
