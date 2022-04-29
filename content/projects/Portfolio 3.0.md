@@ -12,7 +12,7 @@ tags:
 This is my personal portfolio site. I use it to document my progress as a developer, host novel APIs for quick projects, and provide information on who I am and how to contact me.
 
 ## What's So Special About It?
-I wanted a site that made it simple to write content (like this). I wanted to write in Markdown, and I found out that I could use something like [Hugo](https://gohugo.io), but I felt that it was too overcomplicated. Instead, I made this site. This'll make more sense if you check out the source code on GitHub at [http-samc/smrth.dev](https://github.com/http-samc/smrth.dev). Here's how it works:
+I wanted a site that made it simple to write content (like this). I wanted to write in Markdown, and I found out that I could use something like [Hugo](https://gohugo.io), but I felt that it was too overcomplicated. Instead, I made this site. This'll make more sense if you check out the source code on GitHub at [@smrth/smrth.dev](https://github.com/http-samc/smrth.dev). Here's how it works:
 1. Markdown files are written inside `content` (sub directories are ok).
 2. `$ node build` is called, which does the following:
     1. Run the custom project hook. This looks reads the files in the `content/projects` directory and extracts a projectName and projectDescription from them. Then, it creates a html fragment at `fragments/projects.html` that is prestyled and contains a list of all my projects (this is what you see [here](/projects) or [here](/#projects-👨💻))).
