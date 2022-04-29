@@ -2,7 +2,7 @@
 title: Orial
 description: A decentralized social media made for Web 3 🐐
 important: false
-cover: /assets/img/orial-logo.svg
+cover: /assets/img/orial-logo.png
 tags:
     - Mobile App
     - React Native

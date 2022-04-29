@@ -31,7 +31,7 @@ const Project = ({ projects }: any) => {
     const router = useRouter()
     const [tags, setTags] = useState<string[]>([])
     const [visibleTag, setVisibleTag] = useState<string>('all')
-    const isBig = useMediaQuery('(min-width: 900px)')
+    const isMedium = useMediaQuery('(min-width: 440px) and (max-width: 900px)')
 
     return (
         <div>
@@ -61,7 +61,12 @@ const Project = ({ projects }: any) => {
                         let color = COLORS[pos % COLORS.length]
 
                         return <span
-                            style={{ color: color, userSelect: 'none', backgroundColor: tag == visibleTag ? '#f5f5f5' : '', borderRadius: 5 }}
+                            style={{
+                                color: color,
+                                userSelect: 'none',
+                                backgroundColor: tag == visibleTag ? '#f5f5f5' : '',
+                                borderRadius: 5,
+                            }}
                             key={idx.toString()}
                             className={tag}
                             onClick={() => setVisibleTag(tag)}
@@ -88,7 +93,7 @@ const Project = ({ projects }: any) => {
                                     <Card.Content
                                         style={{
                                             display: 'flex',
-                                            flexDirection: isBig ? 'column' : 'row-reverse',
+                                            flexDirection: !isMedium ? 'column' : 'row-reverse',
                                             justifyContent: 'space-between',
                                             flexGrow: 1
                                         }}
@@ -101,13 +106,13 @@ const Project = ({ projects }: any) => {
                                     >
                                         <Image
                                             src={project.cover}
-                                            height={project.important && isBig ? '125px' : '100px'}
+                                            height={project.important && !isMedium ? '125px' : '100px'}
                                             width="auto"
                                             draggable={false}
-                                            style={{ borderRadius: 5, marginLeft: isBig ? '0px' : '10px', margin: 0 }}
+                                            style={{ borderRadius: 5, margin: !isMedium ? '0px' : '5px' }}
                                         />
-                                        {isBig && <Spacer h={1} />}
-                                        <div style={{ width: isBig ? '' : '80%' }}>
+                                        {!isMedium && <Spacer h={1} />}
+                                        <div style={{ width: !isMedium ? '' : '80%' }}>
                                             <Text h4 style={{ marginBottom: -10 }}>{project.title}</Text>
                                             <Text>{project.description}</Text>
                                         </div>
