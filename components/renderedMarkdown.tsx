@@ -25,12 +25,34 @@ const DynamicCodeSnippet = (props: any) => {
   if (props.inline && props.children[0][0] == ' ') {
     return <Snippet {...props} />
   }
+  else if (props.className && props.className.split('::').length > 1) {
+    return (
+      <Code
+        className={props.className.split('::')[0]}
+        name={props.className.split('::')[1]}
+        children={props.children}
+        block
+      />
+    )
+  }
   return <Code {...props} />
-
 }
 
 const DynamicImage = (props: any) => {
-  if (props.alt) {
+  if (props.alt && props.alt.startsWith(' ')) {
+    return (
+      <Display shadow caption={<Text>{props.alt}</Text>}>
+        <Image.Browser url={props.src}>
+          <Image
+            style={{ maxHeight: '500px', height: 'auto', width: '100%' }}
+            alt={props.alt.substring(1)}
+            src={props.src}
+          />
+        </Image.Browser>
+      </Display>
+    )
+  }
+  else if (props.alt) {
     return (
       <Display shadow caption={<Text>{props.alt}</Text>}>
         <Image style={{ maxHeight: '500px', height: 'auto', width: '100%' }} {...props} />

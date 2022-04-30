@@ -1,8 +1,9 @@
 import RenderedMarkdown from "../../components/renderedMarkdown"
-import { Text, Badge, Link, Image, Spacer } from "@geist-ui/core";
-import getRandomThemeColor from "../../utils/get-random-theme-color";
+import { Text, Badge, Link, Image, Spacer, Display } from "@geist-ui/core";
+import getRandomThemeColor, { COLORS } from "../../utils/get-random-theme-color";
 const yfm = require('yaml-front-matter')
 import fs from 'fs'
+import hash from "../../utils/hash";
 
 export const getStaticPaths = async () => {
     let projectPaths = fs.readdirSync(`${process.cwd()}/content/projects`)
@@ -35,28 +36,30 @@ const Project = ({ project }: any) => {
             <Spacer />
             {
                 parsedProject.tags.map((tag: string, idx: number) => {
+                    let pos = tag.length;
+                    for (let c of hash(tag)) {
+                        if (parseInt(c))
+                            pos += parseInt(c)
+                        else
+                            pos += c.charCodeAt(0)
+                    }
+                    let color = COLORS[pos % COLORS.length]
                     return <Badge
                         style={{
-                            backgroundColor: getRandomThemeColor(),
+                            backgroundColor: color,
                             marginRight: '5px',
-                            marginBottom: '5px'
+                            marginBottom: '5px',
+                            color: 'white',
+                            textAlign: 'center',
                         }}
                         key={idx.toString()}
+                        className={tag}
                     >
                         {tag}
                     </Badge>
                 })
             }
             <Spacer h={2} />
-            {
-                parsedProject.cover
-                    ?
-                    <div className='cover-img-container'>
-                        <img className="cover-img" src={parsedProject.cover} />
-                        <Spacer h={2} />
-                    </div>
-                    : null
-            }
             <RenderedMarkdown
                 markdown={parsedProject.__content}
             />

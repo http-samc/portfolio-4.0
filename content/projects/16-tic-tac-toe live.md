@@ -1,6 +1,6 @@
 ---
 title: Tic Tac Toe Live
-description: A 2-Player web app for competitive Tic Tac Toe ❌⭕️
+description: A 2-Player web app for competitive Tic Tac Toe ❌ ⭕️
 important: false
 cover: /assets/img/ttt-live-demo.png
 tags:

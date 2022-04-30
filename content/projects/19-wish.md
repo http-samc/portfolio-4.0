@@ -7,5 +7,6 @@ tags:
     - Mobile App
     - React Native
     - JavaScript
+    - Website
 redirect: https://github.com/http-samc/wish-list
 ---

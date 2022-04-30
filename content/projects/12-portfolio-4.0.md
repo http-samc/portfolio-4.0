@@ -5,6 +5,7 @@ important: false
 cover: /favicon.ico
 tags:
     - Next.js
+    - Website
     - React
     - TypeScript
     - Geist UI

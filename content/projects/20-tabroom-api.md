@@ -1,7 +1,7 @@
 ---
-title: Tabroom-API
-description: A revolutionary API for scraping and parsing tabroom.com 🔍
-important: true
+title: Tabroom API
+description: The first comprehensive API for scraping tabroom.com 🔍
+important: false
 cover: /assets/img/tab-api-demo.png
 tags:
     - API
