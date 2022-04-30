@@ -7,14 +7,16 @@ tags:
     - Android Native
     - Java
     - Mobile App
+    - Firebase
 ---
 
+## What is it?
 Every day, developers around the world push billions of commits, deliberate on millions of issues, and work tirelessly to create amazing projects that transform the world around them. Unfortunately, there’s rarely an easy way for them to garner appreciation for their code. Though the apps, APIs, and libraries they create are beautiful in and of themselves, coding is an art form and deserves its own gallery.
 
 That’s why made CodeSwipe, the premier platform to share code snippets with other developers. Our target audience is developers of all ages looking to experience code in a new way. Users can ‘swipe’ on posts, with ‘liked’ posts showing up in their history. To create their own posts, users can paste in a code snippet, define a language, and add an (optional) description with an (optional) GitHub repository name.
 
+## How do I get it?
 Get the CodeSwipe on the [Play Store](https://play.google.com/store/apps/details?id=dev.smrth.www.codeswipe)!
-
 
 ## What I Learned?
 This was the first truly collaborative mobile app I've done. I learned a lot (especially about merge conflicts). Overall, I found the Native Android experience to be pretty straightforward, though excessive at times (especially when it came to the project's file tree). It was fun to use Firebase for my backend and end up with a fully working and scaleable social media app.
@@ -41,15 +43,13 @@ View the original presentation [here](https://docs.google.com/presentation/d/1hb
     - When viewing your history, you can click the post to revisit the snippet in the browser
     - A GitHub Gist repository is automatically created with your snippet when you post
 
-## UI
+## Showcase
 - Dark theme
 - Scales well for phones and tablets
 - Intuitive design
 
-<br>
-
 <details>
-<summary>View Screenshots</summary>
+<summary>View UI</summary>
 
 ![CodeSwipe Auth](https://github.com/http-samc/CodeSwipe/blob/main/images/CodeSwipeAuthPhone.png?raw=true)
 
