@@ -54,7 +54,7 @@ const Project = ({ projects }: any) => {
                         value={search}
                     />
                 }
-                {isSmall &&
+                {/* {isSmall &&
                     <Button
                         auto
                         ghost
@@ -62,8 +62,8 @@ const Project = ({ projects }: any) => {
                         icon={<Search />}
                         onClick={() => setShowSearch(true)}
                     />
-                }
-                <Modal visible={showSearch}>
+                } */}
+                {/* <Modal visible={showSearch}>
                     <Input
                         htmlType="search"
                         placeholder="search..."
@@ -79,7 +79,7 @@ const Project = ({ projects }: any) => {
                     <Modal.Action onClick={() => setShowSearch(false)}>
                         Submit
                     </Modal.Action>
-                </Modal>
+                </Modal> */}
             </div>
             <Spacer />
             <div className="grid-filter">
@@ -126,7 +126,7 @@ const Project = ({ projects }: any) => {
             <Grid.Container gap={2} justify='center'>
                 {
                     projects.map((project: any, idx: number) => {
-                        if (search) {
+                        if (search && !isSmall) {
                             if (!project.title.toLowerCase().includes(search.toLowerCase()))
                                 return null
                         }

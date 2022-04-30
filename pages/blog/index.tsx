@@ -53,7 +53,7 @@ const Blog = ({ posts, theme }: any) => {
                         value={search}
                     />
                 }
-                {isSmall &&
+                {/* {isSmall &&
                     <Button
                         auto
                         ghost
@@ -61,8 +61,8 @@ const Blog = ({ posts, theme }: any) => {
                         icon={<Search />}
                         onClick={() => setShowSearch(true)}
                     />
-                }
-                <Modal visible={showSearch}>
+                } */}
+                {/* <Modal visible={showSearch}>
                     <Input
                         htmlType="search"
                         placeholder="search..."
@@ -78,7 +78,7 @@ const Blog = ({ posts, theme }: any) => {
                     <Modal.Action onClick={() => setShowSearch(false)}>
                         Submit
                     </Modal.Action>
-                </Modal>
+                </Modal> */}
             </div>
             <div className="grid-filter">
                 <span
@@ -119,7 +119,7 @@ const Blog = ({ posts, theme }: any) => {
             <Grid.Container gap={2} justify='center' direction="row">
                 {
                     posts.map((post: any, idx: number) => {
-                        if (search) {
+                        if (search && !isSmall) {
                             if (!post.title.toLowerCase().includes(search.toLowerCase()))
                                 return null
                         }
