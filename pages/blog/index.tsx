@@ -1,11 +1,13 @@
 import RenderedMarkdown from "../../components/renderedMarkdown"
-import { Text, Badge, Link, Image, Spacer, Grid, Card, Snippet, Collapse } from "@geist-ui/core";
+import { Text, Badge, Link, Image, Spacer, Grid, Card, Snippet, Collapse, Input, Button, Modal } from "@geist-ui/core";
 import getRandomThemeColor, { COLORS } from "../../utils/get-random-theme-color";
 import { useRouter } from "next/router";
 const yfm = require('yaml-front-matter')
 import fs from 'fs'
 import hash from '../../utils/hash'
 import { useState } from "react";
+import { useMediaQuery } from "usehooks-ts";
+import { Search } from "@geist-ui/icons";
 
 const getStaticPaths = () => {
     let postPaths = fs.readdirSync(`${process.cwd()}/content/blog`)
@@ -30,10 +32,54 @@ const Blog = ({ posts, theme }: any) => {
     const router = useRouter()
     const [tags, setTags] = useState<string[]>([])
     const [visibleTag, setVisibleTag] = useState<string>('all')
+    const isSmall = useMediaQuery('(max-width: 670px)')
+    const [showSearch, setShowSearch] = useState(false)
+    const [search, setSearch] = useState('')
 
     return (
         <div>
-            <Text h1>My Blog 📒</Text>
+            <div style={{
+                display: 'flex', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap', alignItems: 'center'
+            }}
+            >
+                <Text h1>My Blog 📒</Text>
+                {!isSmall &&
+                    <Input
+                        htmlType="search"
+                        placeholder="search..."
+                        iconRight={<Search />}
+                        scale={isSmall ? 1 : 1.5}
+                        onChange={(e: any) => setSearch(e.target.value)}
+                        value={search}
+                    />
+                }
+                {isSmall &&
+                    <Button
+                        auto
+                        ghost
+                        type='secondary'
+                        icon={<Search />}
+                        onClick={() => setShowSearch(true)}
+                    />
+                }
+                <Modal visible={showSearch}>
+                    <Input
+                        htmlType="search"
+                        placeholder="search..."
+                        iconRight={<Search />}
+                        scale={isSmall ? 1 : 1.5}
+                        onChange={(e: any) => setSearch(e.target.value)}
+                        value={search}
+                        width='100%'
+                    />
+                    <Modal.Action onClick={() => { setSearch(''); setShowSearch(false) }}>
+                        Cancel
+                    </Modal.Action>
+                    <Modal.Action onClick={() => setShowSearch(false)}>
+                        Submit
+                    </Modal.Action>
+                </Modal>
+            </div>
             <div className="grid-filter">
                 <span
                     style={{
@@ -73,6 +119,10 @@ const Blog = ({ posts, theme }: any) => {
             <Grid.Container gap={2} justify='center' direction="row">
                 {
                     posts.map((post: any, idx: number) => {
+                        if (search) {
+                            if (!post.title.toLowerCase().includes(search.toLowerCase()))
+                                return null
+                        }
                         return (
                             <Grid xs={24} md={8} lg={post.important ? 14 : 10} width="100%" key={idx} style={{
                                 display: post.tags.includes(visibleTag) || visibleTag == 'all' ? 'block' : 'none'
