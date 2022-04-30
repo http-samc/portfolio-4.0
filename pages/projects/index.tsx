@@ -109,7 +109,7 @@ const Project = ({ projects }: any) => {
                                             height={project.important && !isMedium ? '125px' : '100px'}
                                             width="auto"
                                             draggable={false}
-                                            style={{ borderRadius: 5, margin: !isMedium ? '0px' : '5px' }}
+                                            style={{ borderRadius: 5, overflow: 'hidden', margin: !isMedium ? '0px' : '5px' }}
                                         />
                                         {!isMedium && <Spacer h={1} />}
                                         <div style={{ width: !isMedium ? '' : '80%' }}>
