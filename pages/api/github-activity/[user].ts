@@ -52,7 +52,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
         let [action, color]: any = EVENT_LOOKUP[event.type]
         let date = new Date(event.created_at)
-        let datetimestr = date.toLocaleDateString('en-US', { timeZone: 'CST' }) + ' ' + date.toLocaleTimeString('en-US', { timeZone: 'CST' })
+        let datetimestr = date.toLocaleDateString() + ' ' + date.toLocaleTimeString()
         let message = getEventTagline(event)
         message.length > 25 && (message = message.substring(0, 25) + '...')
         message && (message = "'" + message + "'")
