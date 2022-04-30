@@ -30,9 +30,10 @@ const DynamicCodeSnippet = (props: any) => {
       <Code
         className={props.className.split('::')[0]}
         name={props.className.split('::')[1]}
-        children={props.children}
         block
-      />
+      >
+        {props.children}
+      </Code>
     )
   }
   return <Code {...props} />
