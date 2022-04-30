@@ -74,10 +74,9 @@ const Blog = ({ posts, theme }: any) => {
                 {
                     posts.map((post: any, idx: number) => {
                         return (
-                            <Grid xs={24} md={8} lg={post.important ? 16 : 8} width="100%" key={idx} style={{
+                            <Grid xs={24} md={8} lg={post.important ? 14 : 10} width="100%" key={idx} style={{
                                 display: post.tags.includes(visibleTag) || visibleTag == 'all' ? 'block' : 'none'
                             }}>
-
 
                                 <Card
                                     width="100%"
@@ -89,14 +88,21 @@ const Blog = ({ posts, theme }: any) => {
                                     shadow
                                     style={{ backgroundImage: `url(${post.cover})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                                 >
-                                    <Badge style={{
-                                        fontSize: '1.2rem',
-                                        borderRadius: 5,
-                                        backgroundColor: theme == 'light' ? 'rgba(255,255,255,0.8)' : 'rgba(0,0,0,0.8)',
-                                        color: theme == 'light' ? 'black' : 'white',
-                                    }}>
-                                        {post.title}
-                                    </Badge>
+                                    <Badge.Anchor>
+                                        <Badge style={{ marginBottom: 5, marginRight: 5 }} type='error'>
+                                            {post.date.split('/')[0] + '/' + post.date.split('/')[1]}
+                                        </Badge>
+                                        <div>
+                                            <Badge style={{
+                                                fontSize: '1.2rem',
+                                                borderRadius: 5,
+                                                backgroundColor: theme == 'light' ? 'rgba(255,255,255,0.8)' : 'rgba(0,0,0,0.8)',
+                                                color: theme == 'light' ? 'black' : 'white',
+                                            }}>
+                                                {post.title}
+                                            </Badge>
+                                        </div>
+                                    </Badge.Anchor>
                                     <Spacer />
                                     {
                                         post.tags.map((tag: string, idx: number) => {
