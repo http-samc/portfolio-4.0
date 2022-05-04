@@ -66,7 +66,7 @@ These are some of the technologies I look to when starting a new project. Though
             height="40" /> </a> <a href="https://cloud.google.com" style="text-decoration:none" target="_blank"> <img
             class="ovr"
             style="background-color: rgba(255, 255, 255, 0.5); margin: 1px; padding: 3px; border-radius: 5px"
-            src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40"
+            src="https://upload.vectorlogo.zone/logos/nextjs/images/60eff509-53dd-4280-92e7-7318fa02e934.svg" alt="gcp" width="40"
             height="40" /> </a> <a href="https://git-scm.com/" style="text-decoration:none" target="_blank"> <img
             class="ovr"
             style="background-color: rgba(255, 255, 255, 0.5); margin: 1px; padding: 3px; border-radius: 5px"
@@ -98,10 +98,10 @@ These are some of the technologies I look to when starting a new project. Though
         target="_blank"> <img class="ovr"
             style="background-color: rgba(255, 255, 255, 0.5); margin: 1px; padding: 3px; border-radius: 5px"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-            alt="nodejs" width="40" height="40" /> </a> <a href="https://postman.com" style="text-decoration:none"
+            alt="nodejs" width="40" height="40" /> </a> <a href="https://vercel.com" style="text-decoration:none"
         target="_blank"> <img class="ovr"
             style="background-color: rgba(255, 255, 255, 0.5); margin: 1px; padding: 3px; border-radius: 5px"
-            src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40"
+            src="https://raw.githubusercontent.com/simple-icons/simple-icons/aa12fbea02cf98c491e0295568b440776c47dc04/icons/vercel.svg" alt="vercel" width="40"
             height="40" /> </a> <a href="https://github.com/puppeteer/puppeteer" style="text-decoration:none"
         target="_blank"> <img class="ovr"
             style="background-color: rgba(255, 255, 255, 0.5); margin: 1px; padding: 3px; border-radius: 5px"

@@ -42,7 +42,10 @@ const Home = ({ homepage }: any) => {
                     text={ADJECTIVES[index % ADJECTIVES.length]}
                     springConfig={presets.stiff}
                     inline={true}
-                    style={{ textDecoration: 'underline' }}
+                    style={{
+                        textDecoration: 'underline',
+                        color: '#0070f3'
+                    }}
                 />
                 &nbsp;from 📍 Chicago, IL
             </Text>
