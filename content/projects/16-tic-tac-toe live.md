@@ -117,7 +117,7 @@ The token system wasn't my first choice. Initially, I went with an IP-based syst
 ## Frontend
 The game board is a simple 3 x 3 grid of `<input>` elements. They have a custom `goldenrod` border on focus and are `null` until filled by a player, at which point the player's marker is inserted using `firebrick` (which clashes nicely with the `cornflowerblue` background) colored text. The team markers also use the `Permanent Marker` font in order to introduce a more playful field. The status bar on top lets the user know whose turn it is, and notifications (provided via [notify.js](https://notifyjs.jpillora.com/)) are used to provide further information.
 
-![Tic Tac Toe Live UI](/assets/img/ttt-live.png)
+![ Tic Tac Toe Live](https://smrth.dev/assets/img/ttt-live-demo.png)
 
 This was my first time using `window.localStorage`, and I'm glad I did because it enabled a seamless experience when returning to games without having to deal with a login system. This was also my first time using `setInterval`, which was ridiculously simple to set up - I only needed to define my function and what interval to run it at (I run a 2500ms interval).
 
