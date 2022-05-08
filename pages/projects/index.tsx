@@ -1,5 +1,5 @@
 import RenderedMarkdown from "../../components/renderedMarkdown"
-import { Text, Badge, Link, Spacer, Grid, Card, Snippet, Input, Button, Modal } from "@geist-ui/core";
+import { Text, Badge, Link, Image, Spacer, Grid, Card, Snippet, Input, Button, Modal } from "@geist-ui/core";
 import getRandomThemeColor, { COLORS } from "../../utils/get-random-theme-color";
 import { useRouter } from "next/router";
 const yfm = require('yaml-front-matter')
@@ -8,7 +8,6 @@ import { useState } from "react";
 import hash from "../../utils/hash";
 import { useMediaQuery } from "usehooks-ts";
 import { Search } from "@geist-ui/icons";
-import Image from "next/image";
 
 const getStaticPaths = () => {
     let projectPaths = fs.readdirSync(`${process.cwd()}/content/projects`)
@@ -157,11 +156,10 @@ const Project = ({ projects }: any) => {
                                     >
                                         <Image
                                             src={project.cover}
-                                            // height={project.important && !isMedium ? 125 : 100}
-                                            layout="fill"
-                                            // width="auto"
+                                            height={project.important && !isMedium ? '125px' : '100px'}
+                                            width="auto"
                                             draggable={false}
-                                        // style={{ borderRadius: 5, overflow: 'hidden', margin: !isMedium ? '0px' : '5px' }}
+                                            style={{ borderRadius: 5, overflow: 'hidden', margin: !isMedium ? '0px' : '5px' }}
                                         />
                                         {!isMedium && <Spacer h={1} />}
                                         <div style={{ width: !isMedium ? '' : '80%' }}>
