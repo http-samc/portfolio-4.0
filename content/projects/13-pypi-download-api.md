@@ -34,6 +34,6 @@ This API allows you to get the total amount of downloads any [PyPI](https://pypi
 - Return Schema: `image/svg`
 - Sample Return:
 
-![Gendoc Badge](/api/pypi-downloads/badge/gendoc)
+![GenDoc BaDge](/api/pypi-Downloads/badge/gendoc)
 
 *Disclaimer: This site is ran on limited resources. I make its API's publicly available, but I am not responsible for any breakage nor do I provide any guarantee of uptime.*
