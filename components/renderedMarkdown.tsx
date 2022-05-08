@@ -48,6 +48,7 @@ const DynamicImage = (props: any) => {
             style={{ maxHeight: '500px', height: 'auto', width: '100%' }}
             alt={props.alt.substring(1)}
             src={props.src}
+            draggable={false}
           />
         </Image.Browser>
       </Display>
@@ -56,11 +57,11 @@ const DynamicImage = (props: any) => {
   else if (props.alt) {
     return (
       <Display shadow caption={<Text>{props.alt}</Text>}>
-        <Image style={{ maxHeight: '500px', height: 'auto', width: '100%' }} {...props} />
+        <Image style={{ maxHeight: '500px', height: 'auto', width: '100%' }} {...props} draggable={false} />
       </Display>
     )
   }
-  return <Image style={{ marginLeft: 'auto', marginRight: 'auto' }} {...props} />
+  return <Image style={{ marginLeft: 'auto', marginRight: 'auto' }} {...props} draggable={false} />
 }
 
 const RenderedMarkdown = (props: any) => {
