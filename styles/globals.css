@@ -10,6 +10,10 @@ html, body, #__next {
   width: 100%;
 }
 
+#particles {
+  position: absolute;
+}
+
 #footer {
   position: absolute;
   bottom: 15px;

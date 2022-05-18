@@ -10,6 +10,7 @@ import { useMediaQuery } from 'usehooks-ts'
 // @ts-ignore
 import TypeAnimation from 'react-type-animation';
 import Script from 'next/script'
+import Particles from '../components/particles'
 
 const ADJECTIVES = ['built', 2000, 'forged', 2000, 'developed', 2000, 'created', 2000, 'envisioned', 2000, 'researched', 2000, 'implemented', 2000, 'programmed', 2000, 'designed', 2000, 'constructed', 2000, 'maintained', 2000, 'optimized', 2000, 'tailored', 2000,]
 
@@ -69,6 +70,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
 
   return (
     <GeistProvider themeType={theme}>
+      {theme == 'dark' && <Particles />}
       <CssBaseline />
       <Head>
         <title>smrth.dev</title>
