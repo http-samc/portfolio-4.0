@@ -6,7 +6,7 @@ cover: /favicon.ico
 tags:
     - Next.js
     - Website
-    - React
+    - React.js
     - TypeScript
     - Geist UI
 redirect: https://github.com/http-samc/smrth.dev

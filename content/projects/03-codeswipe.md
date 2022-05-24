@@ -1,7 +1,7 @@
 ---
 title: CodeSwipe
 description: A gallery for the art of code 💞
-important: true
+important: false
 cover: https://play-lh.googleusercontent.com/kjugYKyxATvYeaoGJZ4qnUoehkFT6Le72_YQ6CUXqRt9pvzMjmDy_mM0fPMNrKO-ZI4=w720-h310-rw
 tags:
     - Android Native
@@ -21,7 +21,7 @@ Get the CodeSwipe on the [Play Store](https://play.google.com/store/apps/details
 ## What I Learned?
 This was the first truly collaborative mobile app I've done. I learned a lot (especially about merge conflicts). Overall, I found the Native Android experience to be pretty straightforward, though excessive at times (especially when it came to the project's file tree). It was fun to use Firebase for my backend and end up with a fully working and scaleable social media app.
 
-You can check out the source code on GitHub at [@smrth/CodeSwipe](https://github.com/http-samc/CodeSwipe).
+You can check out the source code on GitHub at [@http-samc/CodeSwipe](https://github.com/http-samc/CodeSwipe).
 
 ## Authors
 1. [Samarth C.](https://github.com/http-samc)

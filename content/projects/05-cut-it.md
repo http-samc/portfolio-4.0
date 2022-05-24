@@ -32,14 +32,14 @@ That's why I invented Cut-It, a desktop applicaiton that makes formatting cards 
 
 ## What Does It Do?
 Cut-It speeds up your workflow in 3 key ways:
-1. AutoCut: Cut-It will generate an MLA & debate-grade citation (using [@smrth/QuickCite](/projects/QuickCite)) and get the full text of your article with **only** a URL.
+1. AutoCut: Cut-It will generate an MLA & debate-grade citation (using [@http-samc/QuickCite](/projects/QuickCite)) and get the full text of your article with **only** a URL.
 2. Custom Emphasis Levels: Cut-It offers 3 emphasis levels that can be fully customized to your liking (bolding, underlining, font-size, highlight color, etc.) that are accessible via shortcuts and buttons. These macros make formatting your evidence a breeze.
 3. Card History: The fastest way to cut a card is to not have to cut it in the first place. Debaters often reuse evidence, but recut the card simply because they couldn't find it. Cutting cards with Cut-It means that each card is locally saved to your device and searchable through Card History.
 
 ## How Do I Get It?
 Downloads (Windows, MacOS) for Cut-It are hosted (alongside a full features list) on [cutit.cards](http://cutit.cards), with documentation available at [docs.cutit.cards](https://docs.cutit.cards).
 
-The project is also open sourced on GitHub at [@smrth/Cut-It](https://github.com/http-samc/cut-it) and API documentation is available at [Cut-It/DOCS.md](https://github.com/http-samc/cut-it/blob/main/DOCS.md).
+The project is also open sourced on GitHub at [@http-samc/Cut-It](https://github.com/http-samc/cut-it) and API documentation is available at [Cut-It/DOCS.md](https://github.com/http-samc/cut-it/blob/main/DOCS.md).
 
 ## What I Learned
 Cut-It uses a proper GUI framework, [PyQt5](https://pypi.org/project/PyQt5/), in order to power its desktop applications. I didn't have any prior experience with Qt, but [Adithya](https://www.linkedin.com/in/adithyav-/) (the R&D lead for Cut-It) reccommended that I use it because of its cross-platform nature (which allows us to deploy to both Windows and MacOS with one codebase).

@@ -2,7 +2,8 @@ import RenderedMarkdown from "../components/renderedMarkdown"
 import fs from 'fs'
 import TextTransition, { presets } from "react-text-transition"
 import { useState, useEffect } from 'react'
-import { Text } from "@geist-ui/core";
+import { Image, Text } from "@geist-ui/core";
+import { ChevronDown } from "@geist-ui/icons";
 // import GithubProfile from "../components/githubProfile";
 
 const ADJECTIVES = [
@@ -49,6 +50,12 @@ const Home = ({ homepage }: any) => {
                 />
                 &nbsp;from 📍 Chicago, IL
             </Text>
+            <div style={{ display: 'flex', width: '100%', alignItems: 'center', marginTop: 50 }}>
+                <Image
+                    style={{ borderRadius: '50%' }}
+                    src="https://avatars.githubusercontent.com/u/67826352?s=200"
+                />
+            </div>
             <RenderedMarkdown
                 markdown={homepage}
                 ignoreCustomComponents={true}

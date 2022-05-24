@@ -10,7 +10,10 @@ tags:
     - Hackathon
 ---
 
-**Note: This project was a part of a hackathon submission, so it was built in a weekend. We did win $2,000 in prize money though and I won best pitch!**
+**Note: This project was a part of a hackathon submission, so it was built in a weekend and is not a complete project by any means. We did win $2,000 in prize money though and I won best pitch!**
+
+*Be sure to check out the [DevPost](https://devpost.com/software/carbon-back) submission*
+
 
 ## Inspiration
 We were inspired by [this CNBC video](https://www.cnbc.com/video/2021/10/12/carbon-offset-investments-on-track-to-hit-record-level-in-2021.html) that explained how the Carbon Offset industry is one of the fastest-growing sectors. We felt that the current solutions on the market were underwhelming and thus saw an opportunity to streamline the process while also helping the environment.

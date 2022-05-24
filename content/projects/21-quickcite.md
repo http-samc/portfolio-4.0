@@ -16,7 +16,7 @@ QuickCite is available on PyPI as [QuickCite](https://pypi.org/project/QuickCite
 
 ` pip install QuickCite`
 
-The project is also open sourced on GitHub at [@smrth/QuickCite](https://github.com/http-samc/QuickCite).
+The project is also open sourced on GitHub at [@http-samc/QuickCite](https://github.com/http-samc/QuickCite).
 
 ## What I Learned
 Though this project may appear to be a simple PyPI package, I really ended up learning about reverse-engineering from it. When I was using Formatically, I noticed that there was a post request being made to `https://formatically.com/api/website`. By mimicking the form data, I realised that I could simulate a user with [requests](https://pypi.org/project/requests/). From there, it was basic object oriented programming to flush out the module itself.
@@ -24,4 +24,4 @@ Though this project may appear to be a simple PyPI package, I really ended up le
 I also learned how to set up a UnitTest, which I did [here](https://github.com/http-samc/QuickCite/blob/main/TestQuickCite.py). Though I don't set these up for every project (since I believe there's a right place and a right time to do so), this was a case where I found having tests to be quite useful.
 
 ## Extras
-QuickCite is used by [@smrth/Cut-It](/projects/Cut-It), where it provides `AutoCite` functionality.
+QuickCite is used by [@http-samc/Cut-It](/projects/Cut-It), where it provides `AutoCite` functionality.

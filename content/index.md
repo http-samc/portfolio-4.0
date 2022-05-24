@@ -1,20 +1,17 @@
-<br/>
-<p align="center">
-<img style="border-radius:50%" draggable='false' src="https://avatars.githubusercontent.com/u/67826352?s=200&v=4"/>
-</p>
-<br/>
-
 ## hi 👋
-I'm Sam, a student at [Fremd High School](https://adc.d211.org/Domain/9) ('23). I first started coding at 12 years old to kill free time, but it quickly became more than a hobby for me. Today, in addition to developing, I spend my time:
-- watching the Bulls 🏀
+I'm Sam (*he/him*). I first started coding at 12 years old to kill free time. At 17 I took a job at a startup and moved alone to Silicon Valley. Today, in addition to developing, I spend my time:
+- watching the Bulls 🏀  & 49ers 🏈
 - debating [Public Forum](https://www.speechanddebate.org/topics/) 📣
-- swimming & water polo 🤽‍♂️
+- swimming 🏊‍♂️  & water polo 🤽‍♂️
 - organizing hackathons 🚀
 - working on [research](/research) 🧪
 - going to school 🎒
 
+## projects 👨‍💻
+I've been proud to work on a myriad of projects over the years. I've also put time into crafting thoughtful writeups for many of them. Because the list is pretty extensive, they have a dedicated page [here](/projects).
+
 ## contact 🤝
-I'm open for structured work, internships, freelance projects, and anything else that can help me better myself as a developer **and** a person. Feel free to reach out to me via email at [chitgopekarsamarth@gmail.com](chitgopekarsamarth@gmail.com), or via any of my other socials below.
+I'm currently employed, but I always keep my inbox open for structured work, internships, and freelance opportunities. Feel free to reach out to me via email at [chitgopekarsamarth@gmail.com](chitgopekarsamarth@gmail.com), or via any of my other socials below. I answer *almost* everything.
 
 <div align="center">
     <a href="https://github.com/http-samc" target="blank"><img class="ovr" align="center"
@@ -34,9 +31,8 @@ I'm open for structured work, internships, freelance projects, and anything else
 
 ## recents 🛠
 
-<iframe src="/api/github-activity/http-samc" style="width: 100%; height: 70px, padding: 0px, border: 0px" />
+<iframe src="/api/github-activity/http-samc" style="width: 100%; height: 70px, padding: 0px, border: 0px"></iframe>
 
-## tech stack ⚙️
 ## tech stack ⚙️
 These are some of the technologies I look to when starting a new project. Though there's some overlap, I've always beleived that using the right tool for the right job is the most important aspect of software development.
 
@@ -101,7 +97,7 @@ These are some of the technologies I look to when starting a new project. Though
             alt="nodejs" width="40" height="40" /> </a> <a href="https://vercel.com" style="text-decoration:none"
         target="_blank"> <img class="ovr"
             style="background-color: rgba(255, 255, 255, 0.5); margin: 1px; padding: 3px; border-radius: 5px"
-            src="https://raw.githubusercontent.com/simple-icons/simple-icons/aa12fbea02cf98c491e0295568b440776c47dc04/icons/vercel.svg" alt="vercel" width="40"
+            src="https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/57x57.png" alt="vercel" width="40"
             height="40" /> </a> <a href="https://github.com/puppeteer/puppeteer" style="text-decoration:none"
         target="_blank"> <img class="ovr"
             style="background-color: rgba(255, 255, 255, 0.5); margin: 1px; padding: 3px; border-radius: 5px"
@@ -138,7 +134,4 @@ These are some of the technologies I look to when starting a new project. Though
 
 
 ## blog 📝
-I like to post about cool things I've learned or done. Some of these appear on my [dev.to](https://dev.to/httpsamc), but you can view all of my posts [here](/blog).
-
-## projects 👨‍💻
-I've been proud to work on a myriad of projects over the years. There are a variety of applications, including: frontend, backend, desktop, mobile, api, chrome extensions, and more! I've also made writeups for quite a few of them. Because the list is pretty extensive, they have a dedicated page [here](/projects).
+I like to post about cool things. Some of these appear on my [dev.to](https://dev.to/httpsamc), but you can view all of my posts [here](/blog).
