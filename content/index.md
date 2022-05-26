@@ -1,6 +1,6 @@
 ## hi 👋
-I'm Sam (*he/him*). I first started coding at 12 years old to kill free time. At 17 I took a job at a startup and moved alone to Silicon Valley. Today, in addition to developing, I spend my time:
-- watching the Bulls 🏀  & 49ers 🏈
+I'm Sam (*he/him*). I first started coding at 12 years old to kill free time. At 17 I moved to Silicon Valley to take a job at a startup. Today, in addition to developing, I spend my time:
+- watching the Bulls 🏀&nbsp;& 49ers 🏈
 - debating [Public Forum](https://www.speechanddebate.org/topics/) 📣
 - swimming 🏊‍♂️  & water polo 🤽‍♂️
 - organizing hackathons 🚀
@@ -8,7 +8,7 @@ I'm Sam (*he/him*). I first started coding at 12 years old to kill free time. At
 - going to school 🎒
 
 ## projects 👨‍💻
-I've been proud to work on a myriad of projects over the years. I've also put time into crafting thoughtful writeups for many of them. Because the list is pretty extensive, they have a dedicated page [here](/projects).
+I've been proud to work on a bunch of projects over the years. I've also put time into crafting thoughtful writeups for many of them. Because the list is pretty extensive, they have a dedicated page [here](/projects).
 
 ## contact 🤝
 I'm currently employed, but I always keep my inbox open for structured work, internships, and freelance opportunities. Feel free to reach out to me via email at [chitgopekarsamarth@gmail.com](chitgopekarsamarth@gmail.com), or via any of my other socials below. I answer *almost* everything.
