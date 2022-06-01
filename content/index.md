@@ -1,5 +1,5 @@
 ## hi 👋
-I'm Sam (*he/him*). I first started coding at 12 years old to kill free time. At 17 I moved to Silicon Valley to take a job at a startup. Today, in addition to developing, I spend my time:
+I'm Sam (*he/him*). I first started coding at 12 years old to kill free time. At 18 I moved to Silicon Valley to take a job at a startup. Today, in addition to developing, I spend my time:
 - watching the Bulls 🏀&nbsp;& 49ers 🏈
 - debating [Public Forum](https://www.speechanddebate.org/topics/) 📣
 - swimming 🏊‍♂️  & water polo 🤽‍♂️
