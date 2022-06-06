@@ -34,7 +34,7 @@ I'm currently employed, but I always keep my inbox open for structured work, int
 <iframe src="/api/github-activity/http-samc" style="width: 100%; height: 70px, padding: 0px, border: 0px"></iframe>
 
 ## tech stack ⚙️
-These are some of the technologies I look to when starting a new project. Though there's some overlap, I've always beleived that using the right tool for the right job is the most important aspect of software development.
+These are some of the technologies I look to when starting a new project. Though there's some overlap, I've always believed that using the right tool for the right job is the most important aspect of software development.
 
 <div align="center"> <a href="https://aws.amazon.com" style="text-decoration:none" style="text-decoration:none"
         target="_blank"> <img class="ovr"
