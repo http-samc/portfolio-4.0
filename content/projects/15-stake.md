@@ -1,8 +1,8 @@
 ---
 title: Stake
-description: A full Javascript SDK for Hyper's API 🚦
+description: A decentralized stock market 📈
 important: true
-cover: https://page2images.b-cdn.net/ccimages/ff/27/7PhIlmhJ4R9BJfVh.png
+cover: https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/932/732/datas/original.png
 tags:
     - JavaScript
     - React.js
@@ -13,7 +13,7 @@ tags:
     - Hackathon
 ---
 
-**Note: This project was a part of a hackathon submission, so it was built in a weekend and is not a complete project by any means. I did win $500 in prize money though (best in category).!**
+**Note: This project was a part of a hackathon submission, so it was built in a weekend and is not a complete project by any means. I did win $500 in prize money though (best in category)!**
 
 *Be sure to check out the [DevPost](https://devpost.com/software/stake-wguzpx) submission*
 
