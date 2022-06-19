@@ -6,7 +6,7 @@ html, body, #__next {
 }
 
 #page {
-  max-width: 860px;
+  max-width: 700px;
   width: 100%;
 }
 

@@ -155,6 +155,7 @@ const Project = ({ projects }: any) => {
                                         }}
                                     >
                                         <Image
+                                            alt={project.title}
                                             src={project.cover}
                                             height={project.important && !isMedium ? '125px' : '100px'}
                                             width="auto"
