@@ -8,6 +8,7 @@ import { useState } from "react";
 import hash from "../../utils/hash";
 import { useMediaQuery } from "usehooks-ts";
 import { Search } from "@geist-ui/icons";
+import PROJECT_LAYOUT from "../../layout/projects";
 
 const getStaticPaths = () => {
     let projectPaths = fs.readdirSync(`${process.cwd()}/content/projects`)
@@ -21,9 +22,13 @@ export const getStaticProps = (context: any) => {
         let text = fs.readFileSync(`${process.cwd()}/content/projects/${project}`, 'utf8')
         data.push({ ...yfm.loadFront(text), ...{ urlPath: project.replace('.md', '') } })
     }
+    let orderedData = Array.apply(null, Array(data.length));
+    for (const project of data) {
+        orderedData[PROJECT_LAYOUT.indexOf(project.title)] = project;
+    }
     return {
         props: {
-            projects: data
+            projects: orderedData
         }
     }
 }
