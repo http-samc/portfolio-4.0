@@ -1,7 +1,7 @@
 ---
 title: Wish
 description: A simple yet sophisticated wish list ✨
-important: false
+important: true
 cover: https://github.com/http-samc/wish-list/blob/master/ui/web-2.png?raw=true
 tags:
     - Mobile App

@@ -1,7 +1,7 @@
 ---
 title: Carbon Back
 description: A peer-to-peer carbon credit marketplace 🌳
-important: false
+important: true
 cover: https://raw.githubusercontent.com/http-samc/carbon-back/master/carbon_back_full.svg
 tags:
     - Stripe.js
