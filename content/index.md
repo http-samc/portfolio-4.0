@@ -1,11 +1,5 @@
 ## hi 👋
-I'm Sam (*he/him*). I first started coding at 12 years old to kill free time. At 18 I moved to Silicon Valley to take a job at a startup. Today, in addition to developing, I spend my time:
-- watching the Bulls 🏀&nbsp;& 49ers 🏈
-- debating [Public Forum](https://www.speechanddebate.org/topics/) 📣
-- swimming 🏊‍♂️  & water polo 🤽‍♂️
-- organizing hackathons 🚀
-- working on [research](/research) 🧪
-- going to school 🎒
+I'm Sam (**he/him**). I first started coding at 12 years old to kill free time. At 17 I moved to Silicon Valley to take a job at a startup. Today, in addition to developing, I spend my time playing sports (swimming, water polo, and pickup basketball), debating [Public Forum](https://www.speechanddebate.org/topics/), and watching the Bulls & 49ers.
 
 ## projects 👨‍💻
 I've been proud to work on a bunch of projects over the years. I've also put time into crafting thoughtful writeups for many of them. Because the list is pretty extensive, they have a dedicated page [here](/projects).
@@ -28,10 +22,6 @@ I'm currently employed, but I always keep my inbox open for structured work, int
             alt="13723971" height="30" width="40" /></a>
 </div>
 <br>
-
-## recents 🛠
-
-<iframe src="/api/github-activity/http-samc" style="width: 100%; height: 70px, padding: 0px, border: 0px"></iframe>
 
 ## tech stack ⚙️
 These are some of the technologies I look to when starting a new project. Though there's some overlap, I've always believed that using the right tool for the right job is the most important aspect of software development.
@@ -131,7 +121,10 @@ These are some of the technologies I look to when starting a new project. Though
             src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40"
             height="40" /> </a>
 </div>
-
+<br>
 
 ## blog 📝
 I like to post about cool things. Some of these appear on my [dev.to](https://dev.to/httpsamc), but you can view all of my posts [here](/blog).
+
+## recents 🛠
+<iframe src="/api/github-activity/http-samc" style="width: 100%; height: 70px, padding: 0px, border: 0px"></iframe>

@@ -112,6 +112,19 @@ html, body, #__next {
   transform: scale(1.05);
 }
 
+.rainbow {
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  border-radius: 50%;
+}
+
+.hero-img {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
 .markdown-body {
   width: 100%;
 }
