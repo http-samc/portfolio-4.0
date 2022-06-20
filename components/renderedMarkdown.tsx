@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { Image, Text, Code, Snippet, Display, Loading, Collapse, Link } from '@geist-ui/core'
+import { Image, Text, Code, Snippet, Display, Loading, Collapse, Link, useTheme } from '@geist-ui/core'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
@@ -69,9 +69,15 @@ const DynamicImage = (props: any) => {
 }
 
 const DynamicLink = (props: any) => {
+  const theme = useTheme();
+  if (props.children.length > 1 || props.children[0].type === 'img') return props.children
   return (
     <Link href={props.href}>
-      <RoughNotation type="underline" show>
+      <RoughNotation
+        type={props.href.startsWith("/") ? "highlight" : "underline"}
+        color={theme.type == "dark" ? "#f81ce6" : "#79ffe1"}
+        show
+      >
         <span style={{
           color: getRandomThemeColor(),
           fontWeight: "bold"
@@ -90,12 +96,15 @@ const RenderedMarkdown = (props: any) => {
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw]}
         className="markdown-body"
-        components={ignoreCustomComponents ? undefined : {
-          code: ({ node, ...props }) => <DynamicCodeSnippet {...props} />,
-          img: ({ node, ...props }) => <DynamicImage {...props} />,
-          a: ({ node, ...props }) => <DynamicLink {...props} />,
-          // details: ({ node, ...props }) => <DynamicDetails {...props} />, TODO: implement properly
-        }}
+        components={
+          ignoreCustomComponents
+            ? { a: ({ node, ...props }) => <DynamicLink {...props} /> }
+            : {
+              code: ({ node, ...props }) => <DynamicCodeSnippet {...props} />,
+              img: ({ node, ...props }) => <DynamicImage {...props} />,
+              a: ({ node, ...props }) => <DynamicLink {...props} />,
+              // details: ({ node, ...props }) => <DynamicDetails {...props} />, TODO: implement properly
+            }}
       >
         {markdown}
       </ReactMarkdown>
