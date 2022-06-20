@@ -5,6 +5,8 @@ import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import { RoughNotation } from "react-rough-notation";
 import getRandomThemeColor from '../utils/get-random-theme-color';
+import { COLORS } from '../utils/get-random-theme-color';
+import hash from '../utils/hash';
 
 const getDetailsSummary = (props: any) => {
   for (let i = 0; i < props.children.length; i++) {
@@ -70,7 +72,16 @@ const DynamicImage = (props: any) => {
 
 const DynamicLink = (props: any) => {
   const theme = useTheme();
-  if (props.children.length > 1 || props.children[0].type === 'img') return props.children
+  if (props.children.length > 1 || props.children[0].type === 'img') return props.children;
+  let pos = props.children[0].length;
+  for (let c of hash(props.children[0])) {
+    if (parseInt(c))
+      pos += parseInt(c)
+    else
+      pos += c.charCodeAt(0)
+  }
+  let color = COLORS[pos % COLORS.length]
+
   return (
     <Link href={props.href}>
       <RoughNotation
@@ -79,7 +90,7 @@ const DynamicLink = (props: any) => {
         show
       >
         <span style={{
-          color: getRandomThemeColor(),
+          color: color,
           fontWeight: "bold"
         }}>{props.children}</span>
       </RoughNotation>

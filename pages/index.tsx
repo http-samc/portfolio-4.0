@@ -24,7 +24,7 @@ export const getStaticProps = async (context: any) => {
     }
 }
 
-const HeroSubheading = (isBig) => {
+const HeroSubheading = () => {
     const [index, setIndex] = useState(0)
 
     useEffect(() => {
