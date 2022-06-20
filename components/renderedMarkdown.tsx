@@ -1,7 +1,10 @@
-import { Image, Text, Code, Snippet, Display, Loading, Collapse } from '@geist-ui/core'
+/* eslint-disable jsx-a11y/alt-text */
+import { Image, Text, Code, Snippet, Display, Loading, Collapse, Link } from '@geist-ui/core'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
+import { RoughNotation } from "react-rough-notation";
+import getRandomThemeColor from '../utils/get-random-theme-color';
 
 const getDetailsSummary = (props: any) => {
   for (let i = 0; i < props.children.length; i++) {
@@ -21,6 +24,7 @@ const DynamicDetails = (props: any) => {
     </Collapse>
   )
 }
+
 const DynamicCodeSnippet = (props: any) => {
   if (props.inline && props.children[0][0] == ' ') {
     return <Snippet {...props} />
@@ -64,6 +68,19 @@ const DynamicImage = (props: any) => {
   return <Image style={{ marginLeft: 'auto', marginRight: 'auto' }} {...props} draggable={false} />
 }
 
+const DynamicLink = (props: any) => {
+  return (
+    <Link href={props.href}>
+      <RoughNotation type="underline" show>
+        <span style={{
+          color: getRandomThemeColor(),
+          fontWeight: "bold"
+        }}>{props.children}</span>
+      </RoughNotation>
+    </Link>
+  )
+}
+
 const RenderedMarkdown = (props: any) => {
   const { markdown, ignoreCustomComponents } = props
 
@@ -76,6 +93,7 @@ const RenderedMarkdown = (props: any) => {
         components={ignoreCustomComponents ? undefined : {
           code: ({ node, ...props }) => <DynamicCodeSnippet {...props} />,
           img: ({ node, ...props }) => <DynamicImage {...props} />,
+          a: ({ node, ...props }) => <DynamicLink {...props} />,
           // details: ({ node, ...props }) => <DynamicDetails {...props} />, TODO: implement properly
         }}
       >
