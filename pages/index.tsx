@@ -57,7 +57,7 @@ const Home = ({ homepage }: any) => {
             <div style={
                 isBig
                     ? { display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginTop: 50, marginBottom: 50 }
-                    : { display: 'flex', flexDirection: 'column', alignItems: 'center' }
+                    : { display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 10 }
             }>
                 <div>
                     <Text h1 style={{ fontWeight: 'bolder', fontSize: isBig ? '2.5rem' : '2.35rem' }}>{
