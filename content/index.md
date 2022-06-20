@@ -1,5 +1,5 @@
 ## hi 👋
-I'm Sam (**he/him**). I first started coding at 12 years old to kill free time. At 17 I moved to Silicon Valley to take a job at a startup. Today, in addition to developing, I spend my time playing sports (swimming, water polo, and pickup basketball), debating [Public Forum](https://www.speechanddebate.org/topics/), and watching the Bulls & 49ers.
+I'm Sam (**he/him**). I first started coding at 12 years old to kill free time. At 17 I moved to Silicon Valley to take a job at a startup. Today, in addition to developing, I spend my time playing sports (swimming, water polo, and pickup basketball), debating [HS Public Forum](https://www.speechanddebate.org/topics/), and watching the Bulls & 49ers.
 
 ## projects 👨‍💻
 I've been proud to work on a bunch of projects over the years. I've also put time into crafting thoughtful writeups for many of them. Because the list is pretty extensive, they have a dedicated page [here](/projects).

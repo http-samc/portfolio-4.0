@@ -71,9 +71,9 @@ const Home = ({ homepage }: any) => {
                         Full stack developer. Coding to make the world a better place and building awesome stuff along the way.
                     </Text>
                 </div>
-                <div style={{ width: isBig ? '35%' : '100%' }} className={isBig ? "hero-img-big" : "hero-img-small"}>
+                <div className={isBig ? "rainbow hero-img-big" : "rainbow hero-img-small"}>
                     <Image
-                        style={{ borderRadius: '50%', maxHeight: 200 }}
+                        style={{ borderRadius: '50%', maxHeight: 200, marginBottom: -7 }}
                         alt="Sam's User Avatar"
                         src="https://avatars.githubusercontent.com/u/67826352?s=200"
                     />

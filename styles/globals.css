@@ -138,10 +138,10 @@ html, body, #__next {
 }
 
 .rainbow {
-  border: 5px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-  border-image-slice: 1;
-  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: 100%;
+  background: linear-gradient(45deg, #f81ce6 0%, #79ffe1 100%);
 }
 
 .hero-img-small {
