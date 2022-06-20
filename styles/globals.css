@@ -119,10 +119,16 @@ html, body, #__next {
   border-radius: 50%;
 }
 
-.hero-img {
+.hero-img-small {
   margin-bottom: 25px;
   display: flex;
   justify-content: center;
+}
+
+.hero-img-big {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .markdown-body {

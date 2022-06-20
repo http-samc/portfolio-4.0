@@ -56,7 +56,7 @@ const Home = ({ homepage }: any) => {
         <div>
             <div style={
                 isBig
-                    ? { display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 50, marginBottom: 50 }
+                    ? { display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginTop: 50, marginBottom: 50 }
                     : { display: 'flex', flexDirection: 'column', alignItems: 'center' }
             }>
                 <div>
@@ -71,9 +71,9 @@ const Home = ({ homepage }: any) => {
                         Full stack developer. Coding to make the world a better place and building awesome stuff along the way.
                     </Text>
                 </div>
-                <div style={{ width: isBig ? '30%' : '100%' }} className={!isBig ? "hero-img" : ""}>
+                <div style={{ width: isBig ? '35%' : '100%' }} className={isBig ? "hero-img-big" : "hero-img-small"}>
                     <Image
-                        style={{ borderRadius: '50%', maxHeight: isBig ? 150 : 200 }}
+                        style={{ borderRadius: '50%', maxHeight: 200 }}
                         alt="Sam's User Avatar"
                         src="https://avatars.githubusercontent.com/u/67826352?s=200"
                     />
