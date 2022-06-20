@@ -11,8 +11,6 @@ tags:
 ## Why GenDoc
 GenDoc is a simple yet powerfull Python library, designed to be lightweight and produce intuitive documentation with a single command. Simply annotate your Python project with Docstrings and GenDoc will parse through and, using Abstract Syntax Trees, convert your documentation to Markdown - ready to be used in any project documentation.
 
-![GenDoc Downloads](/api/pypi-downloads/badge/gendoc)
-
 ## Installation
 GenDoc is available on PyPI as [@http-samc/GenDoc](https://pypi.org/project/GenDoc/), where it has over 20,000 downloads. It can be installed with pip:
 
@@ -32,3 +30,6 @@ This was the first CLI package I made with Python, so it was also my first time 
 
 ## Extras
 For some real-world examples, check out [@http-samc/Cut It](/projects/Cut-It)'s [documentation](https://github.com/http-samc/cut-it/blob/main/DOCS.md), [@http-samc/Tabroom-API](/projects/Tabroom-API)'s [project reference](https://github.com/http-samc/tabroom-API/blob/main/DOCS.md), and [@http-samc/2048.py](/projects/2048.py)'s [module documentation](https://github.com/http-samc/2048.py/blob/main/DOCS.md), which are all built using GenDoc.
+
+## Current Usage
+![GenDoc Downloads](/api/pypi-downloads/badge/gendoc)
