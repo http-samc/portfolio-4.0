@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import '../styles/globals.css'
 import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button, Drawer, Tooltip } from '@geist-ui/core'
 import { Sun, Moon, Mail, Pin, Terminal, Menu } from '@geist-ui/icons'
@@ -11,6 +11,7 @@ import { useMediaQuery } from 'usehooks-ts'
 import TypeAnimation from 'react-type-animation';
 import Script from 'next/script'
 import Particles from '../components/particles'
+import elementsIntersect from '../utils/intersection'
 
 const ADJECTIVES = ['built', 2000, 'forged', 2000, 'developed', 2000, 'created', 2000, 'envisioned', 2000, 'researched', 2000, 'implemented', 2000, 'programmed', 2000, 'designed', 2000, 'constructed', 2000, 'maintained', 2000, 'optimized', 2000, 'tailored', 2000,]
 
@@ -90,97 +91,99 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/67826352?s=500" />
       </Head>
       <Page id="page" dotBackdrop={true} dotSize="2px" style={{ padding: 20, marginTop: -30 }}>
-        <Page.Header className='header-container'>
-          <div className='header-container' id="big-logo-container">
-            <Link href='/'>
-              <Text h2 type="success">smrth.dev</Text>
-            </Link>
-            {
-              <Breadcrumbs>
-                {
-                  router.pathname === '/'
-                    ? null
-                    : router.pathname.split('/').map((crumb, i) => {
-                      crumbStack += crumb + '/'
-                      if (crumb[0] == '[')
-                        return
-                      return (
-                        <Breadcrumbs.Item href={crumbStack} key={i}>{crumb}</Breadcrumbs.Item>
-                      )
-                    })
-                }
-              </Breadcrumbs>
-            }
-          </div>
-          <div className='header-container' style={{ flexDirection: isBig ? 'row' : 'row-reverse' }}>
-            {isBig &&
-              <div>
-                <Tooltip text='Contact'>
-                  <Link href="mailto:chitgopekarsamarth@gmail.com"><Mail /></Link>
-                </Tooltip>
-                <Spacer inline w={1} />
-                <Tooltip text='Projects'>
-                  <Link href="/projects"><Terminal /></Link>
-                </Tooltip>
-                <Spacer inline w={1} />
-                <Tooltip text='Blog'>
-                  <Link href="/blog"><Pin /></Link>
-                </Tooltip>
-                <Spacer inline w={1} />
-                <Tooltip text='Research'>
-                  <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
-                </Tooltip>
-              </div>
-            }
-            {
-              !isBig &&
-              <div>
-                <Button
-                  icon={<Menu />}
-                  onClick={toggleDrawer}
-                  paddingRight={0.5}
-                  paddingLeft={0.5}
-                  auto
-                />
-                <Drawer visible={darwerIsVisible} onClose={() => setDrawerisVisisble(false)}>
-                  <div className='header-container-drawer'>
-                    <Link className='drawer-link' href="mailto:chitgopekarsamarth@gmail.com">
-                      <Mail />
-                      <Spacer w={0.5} />
-                      <Text>contact</Text>
-                    </Link>
-                    <Link className='drawer-link' href="/projects">
-                      <Terminal />
-                      <Spacer w={0.5} />
-                      <Text>projects</Text>
-                    </Link>
-                    <Link className='drawer-link' href="/blog">
-                      <Pin />
-                      <Spacer w={0.5} />
-                      <Text>blog</Text>
-                    </Link>
-                    <Link className='drawer-link' href="/research">
-                      <BiTestTube size={21} color={theme == 'light' ? 'black' : 'white'} />
-                      <Spacer w={0.5} />
-                      <Text>research</Text>
-                    </Link>
-                    <Spacer h={10} />
-                  </div>
-                </Drawer>
-              </div>
-            }
-            <Spacer w={isBig ? 1.5 : 0.5} />
-            <Button
-              onClick={toggleTheme}
-              icon={theme == 'dark' ? <Sun color='yellow' /> : <Moon color='purple' />}
-              paddingRight={0.5}
-              paddingLeft={0.5}
-              mb={isBig ? 0.25 : 0}
-              auto
-              ghost
-            />
-          </div>
-        </Page.Header>
+        <div className='header-wrapper'>
+          <Page.Header className='header-container header'>
+            <div className='header-container' id="big-logo-container">
+              <Link href='/'>
+                <Text h2 type="success">smrth.dev</Text>
+              </Link>
+              {
+                <Breadcrumbs>
+                  {
+                    router.pathname === '/'
+                      ? null
+                      : router.pathname.split('/').map((crumb, i) => {
+                        crumbStack += crumb + '/'
+                        if (crumb[0] == '[')
+                          return
+                        return (
+                          <Breadcrumbs.Item href={crumbStack} key={i}>{crumb}</Breadcrumbs.Item>
+                        )
+                      })
+                  }
+                </Breadcrumbs>
+              }
+            </div>
+            <div className='header-container' style={{ flexDirection: isBig ? 'row' : 'row-reverse' }}>
+              {isBig &&
+                <div>
+                  <Tooltip text='Contact'>
+                    <Link href="mailto:chitgopekarsamarth@gmail.com"><Mail /></Link>
+                  </Tooltip>
+                  <Spacer inline w={1} />
+                  <Tooltip text='Projects'>
+                    <Link href="/projects"><Terminal /></Link>
+                  </Tooltip>
+                  <Spacer inline w={1} />
+                  <Tooltip text='Blog'>
+                    <Link href="/blog"><Pin /></Link>
+                  </Tooltip>
+                  <Spacer inline w={1} />
+                  <Tooltip text='Research'>
+                    <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
+                  </Tooltip>
+                </div>
+              }
+              {
+                !isBig &&
+                <div>
+                  <Button
+                    icon={<Menu />}
+                    onClick={toggleDrawer}
+                    paddingRight={0.5}
+                    paddingLeft={0.5}
+                    auto
+                  />
+                  <Drawer visible={darwerIsVisible} onClose={() => setDrawerisVisisble(false)}>
+                    <div className='header-container-drawer'>
+                      <Link className='drawer-link' href="mailto:chitgopekarsamarth@gmail.com">
+                        <Mail />
+                        <Spacer w={0.5} />
+                        <Text>contact</Text>
+                      </Link>
+                      <Link className='drawer-link' href="/projects">
+                        <Terminal />
+                        <Spacer w={0.5} />
+                        <Text>projects</Text>
+                      </Link>
+                      <Link className='drawer-link' href="/blog">
+                        <Pin />
+                        <Spacer w={0.5} />
+                        <Text>blog</Text>
+                      </Link>
+                      <Link className='drawer-link' href="/research">
+                        <BiTestTube size={21} color={theme == 'light' ? 'black' : 'white'} />
+                        <Spacer w={0.5} />
+                        <Text>research</Text>
+                      </Link>
+                      <Spacer h={10} />
+                    </div>
+                  </Drawer>
+                </div>
+              }
+              <Spacer w={isBig ? 1.5 : 0.5} />
+              <Button
+                onClick={toggleTheme}
+                icon={theme == 'dark' ? <Sun color='yellow' /> : <Moon color='purple' />}
+                paddingRight={0.5}
+                paddingLeft={0.5}
+                mb={isBig ? 0.25 : 0}
+                auto
+                ghost
+              />
+            </div>
+          </Page.Header>
+        </div>
         <Divider />
         <div style={{ minHeight: '80vh' }}>
           <Component {...pageProps} theme={theme} />

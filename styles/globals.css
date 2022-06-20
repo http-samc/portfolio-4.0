@@ -85,6 +85,31 @@ html, body, #__next {
   user-select: none;
 }
 
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-wrapper {
+    padding: 0px 15px 0px 15px !important;
+  }
+}
+
+
+.header {
+  max-width: 730px;
+  backdrop-filter: blur(15px) saturate(2);
+}
+
 .cover-img-container {
   display: flex;
   flex-direction: column;

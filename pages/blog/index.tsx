@@ -39,7 +39,7 @@ const Blog = ({ posts, theme }: any) => {
     return (
         <div>
             <div style={{
-                display: 'flex', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap', alignItems: 'center'
+                display: 'flex', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap', alignItems: 'center', marginTop: 30
             }}
             >
                 <Text h1>My Blog 📒</Text>
