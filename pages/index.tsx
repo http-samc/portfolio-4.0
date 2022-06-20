@@ -2,10 +2,9 @@ import RenderedMarkdown from "../components/renderedMarkdown"
 import fs from 'fs'
 import TextTransition, { presets } from "react-text-transition"
 import { useState, useEffect } from 'react'
-import { Image, Text } from "@geist-ui/core";
-import { ChevronDown } from "@geist-ui/icons";
+import { Image, Text, useTheme } from "@geist-ui/core";
 import { useMediaQuery } from "usehooks-ts";
-// import GithubProfile from "../components/githubProfile";
+import { RoughNotation } from "react-rough-notation";
 
 const ADJECTIVES = [
     "bulls fan",
@@ -27,6 +26,7 @@ export const getStaticProps = async (context: any) => {
 
 const Home = ({ homepage }: any) => {
     const isBig = useMediaQuery('(min-width: 700px)')
+    const theme = useTheme();
     const [index, setIndex] = useState(0)
     useEffect(() => {
         const intervalId = setInterval(() =>
@@ -44,7 +44,11 @@ const Home = ({ homepage }: any) => {
                     : { display: 'flex', flexDirection: 'column', alignItems: 'center' }
             }>
                 <div>
-                    <Text h2={isBig} h1={!isBig} style={{ fontWeight: 'bolder', fontSize: '2.5rem' }}>I'm Samarth Chitgopekar</Text>
+                    <Text h1 style={{ fontWeight: 'bolder', fontSize: '2.5rem' }}>{
+                        isBig
+                            ? <>I'm&nbsp;<RoughNotation type="highlight" color={theme.type == "dark" ? "#f81ce6" : "#79ffe1"} show>Sam</RoughNotation>arth Chitgopekar</>
+                            : "I'm Samarth (Sam) Chitgopekar"
+                    }</Text>
                     <Text h3 mt={1}>
                         a&nbsp;
                         <TextTransition
