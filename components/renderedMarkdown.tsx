@@ -72,7 +72,7 @@ const DynamicImage = (props: any) => {
 
 const DynamicLink = (props: any) => {
   const theme = useTheme();
-  if (props.children.length > 1 || props.children[0].type === 'img') return props.children;
+  if (props.children.length > 1 || typeof props.children[0] !== 'string') return props.children;
   let pos = props.children[0].length;
   for (let c of hash(props.children[0])) {
     if (parseInt(c))
