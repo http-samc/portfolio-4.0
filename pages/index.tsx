@@ -50,6 +50,7 @@ const HeroSubheading = () => {
 
 const Home = ({ homepage }: any) => {
     const isBig = useMediaQuery('(min-width: 700px)')
+    const isTiny = useMediaQuery('(max-width: 400px)')
     const theme = useTheme();
 
     return (
@@ -57,7 +58,7 @@ const Home = ({ homepage }: any) => {
             <div style={
                 isBig
                     ? { display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginTop: 50, marginBottom: 50 }
-                    : { display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 10 }
+                    : { display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 30, height: isTiny ? '100vh' : 'auto' }
             }>
                 <div>
                     <Text h1 style={{ fontWeight: 'bolder', fontSize: isBig ? '2.5rem' : '2.35rem' }}>{
