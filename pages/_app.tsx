@@ -112,34 +112,37 @@ const App = ({ Component, pageProps, router }: AppProps) => {
               </Breadcrumbs>
             }
           </div>
-          {isBig &&
-            <div className='header-container'>
-              <Tooltip text='Contact'>
-                <Link href="mailto:chitgopekarsamarth@gmail.com"><Mail /></Link>
-              </Tooltip>
-              <Spacer inline w={1} />
-              <Tooltip text='Projects'>
-                <Link href="/projects"><Terminal /></Link>
-              </Tooltip>
-              <Spacer inline w={1} />
-              <Tooltip text='Blog'>
-                <Link href="/blog"><Pin /></Link>
-              </Tooltip>
-              <Spacer inline w={1} />
-              <Tooltip text='Research'>
-                <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
-              </Tooltip>
-              <div id='theme-toggle' onClick={toggleTheme}>
-                {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='purple' />}
+          <div className='header-container' style={{ flexDirection: isBig ? 'row' : 'row-reverse' }}>
+            {isBig &&
+              <div>
+                <Tooltip text='Contact'>
+                  <Link href="mailto:chitgopekarsamarth@gmail.com"><Mail /></Link>
+                </Tooltip>
+                <Spacer inline w={1} />
+                <Tooltip text='Projects'>
+                  <Link href="/projects"><Terminal /></Link>
+                </Tooltip>
+                <Spacer inline w={1} />
+                <Tooltip text='Blog'>
+                  <Link href="/blog"><Pin /></Link>
+                </Tooltip>
+                <Spacer inline w={1} />
+                <Tooltip text='Research'>
+                  <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
+                </Tooltip>
               </div>
-            </div>
-          }
-          {
-            !isBig &&
-            <div>
-              <Button auto icon={<Menu />} onClick={toggleDrawer} />
-              <Drawer visible={darwerIsVisible} onClose={() => setDrawerisVisisble(false)}>
-                <div style={{ height: '100%' }}>
+            }
+            {
+              !isBig &&
+              <div>
+                <Button
+                  icon={<Menu />}
+                  onClick={toggleDrawer}
+                  paddingRight={0.5}
+                  paddingLeft={0.5}
+                  auto
+                />
+                <Drawer visible={darwerIsVisible} onClose={() => setDrawerisVisisble(false)}>
                   <div className='header-container-drawer'>
                     <Link className='drawer-link' href="mailto:chitgopekarsamarth@gmail.com">
                       <Mail />
@@ -163,14 +166,20 @@ const App = ({ Component, pageProps, router }: AppProps) => {
                     </Link>
                     <Spacer h={10} />
                   </div>
-                </div>
-                <Divider />
-                <div style={{ alignSelf: 'center' }} onClick={toggleTheme}>
-                  {theme == 'dark' ? <Sun color='yellow' /> : <Moon color='purple' />}
-                </div>
-              </Drawer>
-            </div>
-          }
+                </Drawer>
+              </div>
+            }
+            <Spacer w={isBig ? 1.5 : 0.5} />
+            <Button
+              onClick={toggleTheme}
+              icon={theme == 'dark' ? <Sun color='yellow' /> : <Moon color='purple' />}
+              paddingRight={0.5}
+              paddingLeft={0.5}
+              mb={isBig ? 0.25 : 0}
+              auto
+              ghost
+            />
+          </div>
         </Page.Header>
         <Divider />
         <div style={{ minHeight: '80vh' }}>

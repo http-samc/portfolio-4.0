@@ -59,7 +59,7 @@ const Home = ({ homepage }: any) => {
                         &nbsp;from 📍 Chicago, IL
                     </Text>
                     <Text p i b mt={-0.5} mb={isBig ? 0 : 3} style={{ color: '#888', width: isBig ? '70%' : '100%' }}>
-                        Fullstack developer coding to make the world a better place (and building some awesome stuff along the way).
+                        Fullstack developer. Coding to make the world a better place (and building some awesome stuff along the way).
                     </Text>
                 </div>
                 <div style={{ width: isBig ? '30%' : '100%' }} className={!isBig ? "hero-img" : ""}>
