@@ -44,7 +44,7 @@ const Home = ({ homepage }: any) => {
                     : { display: 'flex', flexDirection: 'column', alignItems: 'center' }
             }>
                 <div>
-                    <Text h1 style={{ fontWeight: 'bolder', fontSize: '2.5rem' }}>{
+                    <Text h1 style={{ fontWeight: 'bolder', fontSize: isBig ? '2.5rem' : '2.25rem' }}>{
                         isBig
                             ? <>I'm&nbsp;<RoughNotation type="highlight" color={theme.type == "dark" ? "#f81ce6" : "#79ffe1"} show>Sam</RoughNotation>arth Chitgopekar</>
                             : "I'm Samarth (Sam) Chitgopekar"
