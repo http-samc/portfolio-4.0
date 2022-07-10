@@ -1,4 +1,5 @@
 import RenderedMarkdown from "../components/renderedMarkdown"
+import PageLayout from "../layout/page";
 import fs from 'fs'
 
 export const getStaticProps = async (context: any) => {
@@ -13,10 +14,12 @@ export const getStaticProps = async (context: any) => {
 
 const Research = ({ research }: any) => {
     return (
-        <RenderedMarkdown
-            markdown={research}
-            ignoreCustomComponents={false}
-        />
+        <PageLayout>
+            <RenderedMarkdown
+                markdown={research}
+                ignoreCustomComponents={false}
+            />
+        </PageLayout>
     )
 }
 

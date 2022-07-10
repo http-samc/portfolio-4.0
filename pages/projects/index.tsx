@@ -9,6 +9,7 @@ import hash from "../../utils/hash";
 import { useMediaQuery } from "usehooks-ts";
 import { Search } from "@geist-ui/icons";
 import PROJECT_LAYOUT from "../../layout/projects";
+import PageLayout from "../../layout/page";
 
 const getStaticPaths = () => {
     let projectPaths = fs.readdirSync(`${process.cwd()}/content/projects`)
@@ -43,7 +44,7 @@ const Project = ({ projects }: any) => {
     const [search, setSearch] = useState('')
 
     return (
-        <div>
+        <PageLayout>
             <div style={{
                 display: 'flex', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap', alignItems: 'center'
             }}
@@ -208,7 +209,7 @@ const Project = ({ projects }: any) => {
                 }
             </Grid.Container>
             <Spacer h={2} />
-        </div >
+        </PageLayout >
     )
 }
 

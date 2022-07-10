@@ -4,6 +4,7 @@ import getRandomThemeColor, { COLORS } from "../../utils/get-random-theme-color"
 const yfm = require('yaml-front-matter')
 import fs from 'fs'
 import hash from "../../utils/hash";
+import PageLayout from "../../layout/page";
 
 export const getStaticPaths = async () => {
     let postPaths = fs.readdirSync(`${process.cwd()}/content/blog`)
@@ -31,7 +32,7 @@ export const getStaticProps = async (context: any) => {
 const Post = ({ post }: any) => {
     const parsedPost = yfm.loadFront(post)
     return (
-        <div>
+        <PageLayout>
             <Text h1>{parsedPost.title}</Text>
             {
                 parsedPost.tags.map((tag: string, idx: number) => {
@@ -70,7 +71,7 @@ const Post = ({ post }: any) => {
             <RenderedMarkdown
                 markdown={parsedPost.__content}
             />
-        </div>
+        </PageLayout>
     )
 }
 

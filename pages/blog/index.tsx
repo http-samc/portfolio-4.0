@@ -8,6 +8,7 @@ import hash from '../../utils/hash'
 import { useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import { Search } from "@geist-ui/icons";
+import PageLayout from "../../layout/page";
 
 const getStaticPaths = () => {
     let postPaths = fs.readdirSync(`${process.cwd()}/content/blog`)
@@ -37,7 +38,7 @@ const Blog = ({ posts, theme }: any) => {
     const [search, setSearch] = useState('')
 
     return (
-        <div>
+        <PageLayout>
             <div style={{
                 display: 'flex', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap', alignItems: 'center', marginTop: 30
             }}
@@ -187,7 +188,7 @@ const Blog = ({ posts, theme }: any) => {
                 }
             </Grid.Container>
             <Spacer h={2} />
-        </div>
+        </PageLayout>
     )
 }
 

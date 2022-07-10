@@ -4,6 +4,7 @@ import getRandomThemeColor, { COLORS } from "../../utils/get-random-theme-color"
 const yfm = require('yaml-front-matter')
 import fs from 'fs'
 import hash from "../../utils/hash";
+import PageLayout from "../../layout/page";
 
 export const getStaticPaths = async () => {
     let projectPaths = fs.readdirSync(`${process.cwd()}/content/projects`)
@@ -30,7 +31,7 @@ export const getStaticProps = async (context: any) => {
 const Project = ({ project }: any) => {
     const parsedProject = yfm.loadFront(project)
     return (
-        <div>
+        <PageLayout>
             <Text h1>{parsedProject.title}</Text>
             <Text>
                 <span style={{ fontStyle: 'italic' }}>{parsedProject.description.slice(0, parsedProject.description.length - 2)}</span>
@@ -66,7 +67,7 @@ const Project = ({ project }: any) => {
             <RenderedMarkdown
                 markdown={parsedProject.__content}
             />
-        </div>
+        </PageLayout>
     )
 }
 

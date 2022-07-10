@@ -3,11 +3,7 @@ import '../styles/globals.css'
 import PageLayout from '../layout/page'
 
 const App = ({ Component, pageProps }: AppProps) => {
-  return (
-    <PageLayout>
-      <Component {...pageProps} />
-    </PageLayout>
-  )
+  return <Component {...pageProps} />
 }
 
 export default App

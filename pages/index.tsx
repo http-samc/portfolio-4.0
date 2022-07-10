@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import { Image, Text, useTheme } from "@geist-ui/core";
 import { useMediaQuery } from "usehooks-ts";
 import { RoughNotation } from "react-rough-notation";
+import PageLayout from "../layout/page";
 
 const ADJECTIVES = [
     "bulls fan",
@@ -54,7 +55,7 @@ const Home = ({ homepage }: any) => {
     const theme = useTheme();
 
     return (
-        <div>
+        <PageLayout>
             <div style={
                 isBig
                     ? { display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: 50 }
@@ -84,7 +85,7 @@ const Home = ({ homepage }: any) => {
                 markdown={homepage}
                 ignoreCustomComponents={true}
             />
-        </div>
+        </PageLayout>
     )
 }
 
