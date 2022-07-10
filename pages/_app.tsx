@@ -120,19 +120,19 @@ const App = ({ Component, pageProps, router }: AppProps) => {
             <div className='header-container' style={{ flexDirection: isBig ? 'row' : 'row-reverse' }}>
               {isBig &&
                 <div>
-                  <Tooltip text='Contact'>
+                  <Tooltip text='Contact' placement='bottom' type='success'>
                     <Link href="mailto:chitgopekarsamarth@gmail.com"><Mail /></Link>
                   </Tooltip>
                   <Spacer inline w={1} />
-                  <Tooltip text='Projects'>
+                  <Tooltip text='Projects' placement='bottom' type='success'>
                     <Link href="/projects"><Terminal /></Link>
                   </Tooltip>
                   <Spacer inline w={1} />
-                  <Tooltip text='Blog'>
+                  <Tooltip text='Blog' placement='bottom' type='success'>
                     <Link href="/blog"><Pin /></Link>
                   </Tooltip>
                   <Spacer inline w={1} />
-                  <Tooltip text='Research'>
+                  <Tooltip text='Research' placement='bottom' type='success'>
                     <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
                   </Tooltip>
                 </div>
@@ -179,7 +179,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
               <Button
                 onClick={toggleTheme}
                 className='header-button'
-                icon={theme == 'dark' ? <Sun color='yellow' /> : <Moon color='purple' />}
+                icon={theme == 'dark' ? <Sun color='white' /> : <Moon color='black' />}
                 paddingRight={0.5}
                 paddingLeft={0.5}
                 mb={isBig ? 0.25 : 0}
