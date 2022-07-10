@@ -32,7 +32,10 @@ const Project = ({ project }: any) => {
     return (
         <div>
             <Text h1>{parsedProject.title}</Text>
-            <Text i>{parsedProject.description}</Text>
+            <Text>
+                <span style={{ fontStyle: 'italic' }}>{parsedProject.description.slice(0, parsedProject.description.length - 2)}</span>
+                {parsedProject.description.slice(parsedProject.description.length - 2, parsedProject.description.length)}
+            </Text>
             <Spacer />
             {
                 parsedProject.tags.map((tag: string, idx: number) => {
