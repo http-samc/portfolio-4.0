@@ -84,13 +84,13 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         <meta name="description" content="Sam Chitgopekar's official developer portfolio and blog." />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://smrth.dev/${router.pathname}`} />
+        <meta property="og:url" content={window.location.href} />
         <meta property="og:title" content="smrth.dev" />
         <meta property="og:description" content="Sam Chitgopekar's official developer portfolio and blog." />
         <meta property="og:image" content="https://avatars.githubusercontent.com/u/67826352?s=500" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={`https://smrth.dev/${router.pathname}`} />
+        <meta property="og:url" content={window.location.href} />
         <meta property="twitter:title" content="smrth.dev" />
         <meta property="twitter:description" content="Sam Chitgopekar's official developer portfolio and blog." />
         <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/67826352?s=500" />
