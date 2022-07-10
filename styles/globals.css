@@ -10,7 +10,7 @@ html, body, #__next {
   width: 100%;
 }
 #content {
-  max-width: 600px;
+  max-width: 650px;
   width: 100%;
   padding: 0;
   margin: auto;
@@ -76,9 +76,10 @@ html, body, #__next {
 
 @media only screen and (max-width: 600px) {
   .header-container {
-    padding: 0 10px;
+    padding: 0 15px;
   }
 }
+
 .header-container-drawer {
   display: flex;
   flex-direction: column;
@@ -116,7 +117,7 @@ html, body, #__next {
 
 
 .header {
-  max-width: 650px;
+  max-width: 720px;
   backdrop-filter: blur(15px) saturate(2);
 }
 
