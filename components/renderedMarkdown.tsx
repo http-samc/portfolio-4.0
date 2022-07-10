@@ -83,17 +83,12 @@ const DynamicLink = (props: any) => {
   let color = COLORS[pos % COLORS.length]
   let isInternal = props.href.startsWith("/");
   return (
-    <Link href={props.href} target={isInternal ? "_self" : "_blank"}>
-      <RoughNotation
-        type={isInternal ? "highlight" : "underline"}
-        color={theme.type == "dark" ? "#f81ce6" : "#79ffe1"}
-        show
-      >
-        <span style={{
-          color: isInternal ? (theme.type == "dark" ? "#aaffec" : "#f81ce6") : color,
-          fontWeight: "bold"
-        }}>{props.children}</span>
-      </RoughNotation>
+    <Link
+      href={props.href}
+      target={isInternal ? "_self" : "_blank"}
+      style={{ color, fontWeight: 'bold' }}
+    >
+      {props.children}
     </Link>
   )
 }
