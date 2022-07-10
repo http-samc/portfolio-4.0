@@ -57,8 +57,8 @@ const Home = ({ homepage }: any) => {
         <div>
             <div style={
                 isBig
-                    ? { display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginTop: 50, marginBottom: 50 }
-                    : { display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 30, height: isTiny ? '80vh' : 'auto' }
+                    ? { display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: 50 }
+                    : { display: 'flex', flexDirection: 'column', alignItems: 'center', height: isTiny ? '80vh' : 'auto' }
             }>
                 <div>
                     <Text h1 style={{ fontWeight: 'bolder', fontSize: isBig ? '2.5rem' : '2.35rem' }}>{

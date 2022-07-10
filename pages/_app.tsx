@@ -67,13 +67,19 @@ const App = ({ Component, pageProps, router }: AppProps) => {
       </div>
     )
   }
-
   return (
     <GeistProvider themeType={theme}>
       {theme == 'dark' && <Particles />}
       <CssBaseline />
       <Head>
-        <title>smrth.dev</title>
+        <title>
+          {
+            router.pathname.length > 1
+              ? router.pathname.slice(1) + ' @ '
+              : ''
+          }
+          smrth.dev
+        </title>
         <meta name="title" content="smrth.dev" />
         <meta name="description" content="Sam Chitgopekar's official developer portfolio and blog." />
 
