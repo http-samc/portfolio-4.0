@@ -117,7 +117,7 @@ const PageLayout = ({ children }: any) => {
                 </Breadcrumbs>
               }
             </div>
-            <div className='header-container' style={{ flexDirection: isBig ? 'row' : 'row-reverse' }}>
+            <div className='header-container' id="nav-container" style={{ flexDirection: isBig ? 'row' : 'row-reverse' }}>
               {isBig &&
                 <div>
                   <Tooltip text='Contact' placement='bottom' type='success'>

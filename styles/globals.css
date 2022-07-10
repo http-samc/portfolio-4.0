@@ -71,12 +71,23 @@ html, body, #__next {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 25px;
+}
+
+#big-logo-container {
+  padding-left: 25px;
+}
+
+#nav-container {
+  padding-right: 40px;
 }
 
 @media only screen and (max-width: 600px) {
-  .header-container {
-    padding: 0 15px;
+  #big-logo-container {
+    padding-left: 15px;
+  }
+
+  #nav-container {
+    padding-right: 25px;
   }
 }
 
