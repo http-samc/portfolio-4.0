@@ -1,11 +1,11 @@
 ## hi 👋
 I'm Sam (**he/him**). I first started coding at 12 years old to kill free time. At 17 I moved to Silicon Valley to take a job at a startup. Today, in addition to developing, I spend my time playing sports (swimming, water polo, and pickup basketball), debating [HS Public Forum](https://www.speechanddebate.org/topics/), and watching the Bulls & 49ers.
 
-## projects 👨‍💻
-I've been proud to work on a bunch of projects over the years. I've also put time into crafting thoughtful writeups for many of them. Because the list is pretty extensive, they have a dedicated page [here](/projects).
-
 ## contact 🤝
 I'm currently employed, but I always keep my inbox open for structured work, internships, and freelance opportunities. Feel free to reach out to me via email at [chitgopekarsamarth@gmail.com](chitgopekarsamarth@gmail.com), or via any of my other socials below. I answer *almost* everything.
+
+## projects 👨‍💻
+I've been proud to work on a bunch of projects over the years. I've also put time into crafting thoughtful writeups for many of them. Because the list is pretty extensive, they have a dedicated page [here](/projects).
 
 <div align="center">
     <a href="https://github.com/http-samc" target="blank"><img class="ovr" align="center"
@@ -22,6 +22,12 @@ I'm currently employed, but I always keep my inbox open for structured work, int
             alt="13723971" height="30" width="40" /></a>
 </div>
 <br>
+
+## blog 📝
+I like to post about cool things. Some of these appear on my [dev.to](https://dev.to/httpsamc), but you can view all of my posts [here](/blog).
+
+## research 🔬
+Occasionally, I publish research that applies my computer science skillset in an academic setting. Check out my papers [here](/research).
 
 ## tech stack ⚙️
 These are some of the technologies I look to when starting a new project. Though there's some overlap, I've always believed that using the right tool for the right job is the most important aspect of software development.
@@ -123,8 +129,7 @@ These are some of the technologies I look to when starting a new project. Though
 </div>
 <br>
 
-## blog 📝
-I like to post about cool things. Some of these appear on my [dev.to](https://dev.to/httpsamc), but you can view all of my posts [here](/blog).
+
 
 ## recents 🛠
 <iframe src="/api/github-activity/http-samc" style="width: 100%; height: 70px, padding: 0px, border: 0px"></iframe>
