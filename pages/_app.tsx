@@ -13,7 +13,6 @@ import Script from 'next/script'
 import Particles from '../components/particles'
 
 const ADJECTIVES = ['built', 2000, 'forged', 2000, 'developed', 2000, 'created', 2000, 'envisioned', 2000, 'researched', 2000, 'implemented', 2000, 'programmed', 2000, 'designed', 2000, 'constructed', 2000, 'maintained', 2000, 'optimized', 2000, 'tailored', 2000,]
-let crumbStack = ''
 
 const App = ({ Component, pageProps, router }: AppProps) => {
   const [theme, setTheme] = useState('light')
@@ -108,11 +107,10 @@ const App = ({ Component, pageProps, router }: AppProps) => {
                     router.pathname === '/'
                       ? null
                       : router.pathname.split('/').map((crumb, i) => {
-                        crumbStack += crumb + '/'
                         if (crumb[0] == '[')
                           return
                         return (
-                          <Breadcrumbs.Item href={crumbStack} key={i}>{crumb}</Breadcrumbs.Item>
+                          <Breadcrumbs.Item href={crumb} key={i}>{crumb}</Breadcrumbs.Item>
                         )
                       })
                   }
