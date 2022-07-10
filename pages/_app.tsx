@@ -1,9 +1,18 @@
 import type { AppProps } from 'next/app'
+import { useEffect, useState, useRef } from 'react'
 import '../styles/globals.css'
-import PageLayout from '../layout/page'
+import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button, Drawer, Tooltip } from '@geist-ui/core'
+
 
 const App = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />
+  const [theme, setTheme] = useState('light')
+
+  return (
+    <GeistProvider themeType={theme}>
+      <CssBaseline />
+      <Component {...pageProps} setTheme={setTheme} />
+    </GeistProvider>
+  )
 }
 
 export default App

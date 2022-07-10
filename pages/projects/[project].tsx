@@ -28,10 +28,10 @@ export const getStaticProps = async (context: any) => {
     }
 }
 
-const Project = ({ project }: any) => {
+const Project = ({ project, setTheme }: any) => {
     const parsedProject = yfm.loadFront(project)
     return (
-        <PageLayout>
+        <PageLayout setTheme={setTheme}>
             <Text h1>{parsedProject.title}</Text>
             <Text>
                 <span style={{ fontStyle: 'italic' }}>{parsedProject.description.slice(0, parsedProject.description.length - 2)}</span>

@@ -12,9 +12,9 @@ export const getStaticProps = async (context: any) => {
     }
 }
 
-const Research = ({ research }: any) => {
+const Research = ({ research, setTheme }: any) => {
     return (
-        <PageLayout>
+        <PageLayout setTheme={setTheme}>
             <RenderedMarkdown
                 markdown={research}
                 ignoreCustomComponents={false}

@@ -49,13 +49,13 @@ const HeroSubheading = () => {
     )
 }
 
-const Home = ({ homepage }: any) => {
+const Home = ({ homepage, setTheme }: any) => {
     const isBig = useMediaQuery('(min-width: 700px)')
     const isTiny = useMediaQuery('(max-width: 400px)')
     const theme = useTheme();
 
     return (
-        <PageLayout>
+        <PageLayout setTheme={setTheme}>
             <div style={
                 isBig
                     ? { display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: 50 }

@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
-import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button, Drawer, Tooltip } from '@geist-ui/core'
+import { GeistProvider, CssBaseline, Link, Divider, Page, Text, Toggle, Spacer, Breadcrumbs, Button, Drawer, Tooltip, useTheme } from '@geist-ui/core'
 import { Sun, Moon, Mail, Pin, Terminal, Menu } from '@geist-ui/icons'
 import Head from 'next/head'
 import { BiTestTube } from 'react-icons/bi'
@@ -13,16 +13,16 @@ import { useRouter } from 'next/router'
 
 const ADJECTIVES = ['built', 2000, 'forged', 2000, 'developed', 2000, 'created', 2000, 'envisioned', 2000, 'researched', 2000, 'implemented', 2000, 'programmed', 2000, 'designed', 2000, 'constructed', 2000, 'maintained', 2000, 'optimized', 2000, 'tailored', 2000,]
 
-const PageLayout = ({ children }: any) => {
+const PageLayout = ({ children, setTheme }: any) => {
   const router = useRouter();
-  const [theme, setTheme] = useState('light')
+  const theme = useTheme();
   const [loading, setLoading] = useState(true)
   const [darwerIsVisible, setDrawerisVisisble] = useState(false)
   const isBig = useMediaQuery('(min-width: 600px)')
   const isMedium = useMediaQuery('(min-width: 450px)')
 
   const toggleTheme = () => {
-    let newTheme = theme === 'light' ? 'dark' : 'light'
+    let newTheme = theme.type === 'light' ? 'dark' : 'light'
     window.localStorage.setItem('theme', newTheme)
     setTheme(newTheme)
   }
@@ -60,16 +60,15 @@ const PageLayout = ({ children }: any) => {
         alignItems: 'center',
         width: '100%',
         height: '100%',
-        backgroundColor: theme == 'light' ? 'white' : 'black'
+        backgroundColor: theme.type == 'light' ? 'white' : 'black'
       }}>
         <BounceLoader loading={loading} color='navy' />
       </div>
     )
   }
   return (
-    <GeistProvider themeType={theme}>
-      {theme == 'dark' && <Particles />}
-      <CssBaseline />
+    <>
+      {theme.type == 'dark' && <Particles />}
       <Head>
         <title>
           {
@@ -133,7 +132,7 @@ const PageLayout = ({ children }: any) => {
                   </Tooltip>
                   <Spacer inline w={1} />
                   <Tooltip text='Research' placement='bottom' type='success'>
-                    <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
+                    <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme.type == 'light' ? 'black' : 'white'} /></Link>
                   </Tooltip>
                 </div>
               }
@@ -166,7 +165,7 @@ const PageLayout = ({ children }: any) => {
                         <Text>blog</Text>
                       </Link>
                       <Link className='drawer-link' href="/research">
-                        <BiTestTube size={21} color={theme == 'light' ? 'black' : 'white'} />
+                        <BiTestTube size={21} color={theme.type == 'light' ? 'black' : 'white'} />
                         <Spacer w={0.5} />
                         <Text>research</Text>
                       </Link>
@@ -179,7 +178,7 @@ const PageLayout = ({ children }: any) => {
               <Button
                 onClick={toggleTheme}
                 className='header-button'
-                icon={theme == 'dark' ? <Sun color='white' /> : <Moon color='black' />}
+                icon={theme.type == 'dark' ? <Sun color='white' /> : <Moon color='black' />}
                 paddingRight={0.5}
                 paddingLeft={0.5}
                 mb={isBig ? 0.25 : 0}
@@ -219,7 +218,7 @@ const PageLayout = ({ children }: any) => {
           gtag('config', 'G-BDJ8RBFCND');
         `}
       </Script>
-    </GeistProvider >
+    </ >
   )
 }
 

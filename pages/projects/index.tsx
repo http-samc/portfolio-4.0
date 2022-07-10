@@ -34,7 +34,7 @@ export const getStaticProps = (context: any) => {
     }
 }
 
-const Project = ({ projects }: any) => {
+const Project = ({ projects, setTheme }: any) => {
     const router = useRouter()
     const [tags, setTags] = useState<string[]>([])
     const [visibleTag, setVisibleTag] = useState<string>('all')
@@ -44,7 +44,7 @@ const Project = ({ projects }: any) => {
     const [search, setSearch] = useState('')
 
     return (
-        <PageLayout>
+        <PageLayout setTheme={setTheme}>
             <div style={{
                 display: 'flex', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap', alignItems: 'center'
             }}

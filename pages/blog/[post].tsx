@@ -29,10 +29,10 @@ export const getStaticProps = async (context: any) => {
 }
 
 
-const Post = ({ post }: any) => {
+const Post = ({ post, setTheme }: any) => {
     const parsedPost = yfm.loadFront(post)
     return (
-        <PageLayout>
+        <PageLayout setTheme={setTheme}>
             <Text h1>{parsedPost.title}</Text>
             {
                 parsedPost.tags.map((tag: string, idx: number) => {

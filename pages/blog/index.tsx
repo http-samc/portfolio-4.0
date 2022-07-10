@@ -1,5 +1,5 @@
 import RenderedMarkdown from "../../components/renderedMarkdown"
-import { Text, Badge, Link, Image, Spacer, Grid, Card, Snippet, Collapse, Input, Button, Modal } from "@geist-ui/core";
+import { Text, Badge, Link, Image, Spacer, Grid, Card, Snippet, Collapse, Input, Button, Modal, useTheme } from "@geist-ui/core";
 import getRandomThemeColor, { COLORS } from "../../utils/get-random-theme-color";
 import { useRouter } from "next/router";
 const yfm = require('yaml-front-matter')
@@ -29,16 +29,17 @@ export const getStaticProps = (context: any) => {
     }
 }
 
-const Blog = ({ posts, theme }: any) => {
+const Blog = ({ posts, setTheme }: any) => {
     const router = useRouter()
     const [tags, setTags] = useState<string[]>([])
     const [visibleTag, setVisibleTag] = useState<string>('all')
     const isSmall = useMediaQuery('(max-width: 670px)')
     const [showSearch, setShowSearch] = useState(false)
+    const theme = useTheme().type;
     const [search, setSearch] = useState('')
 
     return (
-        <PageLayout>
+        <PageLayout setTheme={setTheme}>
             <div style={{
                 display: 'flex', justifyContent: 'space-between', width: '100%', flexWrap: 'wrap', alignItems: 'center', marginTop: 30
             }}
