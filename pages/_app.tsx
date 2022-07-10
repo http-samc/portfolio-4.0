@@ -75,7 +75,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         <title>
           {
             router.pathname.length > 1
-              ? router.pathname.slice(1) + ' @ '
+              ? router.pathname.slice(1).split('/')[0] + ' @ '
               : ''
           }
           smrth.dev
