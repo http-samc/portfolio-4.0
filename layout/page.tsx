@@ -15,14 +15,14 @@ const ADJECTIVES = ['built', 2000, 'forged', 2000, 'developed', 2000, 'created',
 
 const PageLayout = ({ children, setTheme }: any) => {
   const router = useRouter();
-  const theme = useTheme();
   const [loading, setLoading] = useState(true)
   const [darwerIsVisible, setDrawerisVisisble] = useState(false)
   const isBig = useMediaQuery('(min-width: 600px)')
   const isMedium = useMediaQuery('(min-width: 450px)')
+  const theme = useTheme().type;
 
   const toggleTheme = () => {
-    let newTheme = theme.type === 'light' ? 'dark' : 'light'
+    let newTheme = theme === 'light' ? 'dark' : 'light'
     window.localStorage.setItem('theme', newTheme)
     setTheme(newTheme)
   }
@@ -33,23 +33,26 @@ const PageLayout = ({ children, setTheme }: any) => {
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem('theme')
-    if (localTheme)
-      setTheme(localTheme)
-    else {
-      window.localStorage.setItem(
-        'theme',
-        window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-      )
-    }
-    const lastVisit = parseInt(window.localStorage.getItem('lastVisit') || '0')
 
-    if (!!lastVisit && lastVisit > Date.now() - 1000 * 60 * 60 * 24 * 2)
-      setLoading(false)
-    else {
-      window.localStorage.setItem('lastVisit', Date.now().toString())
-      setTimeout(() => setLoading(false), 1000)
+    // If localTheme and current theme state are out of sync, take action
+    if (localTheme !== theme) {
+      setLoading(true)
+      // If localTheme exists, prioritize it
+      if (localTheme)
+        setTheme(localTheme)
+
+      // If no local theme, use preferred color scheme w/ light as default
+      else {
+        const newTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        window.localStorage.setItem(
+          'theme',
+          newTheme
+        )
+        setTheme(newTheme)
+      }
     }
-  }, [])
+    setLoading(false)
+  }, [theme])
 
   if (loading) {
     return (
@@ -60,7 +63,7 @@ const PageLayout = ({ children, setTheme }: any) => {
         alignItems: 'center',
         width: '100%',
         height: '100%',
-        backgroundColor: theme.type == 'light' ? 'white' : 'black'
+        backgroundColor: theme == 'light' ? 'white' : 'black'
       }}>
         <BounceLoader loading={loading} color='navy' />
       </div>
@@ -68,7 +71,7 @@ const PageLayout = ({ children, setTheme }: any) => {
   }
   return (
     <>
-      {theme.type == 'dark' && <Particles />}
+      {theme == 'dark' && <Particles />}
       <Head>
         <title>
           {
@@ -109,7 +112,7 @@ const PageLayout = ({ children, setTheme }: any) => {
                         if (crumb[0] == '[')
                           return
                         return (
-                          <Breadcrumbs.Item href={crumb} key={i}>{crumb}</Breadcrumbs.Item>
+                          <Breadcrumbs.Item href={`https://${window.location.host}/${crumb}`} key={i}>{crumb}</Breadcrumbs.Item>
                         )
                       })
                   }
@@ -132,7 +135,7 @@ const PageLayout = ({ children, setTheme }: any) => {
                   </Tooltip>
                   <Spacer inline w={1} />
                   <Tooltip text='Research' placement='bottom' type='success'>
-                    <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme.type == 'light' ? 'black' : 'white'} /></Link>
+                    <Link href="/research"><BiTestTube size={21} style={{ marginLeft: 3 }} color={theme == 'light' ? 'black' : 'white'} /></Link>
                   </Tooltip>
                 </div>
               }
@@ -165,7 +168,7 @@ const PageLayout = ({ children, setTheme }: any) => {
                         <Text>blog</Text>
                       </Link>
                       <Link className='drawer-link' href="/research">
-                        <BiTestTube size={21} color={theme.type == 'light' ? 'black' : 'white'} />
+                        <BiTestTube size={21} color={theme == 'light' ? 'black' : 'white'} />
                         <Spacer w={0.5} />
                         <Text>research</Text>
                       </Link>
@@ -178,7 +181,7 @@ const PageLayout = ({ children, setTheme }: any) => {
               <Button
                 onClick={toggleTheme}
                 className='header-button'
-                icon={theme.type == 'dark' ? <Sun color='white' /> : <Moon color='black' />}
+                icon={theme == 'dark' ? <Sun color='white' /> : <Moon color='black' />}
                 paddingRight={0.5}
                 paddingLeft={0.5}
                 mb={isBig ? 0.25 : 0}
