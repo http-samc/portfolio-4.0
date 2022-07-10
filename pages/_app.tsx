@@ -191,7 +191,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
             </div>
           </Page.Header>
         </div>
-        <div style={{ minHeight: '80vh' }}>
+        <div style={{ minHeight: '80vh', marginTop: 30 }}>
           <Component {...pageProps} theme={theme} />
         </div>
         <Spacer />
