@@ -144,6 +144,10 @@ html, body, #__next {
   background: linear-gradient(45deg, #f81ce6 0%, #79ffe1 100%);
 }
 
+.header-button, .header-button:hover, .header-button:focus {
+  border: 0.5px solid #888 !important;
+}
+
 .hero-img-small {
   margin-bottom: 25px;
   display: flex;

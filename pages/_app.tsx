@@ -144,6 +144,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
                 <div>
                   <Button
                     icon={<Menu />}
+                    className='header-button'
                     onClick={toggleDrawer}
                     paddingRight={0.5}
                     paddingLeft={0.5}
@@ -179,6 +180,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
               <Spacer w={isBig ? 1.5 : 0.5} />
               <Button
                 onClick={toggleTheme}
+                className='header-button'
                 icon={theme == 'dark' ? <Sun color='yellow' /> : <Moon color='purple' />}
                 paddingRight={0.5}
                 paddingLeft={0.5}
