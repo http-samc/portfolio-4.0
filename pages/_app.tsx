@@ -13,12 +13,14 @@ import Script from 'next/script'
 import Particles from '../components/particles'
 
 const ADJECTIVES = ['built', 2000, 'forged', 2000, 'developed', 2000, 'created', 2000, 'envisioned', 2000, 'researched', 2000, 'implemented', 2000, 'programmed', 2000, 'designed', 2000, 'constructed', 2000, 'maintained', 2000, 'optimized', 2000, 'tailored', 2000,]
+let crumbStack = ''
 
 const App = ({ Component, pageProps, router }: AppProps) => {
   const [theme, setTheme] = useState('light')
   const [loading, setLoading] = useState(true)
   const [darwerIsVisible, setDrawerisVisisble] = useState(false)
   const isBig = useMediaQuery('(min-width: 600px)')
+  const isMedium = useMediaQuery('(min-width: 450px)')
 
   const toggleTheme = () => {
     let newTheme = theme === 'light' ? 'dark' : 'light'
@@ -49,8 +51,6 @@ const App = ({ Component, pageProps, router }: AppProps) => {
       setTimeout(() => setLoading(false), 1000)
     }
   }, [])
-
-  let crumbStack = ''
 
   if (loading) {
     return (
@@ -102,7 +102,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
               <Link href='/'>
                 <Text h2 type="success">smrth.dev</Text>
               </Link>
-              {
+              {isMedium &&
                 <Breadcrumbs>
                   {
                     router.pathname === '/'
@@ -191,12 +191,12 @@ const App = ({ Component, pageProps, router }: AppProps) => {
             </div>
           </Page.Header>
         </div>
-        <div style={{ minHeight: '80vh', marginTop: 30 }}>
+        <div id="content">
           <Component {...pageProps} theme={theme} />
         </div>
         <Spacer />
-        <Divider />
         <Page.Footer id='footer'>
+          <Divider />
           <Text id='masthead' style={{ textAlign: 'center' }}>
             <TypeAnimation
               cursor={true}

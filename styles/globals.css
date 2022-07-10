@@ -3,11 +3,19 @@ html, body, #__next {
   width: 100%;
   padding: 0px;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 #page {
-  max-width: 700px;
   width: 100%;
+}
+#content {
+  max-width: 600px;
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  margin-top: 30px;
+  min-height: 80vh;
 }
 
 #particles {
@@ -16,6 +24,9 @@ html, body, #__next {
 
 #footer {
   position: absolute;
+  width: 85%;
+  max-width: 730px;
+  margin: auto;
   bottom: 15px;
   left: 0;
   right: 0;
@@ -60,8 +71,14 @@ html, body, #__next {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0 25px;
 }
 
+@media only screen and (max-width: 600px) {
+  .header-container {
+    padding: 0 10px;
+  }
+}
 .header-container-drawer {
   display: flex;
   flex-direction: column;
@@ -95,18 +112,11 @@ html, body, #__next {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 15px;
-}
-
-@media only screen and (max-width: 600px) {
-  .header-wrapper {
-    padding: 0px 15px 0px 15px !important;
-  }
 }
 
 
 .header {
-  max-width: 730px;
+  max-width: 650px;
   backdrop-filter: blur(15px) saturate(2);
 }
 
