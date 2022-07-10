@@ -142,7 +142,7 @@ const Blog = ({ posts, setTheme }: any) => {
                                 >
                                     <Badge.Anchor>
                                         <Badge style={{ marginBottom: 5, marginRight: 5 }} type='error'>
-                                            {post.date.split('/')[0] + '/' + post.date.split('/')[1]}
+                                            {post.date.split('/')[0] + '/' + post.date.split('/')[2]}
                                         </Badge>
                                         <div>
                                             <Badge style={{
