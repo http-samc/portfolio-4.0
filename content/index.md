@@ -2,7 +2,7 @@
 I'm Sam (**he/him**). I first started coding at 12 years old to kill free time. At 17 I moved to Silicon Valley to take a job at a startup. Today, in addition to developing, I spend my time playing sports (swimming, water polo, and pickup basketball), debating [HS Public Forum](https://www.speechanddebate.org/topics/), and watching the Bulls & 49ers.
 
 ## contact 🤝
-I'm currently employed, but I always keep my inbox open for structured work, internships, and freelance opportunities. Feel free to reach out to me via email at [chitgopekarsamarth [at] gmail.com](chitgopekarsamarth@gmail.com), or via any of my other socials below. I answer *almost* everything.
+I'm currently employed, but I always keep my inbox open for structured work, internships, and freelance opportunities. Feel free to reach out to me via email at [chitgopekarsamarth [at] gmail.com](mailto:chitgopekarsamarth@gmail.com), or via any of my other socials below. I answer *almost* everything.
 
 <div align="center">
     <a href="https://github.com/http-samc" target="blank"><img class="ovr" align="center"
