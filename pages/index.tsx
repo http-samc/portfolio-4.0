@@ -58,7 +58,7 @@ const Home = ({ homepage, setTheme }: any) => {
         <PageLayout setTheme={setTheme}>
             <div style={
                 isBig
-                    ? { display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: 50 }
+                    ? { display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 50 }
                     : { display: 'flex', flexDirection: 'column', alignItems: 'center', height: isTiny ? '80vh' : 'auto' }
             }>
                 <div>
