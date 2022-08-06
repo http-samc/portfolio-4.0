@@ -4,7 +4,7 @@ import getRandomThemeColor, { COLORS } from "../../utils/get-random-theme-color"
 import { useRouter } from "next/router";
 const yfm = require('yaml-front-matter')
 import fs from 'fs'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import hash from "../../utils/hash";
 import { useMediaQuery } from "usehooks-ts";
 import { Search } from "@geist-ui/icons";
@@ -42,6 +42,12 @@ const Project = ({ projects, setTheme }: any) => {
     const isSmall = useMediaQuery('(max-width: 670px)')
     const [showSearch, setShowSearch] = useState(false)
     const [search, setSearch] = useState('')
+
+    useEffect(() => {
+        let all_tags = projects.map((project: { tags: any; }) => project.tags).flat()
+        // @ts-ignore
+        setTags([...new Set(all_tags)])
+    }, [projects])
 
     return (
         <PageLayout setTheme={setTheme}>
@@ -177,7 +183,6 @@ const Project = ({ projects, setTheme }: any) => {
                                     <Card.Footer style={{ display: 'flex', flexGrow: 0.5, flexWrap: 'wrap' }}>
                                         {
                                             project.tags.map((tag: string, idx: number) => {
-                                                tags.includes(tag) || setTags([...tags, tag])
                                                 let pos = tag.length;
                                                 for (let c of hash(tag)) {
                                                     if (parseInt(c))

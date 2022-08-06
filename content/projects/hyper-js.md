@@ -2,9 +2,10 @@
 title: Hyper.js
 description: A full Javascript SDK for Hyper's API 🚦
 important: true
-cover: https://page2images.b-cdn.net/ccimages/ff/27/7PhIlmhJ4R9BJfVh.png
+cover: https://hyper.co/img/logos/hyper.svg
 tags:
     - TypeScript
+    - TypeDoc
     - SDK
 ---
 
