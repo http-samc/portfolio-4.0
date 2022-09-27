@@ -1,7 +1,7 @@
 const PROJECT_LAYOUT = [
     "Tournaments.Tech",
     "GenDoc",
-    "CodeSwipe",
+    "Gadha",
     "Cut-It",
     "fs.smrth.dev",
     "Portfolio 4.0",
@@ -21,7 +21,8 @@ const PROJECT_LAYOUT = [
     "2048.py",
     "Wish",
     "CasEel",
-
+    "Hyper Landing Page",
+    "CodeSwipe",
 ]
 
 export default PROJECT_LAYOUT

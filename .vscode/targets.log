@@ -10,25 +10,23 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Thu May 26 08:10:36 2022
+# Make data base, printed on Tue Sep 27 12:14:37 2022
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
-?F = $(notdir $?)
-# environment
-VSCODE_LOG_NATIVE = false
-# automatic
  
+?F = $(notdir $?)
+# automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/sam/dev/smrth.dev 4.0
+CURDIR := /Users/samarthchitgopekar/Dev/smrth.dev
 # makefile
 SHELL = /bin/sh
 # environment
@@ -40,57 +38,45 @@ WALLABY_PRODUCTION = true
 # makefile
 MAKEFILE_LIST := 
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-INFOPATH = /opt/homebrew/share/info:
-# environment
-P9K_SSH = 0
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/96/ldlpgb4x2zd4pgjtf53z8n_w0000gn/T/vscode-ipc-bc3f4fa0-a110-4d93-98c2-d0e180f189c6.sock
+INFOPATH = /opt/homebrew/share/info:/opt/homebrew/share/info:
 # environment
 VSCODE_CWD = /
 # environment
-ANDROID_SDK = /Users/sam/Library/Android/sdk
-# environment
-PATH = /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Library/Apple/usr/bin:/Users/sam/Library/Android/sdk/platform-tools
+PATH = /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/opt/homebrew/sbin
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
-# environment
-VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.E96DagH6AE/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.cDN0ggz0Qn/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_PIPE_LOGGING = true
-# environment
-PWD = /Users/sam/dev/smrth.dev 4.0
+PWD = /Users/samarthchitgopekar/Dev/smrth.dev
 # environment
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-MANPATH = /opt/homebrew/share/man::
+MANPATH = /opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /Users/sam
+HOME = /Users/samarthchitgopekar
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/sam/Library/Application Support/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = /Users/samarthchitgopekar/Library/Application Support/Code/CachedData/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb
 # environment
-LOGNAME = sam
+LOGNAME = samarthchitgopekar
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
-ZSH = /Users/sam/.oh-my-zsh
+ZSH = /Users/samarthchitgopekar/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -103,15 +89,16 @@ MAKE = $(MAKE_COMMAND)
 MAKECMDGOALS := all
 # environment
 SHLVL = 1
+# environment
+LOCAL_GIT_DIRECTORY = /Applications/GitHub Desktop.app/Contents/Resources/app/git
 # default
 MAKE_VERSION := 3.81
 # environment
-USER = sam
+USER = samarthchitgopekar
 # makefile
 .DEFAULT_GOAL := 
 # environment
 LESS = -R
- 
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
@@ -119,11 +106,13 @@ MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # default
 .VARIABLES := 
 # environment
-TMPDIR = /var/folders/96/ldlpgb4x2zd4pgjtf53z8n_w0000gn/T/
+TMPDIR = /var/folders/mf/kq69p2k53v505mm_jgk2yrbm0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/sam/Library/Application Support/Code/1.67.2-main.sock
+VSCODE_IPC_HOOK = /Users/samarthchitgopekar/Library/Application Support/Code/1.71.1-main.sock
+# environment
+MallocNanoZone = 0
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -131,7 +120,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.28564055.28564061
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.5246418.5246424
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -158,12 +147,13 @@ LC_ALL = C
 SUFFIXES := 
 # environment
 MAKELEVEL := 0
+ 
 # environment
 LANG = C
 # environment
-VSCODE_PID = 10427
+VSCODE_PID = 85262
 # variable set hash-table stats:
-# Load=73/1024=7%, Rehash=0, Collisions=1/93=1%
+# Load=68/1024=7%, Rehash=0, Collisions=1/88=1%
 
 # Pattern-specific Variable Values
 
@@ -171,9 +161,9 @@ VSCODE_PID = 10427
 
 # Directories
 
-# . (device 16777233, inode 23977236): 23 files, no impossibilities.
+# . (device 16777233, inode 5248189): 20 files, no impossibilities.
 
-# 23 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -181,7 +171,6 @@ VSCODE_PID = 10427
 
 # Files
 
- 
 # Not a target:
 all:
 #  Command-line target.
@@ -246,6 +235,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Thu May 26 08:10:36 2022
+# Finished Make data base on Tue Sep 27 12:14:37 2022
 
  

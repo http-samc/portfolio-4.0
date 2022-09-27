@@ -1,6 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/sam/dev/smrth.dev 4.0'
-make: Leaving directory `/Users/sam/dev/smrth.dev 4.0'
+make: Entering directory `/Users/samarthchitgopekar/Dev/smrth.dev'
+make: Leaving directory `/Users/samarthchitgopekar/Dev/smrth.dev'
  
 make: *** No targets specified and no makefile found.  Stop.
 
