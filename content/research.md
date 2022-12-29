@@ -10,4 +10,4 @@
     - **Novel and Performant Quench Analysis Tools for Superconducting Magnets** (*Samarth Chitgopekar*, *Shreekar Earanti*, *Dr. Stoyan Stoynev*).
         - [Talk @ Fermilab](https://firebasestorage.googleapis.com/v0/b/fs-smrth-de.appspot.com/o/Research%2FQuarkNet%2FTalk.mp4?alt=media&token=e8baca66-2fd9-4cd6-a2a7-34b34c53621c)
         - [Presentation](https://firebasestorage.googleapis.com/v0/b/fs-smrth-de.appspot.com/o/Research%2FQuarkNet%2FPresentation.pdf?alt=media&token=494f5465-8939-4b45-ae48-3cd8678899aa)
-        - [Technical Documentation](https://firebasestorage.googleapis.com/v0/b/fs-smrth-de.appspot.com/o/Research%2FQuarkNet%2FDocumentation.pdf?alt=media&token=c2e37e78-08fa-4b24-87a0-04d09ec46051)
+        - Technical Documentation, available on [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4307928)
